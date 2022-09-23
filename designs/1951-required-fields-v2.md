@@ -7,34 +7,33 @@ The proposal presented here is considerably simpler and changes less
 about the current semantics.
 
 # Objective
-We introduce a new field type: required fields, with the aim to address
+We introduce a new field type, a _required_ field, with the aim to address
 various shortcomings of CUE while at the same time allowing for simpler semantics for other features we wish to introduce in CUE.
 
 # Background
 One of CUE’s strengths is that it allows specifying types, constraints,
 and values within a unified framework. This means that fields in CUE have many different roles.
-For example, they can define simple JSON-like data, “templatize” or add derived fields that
-compute fields from these data fields, add constraints to data, or define top-level schema types (also constraints).
+For example, they can define simple JSON-like data, add derived fields that
+compute fields from these data fields (“templatize”), add constraints to data, or define top-level schema types (also constraints).
 
 ## Output and interpretation modes
 There are two major modes for outputting and interpreting CUE: 
-schema: output a schema with all constraints intact
-data: outputs only concrete data after validating all constraints
+- schema: produce a schema with all constraints intact
+- data: produce only concrete data after validating all constraints
 
 The schema mode corresponds to the `cue def` command.
-The data mode corresponds to `cue export`. `cue eval` lives in a limbo land in between the two
+The data mode corresponds to `cue export`. `cue eval` lives at a poorly specified point in between the two
 and should probably be deprecated or could at least benefit from some clarifications.
 This is covered in https://github.com/cue-lang/cue/issues/337.
 
 ### Schema mode
-The main goal of evaluating in schema mode are:
+The main goals of schema-mode evaluation are:
 
-1. Simplification of schema, for instance after unifying two schemas.
-1. Validate that a schema, or the unification of two schemas,
-2. is internally consistent, that is, has no errors.
+1. Simplification of schema (after unifying two schemas, for instance)
+1. Validate that a schema, or the unification of two schemas, is internally consistent; that is, there are no errors.
 
-Schema mode preserves all constraints: outputting CUE in schema mode requires all fields,
-including optional ones, to be output. 
+Schema mode preserves all constraints: generating CUE in schema mode requires all fields,
+including optional ones, to be produced. 
 
 ### Data mode
 In data mode, all [regular fields](https://cuelang.org/docs/references/spec/#definitions-and-hidden-fields)
@@ -45,15 +44,15 @@ or yield an incomplete error, like `a: b + c`, where `b` or `c` are not concrete
 ### Validation
 Validation can occur in either mode.
 
-`cue vet` is essentially used in both modes of interpretation.
+`cue vet` is used for both modes of interpretation.
 By default it uses schema mode, but it can be explicitly set to a data mode by using the `-c` flag.
 
 ## Field Semantics
 We identified the following list of common interpretation or use cases for field semantics:
 
 1. A field is defined with the given value, which must evaluate without error (regular field)
-1. A field _may_ be defined, in which case given constraints apply (optional field).
-1. A field _must_ be defined elsewhere (required field).
+1. A field _may_ be defined, in which case the associated constraint applies (optional field).
+1. A field _must_ be defined elsewhere and satisfy an associated constraint (required field).
 1. A field must not exist (optional field constraint where the constraint is an error value).
 1. A field is only defined if some condition is met (conditional field).
 
@@ -62,7 +61,7 @@ In effect there are two types of fields: those that provide constraints and thos
 ### Data and export
 In CUE, we classify data as [regular fields](https://cuelang.org/docs/references/spec/#definitions-and-hidden-fields)
 (so no definitions or hidden fields), with only concrete values.
-In a nutshell, any JSON value is data in CUE.
+Any JSON value is data in CUE.
 
 In contrast to JSON, but like YAML, CUE permits fields with top-level references to other data fields
 to be classified as data.
@@ -79,18 +78,18 @@ by requiring that any regular field (so not a constraint `a?: x`) must be concre
 
 Case 1 can be expressed as:
 ```
-x? : c
+x?: c
 ```
 Case 2 is currently expressed as:
 ```
-x : c
+x: c
 ```
-The requirement that the user must specify a field is only implicit.
-This works as desired when `c` is not concrete: because “non-optional” fields are required to be concrete,
-it will force the user to specify the field with the concrete value.
+The requirement that the user must specify a field is implicit.
+This works as desired when `c` is not concrete: because “non-optional” fields are required to be concrete.
+It will force the user to specify the field with the concrete value.
 
-It is not possible, however, to force a user to specify a field with a specific concrete value.
-This includes any list or struct.
+It is not possible, however, to force a user to specify a field with a specific concrete value,
+which includes any list or struct.
 This is because there is no syntactic distinction between a field that is a constraint,
 but required, and a regular field: the required property is implied by the fact that regular
 fields must be concrete upon output.
@@ -100,17 +99,17 @@ indistinguishable from a regular field with a concrete value specified by the us
 See, for instance, https://github.com/cue-lang/cue/issues/740 where this is problematic.
 
 ### Derived fields and templating
-The purpose of derived fields and templating is to automatically populate fields for a user.
+The purpose of templating, including deriving fields, is to automatically populate fields for a user.
 Possible use cases are:
 
 * providing a set of defaults, 
-* defining a higher level of abstraction that is mapped to some more concrete representation, or 
+* defining a higher level of abstraction that is mapped to some more concrete representation
 * converting between two versions of an API.
 
 Examples of such fields are:
 
 1. Defaults: `a: *1 | int`
-1. Derived values: `a: b + c`
+1. Derived fields: `a: b + c`
 1. Derived constraints: `a: b + c`, but only if `b + c` is defined.
 
 All derived fields use regular, non-optional, fields.
@@ -123,7 +122,7 @@ if a != _|_ && b != _|_ {
 }
 ```
 Case 3 is common (see https://github.com/cue-lang/cue/issues/1232).
-Having something much more compact would be nice and some thoughts for a proposal for that are in progress.
+Having something much more compact would be nice: we have some thoughts for a possible proposal to address this.
 
 ### Policy
 Policy is like schema but tends to have more derived constraints.
@@ -147,17 +146,17 @@ Another is making constraints more specific, without making them concrete or imp
 CUE currently has the “optional field constraint”, denoted `foo?: value`.
 
 We propose adding a “required field constraint”, denoted `foo!: value`, which is like `foo?: value`,
-but requires a regular value be provided for `foo` (a field `foo:` without  `!:` or ?:`).
+but requires a regular value be provided for `foo` (a field `foo:` without  `!:` or `?:`).
 
 We refer to optional field constraints and required field constraints collectively as “field constraints”.
 
-As a general rule, all data and data templating would be defined with regular fields,
+As a general rule, we consider that all data and data templating should be defined with regular fields,
 whereas schemas would be defined in terms of field constraints.
 Of course, CUE being CUE, mixing these two fields is allowed:
 this rule is not a restriction but suggested as a matter of style and proper usage.
 
 ## Semantics
-Informally, requiredness `!` is a property of a field that is unified independently of a field value.
+Informally, requiredness is a property of a field that is unified independently of a field value.
 
 The following holds:
 ```
@@ -178,7 +177,7 @@ For instance:
 ```
 Note the subtle, but important difference between this proposal and #822: `foo!: value`
 only requires that a field be specified; it does not require it to be concrete.
-As we are no longer proposing a change to the semantics of `x: string`, though, the net effect is roughly the same.
+However as we are no longer proposing a change to the semantics of `x: string`, the net effect is roughly the same.
 
 As a consequence, though, it is now possible to create a concrete value without
 having the user actually provide it (see the line marked `X` in the above example).
@@ -186,6 +185,8 @@ So this loses the strictness of the original proposal.
 In practice, this likely is not much of an impediment: JSON and YAML cannot specify such fields,
 and thus this would not limit the ability to validate such files: they still need to specify
 the actual concrete value to pass.
+
+That completes the proposal.
 
 ## Examples
 Here are some examples of how exclamation marks can be used to express things that were previously not possible.
