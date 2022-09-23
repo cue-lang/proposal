@@ -63,8 +63,8 @@ In CUE, we classify data as [regular fields](https://cuelang.org/docs/references
 (so no definitions or hidden fields), with only concrete values.
 Any JSON value is data in CUE.
 
-In contrast to JSON, but like YAML, CUE permits fields with top-level references to other data fields
-to be classified as data.
+In contrast to JSON, but like YAML, CUE permits fields with references
+to other data fields to be classified as data.
 
 ### Schema and constraints
 There are two common cases for defining fields in schema:
@@ -112,7 +112,6 @@ Examples of such fields are:
 1. Derived fields: `a: b + c`
 1. Derived constraints: `a: b + c`, but only if `b + c` is defined.
 
-All derived fields use regular, non-optional, fields.
 If a field should only be added conditionally, one currently has to revert to rather verbose methods, such as
 ```
 a?: int
