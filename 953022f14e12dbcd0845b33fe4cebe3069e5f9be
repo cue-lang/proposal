@@ -48,6 +48,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8ddf6bb2_bd05fb57",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2022-09-26T14:47:35Z",
+      "side": 1,
+      "message": "Hmm. Bad copy paste there. But as you say, it\u0027s not fully relevant. So I\u0027ll drop the file and the commit message reference.",
+      "parentUuid": "f248163c_2957fdfa",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 8
+      },
+      "revId": "953022f14e12dbcd0845b33fe4cebe3069e5f9be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fb504024_e05bc104",
@@ -61,6 +85,24 @@
       "writtenOn": "2022-09-26T14:43:12Z",
       "side": 1,
       "message": "cue-lang/proposal",
+      "revId": "953022f14e12dbcd0845b33fe4cebe3069e5f9be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "578cd8fb_b29d90b5",
+        "filename": "internal/ci/github/workflows.cue",
+        "patchSetId": 8
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2022-09-26T14:47:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fb504024_e05bc104",
       "revId": "953022f14e12dbcd0845b33fe4cebe3069e5f9be",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
