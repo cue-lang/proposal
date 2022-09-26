@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f248163c_2957fdfa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2022-09-26T14:43:37Z",
+      "side": 1,
+      "message": "presumably it doesn\u0027t matter either, as we would use Gerrit for code reviews?",
+      "parentUuid": "ddfbedf9_e92bb655",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 8
+      },
+      "revId": "953022f14e12dbcd0845b33fe4cebe3069e5f9be",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fb504024_e05bc104",
         "filename": "internal/ci/github/workflows.cue",
         "patchSetId": 8
