@@ -15,48 +15,53 @@
 package github
 
 import (
+	"list"
+
 	"github.com/SchemaStore/schemastore/src/schemas/json"
 )
 
 // The trybot workflow.
-trybot: _base.#bashWorkflow & {
-	// Note: the name of this workflow is used by gerritstatusupdater as an
-	// identifier in the status updates that are posted as reviews for this
-	// workflows, but also as the result label key, e.g. "TryBot-Result" would
-	// be the result label key for the "TryBot" workflow. Note the result label
-	// key is therefore tied to the configuration of this repository.
-	name: "TryBot"
+workflows: trybot: _repo.bashWorkflow & {
+	name: _repo.trybot.name
 
 	on: {
 		push: {
-			branches: ["trybot/*/*", _#defaultBranch, _base.#testDefaultBranch] // do not run PR branches
-			"tags-ignore": [_#releaseTagPattern]
+			branches: list.Concat([[_repo.testDefaultBranch], _repo.protectedBranchPatterns]) // do not run PR branches
 		}
 		pull_request: {}
 	}
 
 	jobs: {
 		test: {
-			"runs-on": _#linuxMachine
+			"runs-on": _repo.linuxMachine
+
+			let runnerOSExpr = "runner.os"
+			let runnerOSVal = "${{ \(runnerOSExpr) }}"
+			let _setupGoActionsCaches = _repo.setupGoActionsCaches & {
+				#goVersion: _repo.latestGo
+				#os:        runnerOSVal
+				_
+			}
+
+			// Only run the trybot workflow if we have the trybot trailer, or
+			// if we have no special trailers. Note this condition applies
+			// after and in addition to the "on" condition above.
+			if: "\(_repo.containsTrybotTrailer) || ! \(_repo.containsDispatchTrailer)"
+
 			steps: [
-				_base.#installGo,
-				_base.#checkoutCode & {
-					// "pull_request" builds will by default use a merge commit,
-					// testing the PR's HEAD merged on top of the master branch.
-					// For consistency with Gerrit, avoid that merge commit entirely.
-					// This doesn't affect "push" builds, which never used merge commits.
-					with: ref: "${{ github.event.pull_request.head.sha }}"
+				for v in _repo.checkoutCode {v},
+
+				_repo.installGo & {
+					with: "go-version": _repo.latestGo
 				},
-				_base.#earlyChecks & {
-					// These checks don't vary based on the Go version or OS,
-					// so we only need to run them on one of the matrix jobs.
-					if: "\(#_isLatestLinux)"
-				},
-				_base.#cacheGoModules,
+
+				for v in _setupGoActionsCaches {v},
+
+				_repo.earlyChecks,
 				_#goGenerate,
 				_#goTest,
 				_#goCheck,
-				_base.#checkGitClean,
+				_repo.checkGitClean,
 			]
 		}
 	}
