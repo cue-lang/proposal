@@ -1,4 +1,4 @@
-// Copyright 2022 The CUE Authors
+// Copyright 2023 The CUE Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,7 +14,15 @@
 
 package github
 
-// The trybot_dispatch workflow.
-trybot_dispatch: _base.#bashWorkflow & _gerrithub.#dispatchWorkflow & {
-	#type: _gerrithub.#dispatchTrybot
-}
+// This file exists to provide a single point of importing
+// the repo package. The pattern of using base and repo
+// is replicated across a number of CUE repos, and as such
+// the import path of repo varies between them. This makes
+// spotting differences and applying changes between the
+// github/*.cue files noisy. Instead, import the repo package
+// in a single file, and that keeps the different in import
+// path down to a single file.
+
+import repo "github.com/cue-lang/proposal/internal/ci/repo"
+
+_repo: repo
