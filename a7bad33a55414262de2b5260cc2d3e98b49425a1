@@ -35,6 +35,510 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3446075e_c16b70ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "Ended up leaving lots of notes, hope that\u0027s okay. A good number are nits or very minor writing suggestions.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41f8f1cb_29523cbe",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "I struggle to parse this sentence. Perhaps:\n\n\u003e that is compatible with co-versioning alongside",
+      "range": {
+        "startLine": 15,
+        "startChar": 59,
+        "endLine": 16,
+        "endChar": 34
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c38de1db_9f57dfaa",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "perhaps this should be slightly more generic, such as:\n\n\u003e integrations with code hosting sites such as a GitHub app.\n\njust so we don\u0027t give the idea that we\u0027re limiting ourselves to GitHub.",
+      "range": {
+        "startLine": 19,
+        "startChar": 66,
+        "endLine": 19,
+        "endChar": 78
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9140b45_8d942a03",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: comma after \"example\"",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23732e00_ea047433",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "besides resolve and download, we could also mention \"discover\". discovery has always been a bit of a problem with Go, because there isn\u0027t a central place to search for keywords or rank results by popularity or other metrics. pkg.go.dev does some of this now, but it essentially scrapes data from proxy.golang.org, and does not support private modules.\n\nI\u0027d also mention this under the advantages below.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "adde646a_5c200fda",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "Not sure if I buy this argument entirely. If the Go proxy is not available, yes, falling back to direct VCS is slower. But if a central registry is not available, you have absolutely nothing to fall back on, which is surely worse.\n\nAlso, what do you mean by empty caches - on the client side, or server side? On the client side, downloading a zip from a proxy or a registry is equally efficient. On the server side, the proxy does have to do a VCS fetch the first time. This is an engineering challenge for the server to do quickly for sure, but as a user I never notice any slowness with the way the Go proxy does it.\n\nThere are two cases where the registry does seem more performant to me:\n\n1) Users disabling the proxy via `GOPROXY\u003ddirect`, falling back to old VCS downloads. The registry sidesteps this problem by not having two client-side modes.\n\n2) Private modules - in Go, most companies don\u0027t bother running their own private proxy, so they simply use the public proxy for public dependencies and VCS downloads for private ones. The more private dependencies they use, the slower the module downloading is.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3679d947_41f003bd",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "I assume this is because a proxy (and its client in fallback mode) need to run VCS clone commands, which add millions of lines of code. I would clarify.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b33b0102_73acf805",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "the use of the plural word \"registries\" makes it seem like cmd/cue could use multiple registries at once, akin to how I can today use\n\n    GOPROXY\u003dhttps://proxy.mycorp.com,https://proxy.golang.org,direct\n\nsome companies do this in Go so that the in-house proxy can return a 404 for public modules, making the client fall back to the public proxy, so that the in-house proxy doesn\u0027t need to store as much data.\n\nwill using multiple registries be supported? I would make it clear. the current text makes it sound like we will support it.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a8f477c_5059f898",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: verify?",
+      "range": {
+        "startLine": 101,
+        "startChar": 0,
+        "endLine": 101,
+        "endChar": 5
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05533e46_3ffb8c70",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: if a feature",
+      "range": {
+        "startLine": 114,
+        "startChar": 32,
+        "endLine": 114,
+        "endChar": 42
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "689b4a08_4493f992",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "publishers? authors? not sure I understand what \"considerations\" means here.",
+      "range": {
+        "startLine": 118,
+        "startChar": 58,
+        "endLine": 118,
+        "endChar": 72
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1ec35b0_962fe036",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: which",
+      "range": {
+        "startLine": 159,
+        "startChar": 13,
+        "endLine": 159,
+        "endChar": 16
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d9cfcc2_13f3100d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "I would briefly explain why, like:\n\n\u003e , since `/v1` and `/v2` are also valid sub-packages.",
+      "range": {
+        "startLine": 167,
+        "startChar": 6,
+        "endLine": 167,
+        "endChar": 17
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9bb898b_22bc891a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: duplicate word",
+      "range": {
+        "startLine": 173,
+        "startChar": 60,
+        "endLine": 173,
+        "endChar": 66
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0c3d5ed_e4a06d2d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: plural?",
+      "range": {
+        "startLine": 182,
+        "startChar": 40,
+        "endLine": 182,
+        "endChar": 46
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f363ac80_4c8e6ef8",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: missing period",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a87d570_6fc126dd",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: replace with \"support\", to not repeat allow, which is a bit confusing",
+      "range": {
+        "startLine": 195,
+        "startChar": 68,
+        "endLine": 195,
+        "endChar": 77
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c0ee9950_c683681e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: \"in their\" or \"with their\".",
+      "range": {
+        "startLine": 210,
+        "startChar": 11,
+        "endLine": 210,
+        "endChar": 15
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28373b56_ad5e835e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "The order `{a?: x} \u003e {a!: x} \u003e {a: x}` still confuses me to this day. Perhaps we should link to the required fields proposal as a reminder.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f42c681_b9cf783e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 288,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: plural",
+      "range": {
+        "startLine": 288,
+        "startChar": 48,
+        "endLine": 288,
+        "endChar": 56
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eadf0be1_9b0fb98f",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 334,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "I guess we could say \"avoid or deal with\", because in practice users may still run into breakages if they don\u0027t stick to the rules perfectly, which will happen.",
+      "range": {
+        "startLine": 334,
+        "startChar": 15,
+        "endLine": 334,
+        "endChar": 20
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7942634e_ae323a0a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "compatibility rules?",
+      "range": {
+        "startLine": 380,
+        "startChar": 48,
+        "endLine": 380,
+        "endChar": 53
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8c4883c_af13bcf8",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: into",
+      "range": {
+        "startLine": 380,
+        "startChar": 33,
+        "endLine": 380,
+        "endChar": 38
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9307a51_3eb6ea37",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: plural",
+      "range": {
+        "startLine": 381,
+        "startChar": 29,
+        "endLine": 381,
+        "endChar": 35
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "60996907_886ae967",
@@ -48,6 +552,23 @@
       "writtenOn": "2023-04-07T20:49:44Z",
       "side": 1,
       "message": "Per @rog:\n\nWe should explicitly call out whether this format is intended to be closed or open, and if open, where the openness might apply.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2afe9850_7e741574",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 413,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "I guess we could make this simply mention alpha.1 very soon, before we merge the proposal.",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -71,6 +592,279 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ab88a0ae_8e9a2afd",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "canonical path? or at least we should mention that `cue mod tidy` will canonicalize it.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d7e857e_bd30922a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "I\u0027m not a fan of how we copied go here; when people see `go 1.19`, it\u0027s still too easy to misunderstand what it actually means. Is it a minimum version? A target version?\n\nI would personally go with `cue: spec: #Semver` or some other form that includes a word like \"lang\" or \"spec\", to clarify that this is about what version of the _language spec_ the module source is written in.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6dc5601a_84a4f3d2",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 461,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: mixing space and tab indentation, also elsewhere in this document like the publish section.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0fb173a1_44a82c4f",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 463,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: period",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "336b9c72_de9e2126",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 476,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "Go implements retractions via go.mod because it has no better way to do so. It\u0027s a bit awkward at times, because if one wants to retract the latest or all versions, one needs to publish one more higher version.\n\nPresumably we could do better: have the user retract versions directly with the registry, as a \"retract\" request akin to \"publish\" to add a version.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b7f7f39_09275d7f",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 554,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "-go? :)",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c134116_8d6b4c3a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 572,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "The?",
+      "range": {
+        "startLine": 572,
+        "startChar": 67,
+        "endLine": 572,
+        "endChar": 72
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d6ada03e_7c688392",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "I don\u0027t see any other reference to \"indirect\" though.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "110f1ea0_b1261bb3",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 611,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "nit: join this line with the one above",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc15eea6_085f848e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "how does it choose whether to use a minor or patch release increment?",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c08cadb_562604ee",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 630,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "join with the line above",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1059a60_f3f84340",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 631,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "how is `cue mod upload` different from `cue mod publish` then? I would clarify that `upload` does not require a semver version, and can be used to upload unnamed versions to the registry like development commits.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d9f774d_713a6647",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 652,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "presumably this means to say \"made private\"? because this command has nothing to do with retractions as far as I can tell.",
+      "range": {
+        "startLine": 652,
+        "startChar": 26,
+        "endLine": 652,
+        "endChar": 35
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "275223ca_4046925e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 704,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "you don\u0027t mention how or when vendoring is enabled, though. how about:\n\n\u003e When that `vendor` directory exists, ...\n\ni.e. just like Go, vendoring is enabled when the directory is present.",
+      "range": {
+        "startLine": 704,
+        "startChar": 5,
+        "endLine": 704,
+        "endChar": 25
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "29c455fd_29b3c325",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 713,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "if there is such a skew and I don\u0027t run tidy, would other commands like eval fail?",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ebfad67a_c9a2a344",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -82,6 +876,104 @@
       "writtenOn": "2023-04-07T20:49:44Z",
       "side": 1,
       "message": "Per @rog: not sure on the naming here.\n\nWe could follow the Go approach of a top-level clean command, at which point this would become:\n\n```\ncue clean -modcache\n```",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4eae1916_d7e712e8",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "it makes sense for Go\u0027s to be top-level, because two out of the three caches it handles are package-based (build and test cache) and not module-based (module download cache).\n\ndo we expect to ever have on-disk caches at the package level? if not, then I think `cue mod clean` is nicer.",
+      "parentUuid": "ebfad67a_c9a2a344",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d4019cf_41f2a2f2",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 752,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "is \"upload\" the right term? because I thought uploading was for non-semver versions, whereas \"publish\" was for semver. and this is triggered by tagging a semver release.",
+      "range": {
+        "startLine": 752,
+        "startChar": 46,
+        "endLine": 752,
+        "endChar": 52
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80f92662_0cf40a4d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 760,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "you can deduplicate both module paths and just use `github.com/$owner/$repo/path@$majorversion`\n\n(also note I think $repo should be a var for consistency)",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "532113bc_fcac05d6",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 790,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "clarify that you abbreviate it as MVS from this point.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "42894ece_c132d150",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 801,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-07T23:27:01Z",
+      "side": 1,
+      "message": "HEAD is a pretty git-centric term, perhaps \"tip\" or \"latest\" would be more universally understood.",
+      "range": {
+        "startLine": 801,
+        "startChar": 36,
+        "endLine": 801,
+        "endChar": 40
+      },
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
