@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cae5fe5_37a5838f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-07T20:49:44Z",
+      "side": 1,
+      "message": "PTAL. ",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60996907_886ae967",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-07T20:49:44Z",
+      "side": 1,
+      "message": "Per @rog:\n\nWe should explicitly call out whether this format is intended to be closed or open, and if open, where the openness might apply.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51da2758_7226bcd1",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-07T20:49:44Z",
+      "side": 1,
+      "message": "@mpvl: this sentence is incomplete.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ebfad67a_c9a2a344",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-07T20:49:44Z",
+      "side": 1,
+      "message": "Per @rog: not sure on the naming here.\n\nWe could follow the Go approach of a top-level clean command, at which point this would become:\n\n```\ncue clean -modcache\n```",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c10d222_d21298b4",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 807,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-07T20:49:44Z",
+      "side": 1,
+      "message": "@mpvl @rog to review wording, content.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
