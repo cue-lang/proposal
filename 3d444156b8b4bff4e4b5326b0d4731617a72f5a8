@@ -18,6 +18,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "beedac4f_66085f24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "A number of points address in patchset 3. \n\nResponded to all other points, mainly to clarify where we need input from @mpvl and @rog to clarify. ",
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d823dd0a_8cb8e8d8",
@@ -37,6 +54,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f0fb08dd_52969c6d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 526,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "Agreed. Defer to @mpvl and @rog who created the schema.",
+      "parentUuid": "d823dd0a_8cb8e8d8",
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "154e4a2a_b4b90992",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 2
@@ -48,6 +83,30 @@
       "writtenOn": "2023-04-08T10:04:05Z",
       "side": 1,
       "message": "FYI, since you changed \"upload\" to \"publish\" above, the same should be done here.",
+      "range": {
+        "startLine": 758,
+        "startChar": 2,
+        "endLine": 758,
+        "endChar": 9
+      },
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4acba18_e1ddd2ba",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 758,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "Ah good catch. Done",
+      "parentUuid": "154e4a2a_b4b90992",
       "range": {
         "startLine": 758,
         "startChar": 2,

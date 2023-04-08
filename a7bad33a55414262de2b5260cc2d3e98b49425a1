@@ -251,6 +251,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb238008_73a56166",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ad1b554_00359111",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "adde646a_5c200fda",
@@ -300,6 +318,24 @@
       "side": 1,
       "message": "I see, that would make more sense to me. I also now realise what was meant by empty caches - the text does mean client-side caches, because downloading modules via VCS from scratch means a full git clone from zero, whereas downloading new versions on a warm cache often means just fetching a few commits.\n\nHow about this rewrite, to be more to the point:\n\n\u003e - Cloning VCS repositories is often slower than downloading source archives, especially when cloning from scratch due to an empty cache. Public proxies wouldn\u0027t host private modules, causing most users to fall back to slow VCS clones unless they took the time to run their own private proxy server.\n\nI would also suggest moving \"design allows for private modules\" further up. Not only is it noteworthy, but it also leads to the performance claim we make here, so they shouldn\u0027t be out of order.",
       "parentUuid": "83882f18_f848433e",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "70035198_bcef9417",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "\u003e I also now realise what was meant by empty caches - the text does mean client-side caches\n\nI\u0027m not actually clear this is a exclusively a reference to client side caches. Indeed now re-reading this paragraph for the 10th time I\u0027m not sure it makes sense:\n\n\u003e Cloning repositories can be costly. Using a VCS-backed proxy may result in      longer download times when dealing with empty caches or when a proxy is not available. Since CUE is often used in such contexts, this concern is even greater.\n\nOr put another way, I don\u0027t think it has the right focus.\n\nI think the points we should be trying to make here are:\n\n* The challenge with the Go (VCS-based) approach is that with private modules you have two choices as a module author (and by extension user): host your own proxy or have your users suffer the cost, instability etc of a direct VCS clone. \n* With a registry based approach, people can choose to run their own registry (for public or private modules, for various reasons), but there is no strict need to do so.\n* A VCS-based module system is going to be slower in general, because you can\u0027t always assume there is a proxy to amortise the clone time, the main reason being the point above about private modules. This does not apply for a registry approach.\n* If there _is_ a proxy available (for public and or private modules) in a VCS-based modules system, you _can_ amortise the clone time, but the initial clone time in the proxy remains. This point seems incredibly minor relative to the point about private modules. \n\nHence I think the main point to make here is that in the case of private modules in a VCS-based system, because there is not guaranteed to be a proxy available, the cost of cloning etc cannot always be amortised. \n\ni.e. right now I don\u0027t think we are missing a lede on that fact that this situation arises in a VCS-based system like Go because the public proxy does not handle private modules. The fact that the _proxy_ is VCS backed is not relevant: because we\u0027re talking about a situation where a proxy is not (generally) available.\n\nHence I think your attempted rewording is closer but I\u0027m not keen on the wording. \n\nHow about this.\n\n\u003e VCS-backed public proxies do not host private modules. As an author of a private module you therefore have two choices: host your own proxy, or have your users fall back to a direct VCS clone. Cloning VCS repositories can be unreliable and costly, especially where a user has empty caches. Private modules in CUE will be very common, as will situations where users resolve and download dependencies with empty caches. A registry based design naturally and natively supports private modules, and entirely side steps any costs associated with VCS clones.",
+      "parentUuid": "aaa80f55_3da54f10",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -458,6 +494,30 @@
       "side": 1,
       "message": "I might be misreading the `1..2` diff, but this seems unchanged?",
       "parentUuid": "60652a32_5a90c570",
+      "range": {
+        "startLine": 114,
+        "startChar": 32,
+        "endLine": 114,
+        "endChar": 42
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa4cd736_6d73e1ee",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "My bad. Good spot. Thanks. Done.",
+      "parentUuid": "7e4585a5_6b8d885e",
       "range": {
         "startLine": 114,
         "startChar": 32,
@@ -1298,6 +1358,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6f6d2df6_42810080",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "I don\u0027t think I would use the word \"canonicalize\" here for that. It\u0027s a one-off fix... a fix that might actually be wrong because it is in fact a guess at a major version, and `@v0` would seem like the obvious choice.\n\nI\u0027ll let @mpvl and @rog weigh in here because I don\u0027t have the full background on the point about the fix. \n\nIn any case, we could punt on mentioning anything here because I think that\u0027s a point we could establish in the course of an implementation.",
+      "parentUuid": "af5e5681_34554766",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6d7e857e_bd30922a",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -1345,6 +1423,24 @@
       "side": 1,
       "message": "This is one of those cases where I think we should do better than Go. Go chose `go: X.Y` in isolation years ago, well before they thought they would need other \"version\" fields like `toolchain: X.Y.Z`. I suspect they might well want to add a \"minimum version\" field at some point as well.\n\nGo\u0027s current state is awkward:\n\n```\ngo: 1.18\ntoolchain: 1.19.3\n```\n\nWhat is `go:` there? You and I know it actually means the language spec version, but it\u0027s far too easy to mistake it for a minimum version. We\u0027ve covered this kind of confusion at length in the Go issue tracker before :) \n\nIt\u0027s very likely that we will want more \"version\" fields in module.cue in the future, much like Go is doing. For that reason, I would steer clear of `cue: X.Y` due to its ambiguity.\n\nPersonally, I would go with `cue: spec?: #Semver`. It is clear and not too verbose. We could always omit the `cue` part and do `spec?: #Semver` directly, although it\u0027s nice for the file contents alone to still mention that this is a CUE module.\n\nYou can then imagine a future where we also add `toolchain` in a natural way:\n\n```\ncue: {\n  spec?: #Semver\n  toolchain?: #Semver\n}\n```",
       "parentUuid": "8791d71b_a79e8148",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9db4664d_6ea87d5c",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "Great, that\u0027s what I was after: for you to propose something concrete based on the proposed (current) Go situation. \n\nI\u0027d be happy with your proposal. \n\nWill defer to @mpvl and @rog for thoughts.\n\nFWIW I agree with your intuition that we should improve on the Go situation.",
+      "parentUuid": "5aaff227_3a7489b5",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -1468,6 +1564,24 @@
       "side": 1,
       "message": "You\u0027re right that we could always implement retractions directly in the registry, but I would argue that we shouldn\u0027t support retractions via `module.cue` if we plan to support them via the registry. Supporting both feels more complex and awkward for no reason.",
       "parentUuid": "3d9da317_7e62a976",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "614d0ebd_d6ef2537",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 476,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "Agreed. Again, I defer to @mpvl and @rog on previous conversations.",
+      "parentUuid": "4d00ea97_9db9c0a3",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -1679,6 +1793,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0dca5b62_09273d9d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "I\u0027ve offered some wording here. PTAL",
+      "parentUuid": "17d0a9e0_6759db02",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1c08cadb_562604ee",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -1767,6 +1899,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "05dccf4c_b5c7903b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 631,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "What I think we need to clarify is what the benefit is from having a separate upload step. I\u0027m not clear on the use case around it, because as I said before you can\u0027t depend on something that has only been `upload`-ed.",
+      "parentUuid": "4f850313_55a632b3",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4d9f774d_713a6647",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -1826,6 +1976,30 @@
       "side": 1,
       "message": "Hang on, public modules can\u0027t be retracted? That doesn\u0027t seem right. Public modules can\u0027t be _removed_ in general, but they can surely be retracted in cases like security flaws or unintended publishes, in which case they could still be explicitly downloaded but they wouldn\u0027t be listed or used for `@latest` queries.\n\nIn a way, \"a public module cannot be made private\" is equivalent to \"a public module cannot be removed\", because both could result in `cue mod download` suddenly failing due to 404s, breaking reproducibility.",
       "parentUuid": "bf5d2523_92983d1d",
+      "range": {
+        "startLine": 652,
+        "startChar": 26,
+        "endLine": 652,
+        "endChar": 35
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "285a0e12_71e67798",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 652,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-08T15:15:45Z",
+      "side": 1,
+      "message": "Ha! I just made exactly the mistake I was looking to avoid. Public modules cannot be _deleted_, hence nor can they be made private. Completely agree with your point.\n\nWhat we could make clearer is that retractions are therefore something that feed into the MVS implementation (the Go diagrams are good in this respect). Hence deleting a module version is not necessary. \n\nSo there are indeed two things to change in this sentence:\n\n* Confirm that we mean \"deleted\" where it currently reads \"retracted\"\n* Clarify what we mean by \"change the scope\" of a package (module). Because I don\u0027t think we can support changing a module from being public to private, given the first point.\n\nWe also need to ensure we are consistent in the use of modules vs package. The use of package in this paragraph at least is wrong IMO. But I will make that change once we have agreed on the point about scope change, deletion etc.\n\n@mpvl to confirm though.",
+      "parentUuid": "acf4fa8f_5120a5b7",
       "range": {
         "startLine": 652,
         "startChar": 26,
