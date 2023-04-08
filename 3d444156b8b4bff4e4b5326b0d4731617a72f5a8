@@ -16,6 +16,46 @@
       "message": "The rendered version for patchset 2 is available at https://github.com/cue-lang/proposal/blob/3d444156b8b4bff4e4b5326b0d4731617a72f5a8/designs/2330-modules-v2.md",
       "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d823dd0a_8cb8e8d8",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 526,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-08T10:04:05Z",
+      "side": 1,
+      "message": "nit: the proposal text uses SemVer, but the definition uses Semver. I would be consistent, likely towards SemVer, as that\u0027s what the upstream spec uses:\n\n\u003e Semantic Versioning Specification (SemVer)",
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "154e4a2a_b4b90992",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 758,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-08T10:04:05Z",
+      "side": 1,
+      "message": "FYI, since you changed \"upload\" to \"publish\" above, the same should be done here.",
+      "range": {
+        "startLine": 758,
+        "startChar": 2,
+        "endLine": 758,
+        "endChar": 9
+      },
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
