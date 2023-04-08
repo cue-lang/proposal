@@ -72,6 +72,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8d2db57a_9882d792",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 526,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-04-08T15:29:45Z",
+      "side": 1,
+      "message": "Leaving this to @rog.",
+      "parentUuid": "d823dd0a_8cb8e8d8",
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "154e4a2a_b4b90992",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 2
@@ -106,6 +124,30 @@
       "writtenOn": "2023-04-08T15:15:45Z",
       "side": 1,
       "message": "Ah good catch. Done",
+      "parentUuid": "154e4a2a_b4b90992",
+      "range": {
+        "startLine": 758,
+        "startChar": 2,
+        "endLine": 758,
+        "endChar": 9
+      },
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76ee90d7_3170c124",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 758,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-04-08T15:29:45Z",
+      "side": 1,
+      "message": "Indeed publish is more appropriate here.",
       "parentUuid": "154e4a2a_b4b90992",
       "range": {
         "startLine": 758,
