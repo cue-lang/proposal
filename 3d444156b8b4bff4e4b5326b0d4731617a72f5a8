@@ -90,6 +90,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "386c01a0_b8e059ed",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 526,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "Happy to go with SemVer if that\u0027s consensus.",
+      "parentUuid": "8d2db57a_9882d792",
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "154e4a2a_b4b90992",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 2

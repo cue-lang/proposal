@@ -16,6 +16,635 @@
       "message": "The rendered version for patchset 4 is available at https://github.com/cue-lang/proposal/blob/a665a59fc3fa5ab0066820afc15194778f920ddb/designs/2330-modules-v2.md",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fcc3d4d2_8cdb1faf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "Thanks! A bunch of comments and suggestions...\n",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a1372492_998f1b7d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/co-versioning other/co-versioning with other/ ?\nThe current phrasing sounds a bit like we might intend CUE versions to be used to version other languages.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6eea985e_3e0282f4",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "This reads a bit awkwardly. It sounds like we\u0027re talking about package managers for schema stores which doesn\u0027t quite make sense to me.\n\nHow about:\n\u003e Most schema stores and package managers for programming languages follow a ...\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6394c61_72a4089e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "Go deviates from this approach by using a direct approach (users use a VCS to publish modules to a namespace of their choice) combined with a [proxy](http://proxy.golang.org) to improve speed and reliability.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1b8e415_46d76046",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/side steps/sidesteps/",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2de6ed2_e87f1078",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/Considerably smaller/Reduced/\n\n?\nLet\u0027s try not to overstate things - others have been concerned about increased attack possibility due to the fact that we\u0027d be hosting the content directly and implementing our own authorization logic.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "360e12eb_2d405def",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "Not just easier: it makes them possible. There\u0027s no way to do cross-validation if publishing happens without the CUE-aware portion in the loop AFAICS.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "927352e4_96e94c96",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/proxy/direct/ ?\ns/proxy/self-publish/ ?\n\nAfter all, the proxy is really just a consequence of the direct/self-publishing nature of Go modules AFAICS.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f363c031_7320ccfe",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "This makes it sound like that document already exists, which it doesn\u0027t AFAIK.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4c2e521_3e0119ed",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "This reads awkwardly - I started parsing at first like \"will supply hashes for modules and modules themselves\" as.\n\nHow about splitting into two sentences?\n\n\u003e The registry will supply cryptographic content hashes for modules. Modules themselves will contain hashes of their dependencies.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fcb29da4_af719f87",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/SemVer/Semantic Versioning (SemVer)/\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62f25239_5a7eb1dd",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "I don\u0027t think we need to talk about v2 vs v1 - v2 has been available for almost a decade now (released June 2013) and everyone understands that to be the standard AFAIK.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c4bc0b8e_8f315e9d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "\"Bumping\" is a bit informal. How about:\n\ns/bumping the major version/changing the major version of imported modules./\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf8885a1_7fc2bf44",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/be different modules/be different modules (because major versions in CUE are not specified with regular path elements)/\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "91453610_4b3c6495",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/special cases/special-cases/",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d98873e7_3bf72c94",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/a great deal of//\nNo need to overstate, I think, for something that\u0027s arguably a subjective point.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02970751_d6e09342",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "Different representations of what?\nGiven that our approach is independent of VCS, I\u0027m not sure that this section is that useful.\n\nAlso, I don\u0027t understand what the difference is between \"always use the same directory\" and \"use the same directory on different branches\".\n\nOr how \"different paths in the VCS altogether\" is different from \"use different paths\".",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "742a9802_93992b52",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/can/could/ ?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1bae0d44_5f1110a4",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "I don\u0027t really understand this. It seems like it\u0027s mainly talking about the second last point?\n\nSpecifically, it sounds like it\u0027s talking about a single module.cue file specifying multiple different major versions, which isn\u0027t really the idea AFAIK.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dabe24a_bc2bd486",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "For a newly added module, the tooling will choose the latest major version that has a non-prerelease version.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5d3bcf4_9aeda2e7",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "This section is sufficiently large and complex and covers enough not-well-known territory that I wonder if it would be better in a separate document. We could just say something like:\n\n\u003e The registry will check uploaded modules for compatibility. [This document](xxxx) discusses CUE module compatibility.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f6bc468_3057ad5a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/authors\u0027/author/\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82fcea69_c5e46a51",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "I think these should be either required or optional fields.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9fb677d_b64c86a3",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 495,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "doc comment is needed here.\n\nAlso note that we\u0027re breaking our own suggested rules for definitions by providing a default value here, AFAICS.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a1dfef5_06727522",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 532,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "Format as yet to be defined.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "abf7a7d7_9c735b5f",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 553,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "If a major version suffix is not supplied, an `@v0` suffix will be added.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad18579c_fbd1f865",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 581,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "I\u0027m not sure that we need this qualification, at first at any rate. It means we can\u0027t remove dot-prefixed paths from modules without first checking that nothing in the module imports them. Maybe better to wait until we have a solid use case for this pattern?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5363f95d_06e60e0c",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 621,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/`cue mod publish`/this command/\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65c0656e_dd8e5c75",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 653,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "AFAICS this is _almost_ the same as `cue mod publish` except that it publishes a previously uploaded version rather than the current code.\nHow about just `cue mod publish \u003cid\u003e@\u003cversion\u003e` for this use case?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c85a1bd_98283706",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 703,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "What commands would these be? I don\u0027t foresee `cue mod download` needing to run any commands.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56547339_30bf818a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 714,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "It might be worth discussing how the vendor directory will interact (or otherwise) with the existing `pkg` etc directories.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0df61556_ff8ec35b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 755,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "This command will provide command-line-driven editing of the module.cue file, with a similar design to Go\u0027s `go mod edit`. The exact design remains to be specified.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c350fef0_51ae1b60",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 773,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/\\./. although these may not be nested./\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bb6e2038_d42755eb",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 798,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/out/available/ ?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b3f993e_5222d889",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 813,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "This needs some evidence (I\u0027m not sure that it does, tbh). I\u0027d be tempted to leave this point out.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d946545_ac023e70",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 815,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "s/SAT solver/SAT solver (as required by most more general versioning schemes)/\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6efda0d5_fe57585b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 827,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-09T18:42:58Z",
+      "side": 1,
+      "message": "I think active voice would read better here:\n\n```\n* Implement initial version of the registry\n* Implement `cue mod tidy`\n```\n\netc",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
