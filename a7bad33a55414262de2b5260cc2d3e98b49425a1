@@ -358,6 +358,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3e45205_b4a88ce4",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "\u003e I mostly meant when users are not using the PROXY\n\nRight, that\u0027s the conclusion I\u0027ve reached above. Which is what makes the  second sentence sound a bit strange:\n\n\u003e Using a VCS-backed proxy ... when a proxy is not available\n\nI\u0027ve reworded.",
+      "parentUuid": "655b9f50_82205306",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3679d947_41f003bd",
@@ -442,6 +460,24 @@
       "side": 1,
       "message": "I\u0027m not sure if we really want to support multiple registries at once. But maybe. What was intended here is indeed to allow users to allow specifying a different one, not per se multiple.",
       "parentUuid": "1de37ae5_7bcf9541",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef3b7910_1da0ba98",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "Let\u0027s leave the wording as it is for now. The current design and wording leaves the door open on many fronts, intentionally.",
+      "parentUuid": "8e300a04_e458691c",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -625,6 +661,30 @@
       "side": 1,
       "message": "...can be useful for schema.",
       "parentUuid": "8bfad748_f5d7c8d1",
+      "range": {
+        "startLine": 118,
+        "startChar": 58,
+        "endLine": 118,
+        "endChar": 72
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f638797a_b8210e97",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7aab1fc8_aeed2909",
       "range": {
         "startLine": 118,
         "startChar": 58,
@@ -1355,6 +1415,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2023b85a_326a981d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "We could do so very simply by providing a field within which people can put whatever they like. I\u0027d suggest we leave the wording for now, and we can refine at a later date. Not a critical show-stopped for the initial publication.\n\nLeaving unresolved for @rog to offer any last opinions.",
+      "parentUuid": "6e863be4_75d7c11e",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2afe9850_7e741574",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -1419,6 +1497,24 @@
       "side": 1,
       "message": "Don\u0027t remember writing this. I copied the schema from elsewhere. Fine to remove.",
       "parentUuid": "51da2758_7226bcd1",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d68dc6b_60198dac",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "I\u0027ve removed that sentence in patchset 4, but leaving this comment unresolved for @rog to chime in.",
+      "parentUuid": "4a1d4eae_45ae0008",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -1585,6 +1681,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9198b244_83d44d96",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "Switched to `cue: lang:` as well as in the comment - again, leaving the comment open for @rog to easily find this discussion and comment one way or the other.",
+      "parentUuid": "8ca0ed3d_09b6fe6f",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6dc5601a_84a4f3d2",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -1744,6 +1858,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "bd439a63_0a31e18a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 476,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "To my knowledge, retracting or deprecating a version does not impact MVS. Both only ever impact the warning output in the Go command. As such, neither impacts reproducibility. Retracting a module version also results in the default output of go list not including the retracted version, but MVS never changes its version selection because a module version is retracted. Its left to the user to check (via cmd/go) whether any version they are depending is retracted/deprecated. \n\nReference:\n\n\u003e After go get has selected a new set of versions, it checks whether any newly selected module versions or any modules providing packages named on the command line are retracted or deprecated. go get prints a warning for each retracted version or deprecated module it finds. go list -m -u all may be used to check for retractions and deprecations in all dependencies.\n\nTaken from https://go.dev/ref/mod#go-get\n\nAs such, I\u0027ll remove this field, leave the comment open for @rog to comment either way. \n\nIn a later revision we should add a comment about how the registry will offer the ability to mark versions as retracted and/or deprecated, but again I don\u0027t think that\u0027s a blocker for the initial version of this document.",
+      "parentUuid": "4093b4fe_d21f7afa",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0b7f7f39_09275d7f",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -1879,6 +2011,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cea7d6e8_582d060b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "In the cue.mod/modules.cue file 😊\n\nLeaving to @rog to resolve. \n\nOne option would be to remove this sentence because it\u0027s a relatively minor point that we could easily cover in later documentation.",
+      "parentUuid": "bce068e6_ea1d619e",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "110f1ea0_b1261bb3",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -1997,6 +2147,24 @@
       "side": 1,
       "message": "We haven\u0027t indeed specified this yet, but I would say:\nmajor: not backwards compatible (w.r.t schema)\nminor: new release strictly subsumed old release, (w.r.t. schema)\npatch: new release is identical to previous release (w.r.t schema)",
       "parentUuid": "17d0a9e0_6759db02",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b0bfe1e3_8402d979",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "I\u0027ve used @mpvl\u0027s suggestion to offer some wording here that builds on mine. Leaving this comment open for @rog to see.",
+      "parentUuid": "1a047fb2_2d37b320",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -2127,6 +2295,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f0461097_a8f07ac7",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 631,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "I\u0027ll wait for @rog to offer comments here, but my suggestion would be that we delete the sections on `cue mod upload` and `cue mod release`. Without better motivation for why they exist (see my previous point) they appear a bit lost in the document. We can easily add them in a later revision with more supporting evidence.",
+      "parentUuid": "0b935c3c_9abb21d7",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4d9f774d_713a6647",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -2246,6 +2432,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "079395c5_8ea33dbe",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 652,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "Made the change from \"... cannot be retracted\" to \"... cannot be made private or removed\". \n\nLeaving open for @rog to comment.",
+      "parentUuid": "c9f8bacc_827963b5",
+      "range": {
+        "startLine": 652,
+        "startChar": 26,
+        "endLine": 652,
+        "endChar": 35
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "275223ca_4046925e",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -2315,6 +2525,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed9f5bac_a4b5a0c1",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 704,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "I\u0027ve reverted to the wording \"When vendoring is enabled\" - we can make this more precise in a later version or the implementation. It\u0027s not critical to the publishing of the proposal, and the wording does not box us into a corner.",
+      "parentUuid": "87b848cf_86af384b",
+      "range": {
+        "startLine": 704,
+        "startChar": 5,
+        "endLine": 704,
+        "endChar": 25
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "29c455fd_29b3c325",
@@ -2364,6 +2598,24 @@
       "side": 1,
       "message": "I don\u0027t think vendor should be in the scope of this document. But up to @rog otherwise.",
       "parentUuid": "0a886951_3f9010f8",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69f5c37b_9069e99a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 713,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "Leaving the text and marking as done. As I suggested before, this sounds like a detail we can attend to later.",
+      "parentUuid": "4b69f92b_0b66d134",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -2435,6 +2687,24 @@
       "side": 1,
       "message": "I don\u0027t think it is likely that we have an on-disk package cache indeed. Daniel\u0027s consideration is exactly why I though `cue mod clean` was more appropriate here.",
       "parentUuid": "48e898e6_a071f3eb",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e06336e_0752c1c1",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "Leaving open for a last comment from @rog.",
+      "parentUuid": "f199cfec_42467fc8",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },

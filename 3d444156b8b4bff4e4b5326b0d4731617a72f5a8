@@ -157,6 +157,30 @@
       },
       "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6f69925_97258480",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 758,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-09T05:41:33Z",
+      "side": 1,
+      "message": "I\u0027ve fixed a few more instances of upload -\u003e publish in patchset 4.",
+      "parentUuid": "76ee90d7_3170c124",
+      "range": {
+        "startLine": 758,
+        "startChar": 2,
+        "endLine": 758,
+        "endChar": 9
+      },
+      "revId": "3d444156b8b4bff4e4b5326b0d4731617a72f5a8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
