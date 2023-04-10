@@ -52,6 +52,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1903065_2010634b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Ha! We had exactly that before. I understand your point though, and I was comfortable with the previous wording, and it is correct. Will re-add a second \"with\" because as you say it leaves the correct emphasis.",
+      "parentUuid": "a1372492_998f1b7d",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6eea985e_3e0282f4",
@@ -65,6 +83,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "This reads a bit awkwardly. It sounds like we\u0027re talking about package managers for schema stores which doesn\u0027t quite make sense to me.\n\nHow about:\n\u003e Most schema stores and package managers for programming languages follow a ...\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e220d53_9d8ffbef",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6eea985e_3e0282f4",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -86,6 +122,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1cf84b11_067726e0",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "b6394c61_72a4089e",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e1b8e415_46d76046",
@@ -99,6 +153,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/side steps/sidesteps/",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e569cbd8_3d647494",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1b8e415_46d76046",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -120,6 +192,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa38c713_9a2d5e17",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e2de6ed2_e87f1078",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "360e12eb_2d405def",
@@ -133,6 +223,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "Not just easier: it makes them possible. There\u0027s no way to do cross-validation if publishing happens without the CUE-aware portion in the loop AFAICS.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75225f53_079cc0cc",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "360e12eb_2d405def",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -154,6 +262,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f001140_ceda3ce9",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done. I\u0027ve taken the liberty of including \"VCS-based\" in there as well to drive the point home.",
+      "parentUuid": "927352e4_96e94c96",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f363c031_7320ccfe",
@@ -167,6 +293,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "This makes it sound like that document already exists, which it doesn\u0027t AFAIK.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7095bfa8_fe83dc8d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Fixed with \"will come later and be discussed in a separate document.\" The intention, to my reading, was to indicate a) we will discuss later, and b) in a document other than this one.",
+      "parentUuid": "f363c031_7320ccfe",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -188,6 +332,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4d95299_5fc76479",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b4c2e521_3e0119ed",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fcb29da4_af719f87",
@@ -201,6 +363,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/SemVer/Semantic Versioning (SemVer)/\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "873a556a_482a1b18",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fcb29da4_af719f87",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -222,6 +402,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "23246ffd_74d9d2f0",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "62f25239_5a7eb1dd",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c4bc0b8e_8f315e9d",
@@ -235,6 +433,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "\"Bumping\" is a bit informal. How about:\n\ns/bumping the major version/changing the major version of imported modules./\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b230c370_993e4f03",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c4bc0b8e_8f315e9d",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -256,6 +472,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e9212a7_694b94c0",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf8885a1_7fc2bf44",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "91453610_4b3c6495",
@@ -273,6 +507,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e24fc4a3_1eb2319e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "91453610_4b3c6495",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d98873e7_3bf72c94",
@@ -286,6 +538,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/a great deal of//\nNo need to overstate, I think, for something that\u0027s arguably a subjective point.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50716006_d308f032",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d98873e7_3bf72c94",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -309,6 +579,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9169b16f_ab8ffd42",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "I read this slightly differently. To my mind it was intending, in perhaps a rather verbose way, to say that the module-based design and major version in the module path is silent on how the author represents something in VCS, leaving flexibility. I\u0027ve offered a shorter alternative wording. PTAL @rog",
+      "parentUuid": "02970751_d6e09342",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "742a9802_93992b52",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -320,6 +608,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/can/could/ ?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd6ee106_91199766",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "742a9802_93992b52",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -343,6 +649,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c56591bf_56d368ef",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Agreed. Indeed with my proposed rewording of one of those bullets I think it\u0027s redundant. Deleted the paragraph, but it doesn\u0027t add anything. PTAL @rog",
+      "parentUuid": "1bae0d44_5f1110a4",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7dabe24a_bc2bd486",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -354,6 +678,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "For a newly added module, the tooling will choose the latest major version that has a non-prerelease version.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed2ac150_11171508",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Hmm your proposed edit seems to be addressing a quite different (but nonetheless important) point to the current wording? Were you suggesting to replace the entire paragraph?\n\nI\u0027ve reworded the current paragraph to be a bit less clumsy in any case, and offered your suggestion as an additional paragraph.\n\nPTAL @rog",
+      "parentUuid": "7dabe24a_bc2bd486",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -375,6 +717,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c72fb77_00b2fb66",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "At this stage I would suggest we continue with a version of it in the modules proposal, not least because people would be jumping around. Doing so does not of course preclude us branching out into a separate document at a later date, with something that, for example, complements the CUE spec, location TBD.",
+      "parentUuid": "e5d3bcf4_9aeda2e7",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2f6bc468_3057ad5a",
@@ -388,6 +748,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/authors\u0027/author/\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "848253c2_eb30a97e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2f6bc468_3057ad5a",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -411,6 +789,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "97fb6002_2efaa71d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done, with what I assume to be the intended semantics. PTAL @rog",
+      "parentUuid": "82fcea69_c5e46a51",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c9fb677d_b64c86a3",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -422,6 +818,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "doc comment is needed here.\n\nAlso note that we\u0027re breaking our own suggested rules for definitions by providing a default value here, AFAICS.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3addcb24_918d3fef",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 495,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "@rog - as owner I leave you to suggest some wording 😊\n\nAlso agree on the point about dropping the default marker.",
+      "parentUuid": "c9fb677d_b64c86a3",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -443,6 +857,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b093c8d4_7228ddf8",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 532,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a1dfef5_06727522",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "abf7a7d7_9c735b5f",
@@ -456,6 +888,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "If a major version suffix is not supplied, an `@v0` suffix will be added.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73bf01b1_0914e6fd",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 553,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "abf7a7d7_9c735b5f",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -479,6 +929,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ce267610_bcf0540b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 581,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Is this a question for @mpvl, @rog?\n\nFWIW, in my experience this pattern is incredibly useful in the Go world. So I would be tempted to leave this in.",
+      "parentUuid": "ad18579c_fbd1f865",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5363f95d_06e60e0c",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -490,6 +958,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/`cue mod publish`/this command/\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9b42fc7_c15880de",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 621,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5363f95d_06e60e0c",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -513,6 +999,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3b2278f9_6e837c07",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 653,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Is this a question for @mpvl, @rog? \n\nI would have no problems with that suggestion, but defer to you both as main authors.",
+      "parentUuid": "65c0656e_dd8e5c75",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8c85a1bd_98283706",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -524,6 +1028,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "What commands would these be? I don\u0027t foresee `cue mod download` needing to run any commands.",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b58ff7ef_7aa41ba1",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 703,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Good spot. Removed. This is a hangover from `go mod download`, where those commands are the various VCS-based commands that are needed when a download becomes direct.",
+      "parentUuid": "8c85a1bd_98283706",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -547,6 +1069,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7eb0f834_73fe366e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 714,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "@rog, please suggest wording. Or alternatively, we can leave that finer detail to a later revision of this document, or the implementation.",
+      "parentUuid": "56547339_30bf818a",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0df61556_ff8ec35b",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -558,6 +1098,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "This command will provide command-line-driven editing of the module.cue file, with a similar design to Go\u0027s `go mod edit`. The exact design remains to be specified.\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6d141e0_baca84bb",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 755,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0df61556_ff8ec35b",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -579,6 +1137,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8786523_31f7926d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 773,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done with capitalisation of \"although\".",
+      "parentUuid": "c350fef0_51ae1b60",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bb6e2038_d42755eb",
@@ -592,6 +1168,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/out/available/ ?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbb34582_3245c749",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 798,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bb6e2038_d42755eb",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -615,6 +1209,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8133405c_822224bd",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 813,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Will leave you and @mpvl to decide, @rog.",
+      "parentUuid": "3b3f993e_5222d889",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3d946545_ac023e70",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -626,6 +1238,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "s/SAT solver/SAT solver (as required by most more general versioning schemes)/\n\n?",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "14249210_4f389ae4",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 815,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3d946545_ac023e70",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -643,6 +1273,24 @@
       "writtenOn": "2023-04-09T18:42:58Z",
       "side": 1,
       "message": "I think active voice would read better here:\n\n```\n* Implement initial version of the registry\n* Implement `cue mod tidy`\n```\n\netc",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9fd5ea05_e5e7ac4d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 827,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done. PTAL, @rog.",
+      "parentUuid": "6efda0d5_fe57585b",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }

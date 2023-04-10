@@ -1608,6 +1608,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1193fba3_342a6d71",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 424,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0f98fdbf_c7c53f57",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6d7e857e_bd30922a",
@@ -1910,6 +1928,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "be989b52_29056a18",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 476,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae22ed44_c6fa1e15",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0b7f7f39_09275d7f",
@@ -2077,6 +2113,24 @@
       "side": 1,
       "message": "Attributes aren\u0027t part of a schema, but I do think that it might be worth mentioning the `@indirect()` attribute in the schema definition.\n\nAside: it would be nice if we could spell it `@indirect`, without the need for the trailing empty parens, but that\u0027s a future language change.",
       "parentUuid": "cea7d6e8_582d060b",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "07d64e52_2678836c",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "\u003e Attributes aren\u0027t part of a schema, but I do think that it might be worth mentioning the  @indirect()  attribute in the schema definition.\n\nPlease suggest some wording, @rog.",
+      "parentUuid": "484881c5_4f18a0a9",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -2777,6 +2831,24 @@
       "side": 1,
       "message": "Happy to go with `cue mod clean`.",
       "parentUuid": "8e06336e_0752c1c1",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2eff594e_3a371480",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-10T05:43:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "31d1deb1_320c2ce4",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
