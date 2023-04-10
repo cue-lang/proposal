@@ -1433,6 +1433,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c51f9497_a87ab90a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "Given that people are already putting their own arbitrary information in the module.cue file, so this is definitely a question that will be raised, I think we should be somewhat explicit:\n\n\u003e Authors should treat this schema as closed. A field for user-defined data may be added later.\n\n?",
+      "parentUuid": "2023b85a_326a981d",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2afe9850_7e741574",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -2149,6 +2167,24 @@
       "side": 1,
       "message": "\u003e Attributes aren\u0027t part of a schema, but I do think that it might be worth mentioning the  @indirect()  attribute in the schema definition.\n\nPlease suggest some wording, @rog.",
       "parentUuid": "484881c5_4f18a0a9",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "634770b6_35774a09",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "I\u0027ve made a suggestion.",
+      "parentUuid": "07d64e52_2678836c",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },

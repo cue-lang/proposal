@@ -595,6 +595,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f29af840_4230e48a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9169b16f_ab8ffd42",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "742a9802_93992b52",
@@ -665,6 +683,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "39c61ecd_607cb415",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c56591bf_56d368ef",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7dabe24a_bc2bd486",
@@ -696,6 +732,24 @@
       "side": 1,
       "message": "Hmm your proposed edit seems to be addressing a quite different (but nonetheless important) point to the current wording? Were you suggesting to replace the entire paragraph?\n\nI\u0027ve reworded the current paragraph to be a bit less clumsy in any case, and offered your suggestion as an additional paragraph.\n\nPTAL @rog",
       "parentUuid": "7dabe24a_bc2bd486",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d81a0aa_e03d3b90",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "perfect, thanks.",
+      "parentUuid": "ed2ac150_11171508",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -735,6 +789,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c388150d_884999b4",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "tbh I\u0027m not sure that people would need to jump around, because there\u0027s very little interplay between the two things. The two things (the core module proposal and the compatibility aspect) are largely orthogonal AFAICS: we could have a module proposal without a firm definition of backward compatibility; we could have a firm definition of backward compatibility without a module proposal. I\u0027m a bit concerned that the size and complexity of the compatibility aspect risks derailing the discussion on the core module proposal.",
+      "parentUuid": "3c72fb77_00b2fb66",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2f6bc468_3057ad5a",
@@ -766,6 +838,24 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "2f6bc468_3057ad5a",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4052866d_cf21c2d0",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "I still think it might read better in the singular form.\n\ns/authors/author/",
+      "parentUuid": "848253c2_eb30a97e",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -836,6 +926,24 @@
       "side": 1,
       "message": "@rog - as owner I leave you to suggest some wording 😊\n\nAlso agree on the point about dropping the default marker.",
       "parentUuid": "c9fb677d_b64c86a3",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9177991_e7524ef2",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 495,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "```\n// #Scope defines the visibility of a module.\n// The public scope is visible to all. The private\n// scope restricts visibility to a subset of authorized\n// clients. The default scope is private.\n```\n\n?",
+      "parentUuid": "3addcb24_918d3fef",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -947,6 +1055,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1d3afcf4_d09b28db",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 581,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "I was specifically talking about the \"unless those packages are explicitly imported by other packages.\" exception, which I think we should remove. Based around offline chat, I don\u0027t think it\u0027s that which you\u0027ve found useful.",
+      "parentUuid": "ce267610_bcf0540b",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5363f95d_06e60e0c",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -1017,6 +1143,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "772fe4d8_55f8519c",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 653,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "Yup, it\u0027s a question for @mpvl, I guess. The semantics are so overlapping that ISTM that a single command would be more intuitive.",
+      "parentUuid": "3b2278f9_6e837c07",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8c85a1bd_98283706",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -1081,6 +1225,24 @@
       "side": 1,
       "message": "@rog, please suggest wording. Or alternatively, we can leave that finer detail to a later revision of this document, or the implementation.",
       "parentUuid": "56547339_30bf818a",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2635be08_fbf1bc3c",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 714,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "```\nNote that in module mode, the contents of the `cue/mod/{pkg,gen,usr}` directories are ignored.\n```\n?",
+      "parentUuid": "7eb0f834_73fe366e",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -1291,6 +1453,24 @@
       "side": 1,
       "message": "Done. PTAL, @rog.",
       "parentUuid": "6efda0d5_fe57585b",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0955d4e4_39eae7d0",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 827,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-10T13:47:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9fd5ea05_e5e7ac4d",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
