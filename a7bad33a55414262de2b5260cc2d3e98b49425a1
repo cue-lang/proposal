@@ -1733,6 +1733,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3d8b735_0d21550e",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 433,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-04-10T08:55:17Z",
+      "side": 1,
+      "message": "Sounds good, I agree that \"spec\" is a bit more ambiguous. We could always go with the full-length `language` if we wanted to avoid short forms, since e.g. Go went with `toolchain` for the latest addition.",
+      "parentUuid": "9198b244_83d44d96",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6dc5601a_84a4f3d2",
