@@ -1579,6 +1579,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1cff87ae_aecb81a0",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Sentence removed. @rog can revisit in a later revision if this turns out to have been critical, but it doesn\u0027t seem so.",
+      "parentUuid": "0d68dc6b_60198dac",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ab88a0ae_8e9a2afd",
@@ -2391,6 +2409,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "db00af78_eba243a4",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Reviewed wording with @mpvl and this is good for now.",
+      "parentUuid": "b0bfe1e3_8402d979",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1c08cadb_562604ee",
@@ -2535,6 +2571,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7c0d1ca1_40355d1b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 631,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Chatted with @mpvl. The `cue mod upload` step is distinct in order that any errors/analysis can be clearly associated with an upload, as opposed to simply being reported to one user when that user runs `cue mod publish` and it fails. This also allows uploads which _might_ become a release, just that the artefacts are already uploaded, analysed etc and then \"just\" need to be `cue mod release`-ed.\n\nWill add some short wording that hints at this, detail to follow later.",
+      "parentUuid": "f0461097_a8f07ac7",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4d9f774d_713a6647",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -2666,6 +2720,30 @@
       "side": 1,
       "message": "Made the change from \"... cannot be retracted\" to \"... cannot be made private or removed\". \n\nLeaving open for @rog to comment.",
       "parentUuid": "c9f8bacc_827963b5",
+      "range": {
+        "startLine": 652,
+        "startChar": 26,
+        "endLine": 652,
+        "endChar": 35
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb99c4bb_e76d747b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 652,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Agreed with @mpvl.",
+      "parentUuid": "079395c5_8ea33dbe",
       "range": {
         "startLine": 652,
         "startChar": 26,
@@ -3144,6 +3222,24 @@
       "writtenOn": "2023-04-07T20:49:44Z",
       "side": 1,
       "message": "@mpvl @rog to review wording, content.",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "516f8b21_1e0f51dd",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 807,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Reviewed wording with @mpvl after recent @rog proposed edits.",
+      "parentUuid": "3c10d222_d21298b4",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }

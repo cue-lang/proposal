@@ -967,6 +967,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bcc31f3_1f7e5402",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Checked with @mpvl and all looks good.",
+      "parentUuid": "97fb6002_2efaa71d",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c9fb677d_b64c86a3",
@@ -1373,6 +1391,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd6b1914_bd3ef2f5",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 714,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Agreed with @mpvl we can punt this detail until a later revision/implementation time.",
+      "parentUuid": "c9fee450_25f6b486",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0df61556_ff8ec35b",
@@ -1509,6 +1545,24 @@
       "side": 1,
       "message": "Will leave you and @mpvl to decide, @rog.",
       "parentUuid": "3b3f993e_5222d889",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c187a1ac_7f77d6b9",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 813,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:07Z",
+      "side": 1,
+      "message": "Leaving it in per discussion with @mpvl, with the change \"MVS provides a clear path to support co-versioning of CUE schemas that are...\"",
+      "parentUuid": "8133405c_822224bd",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
