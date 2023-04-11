@@ -16,6 +16,23 @@
       "message": "Patchset 5 rendered version available at https://github.com/cue-lang/proposal/blob/c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3/designs/2330-modules-v2.md",
       "revId": "c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2ae6d36_5266db1e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:02:58Z",
+      "side": 1,
+      "message": "Rendered version of patchset 6 available at https://github.com/cue-lang/proposal/blob/ec07f8414a7f686f47cd103c27cdb7dd1905dada/designs/2330-modules-v2.md",
+      "revId": "c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
