@@ -1615,6 +1615,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7460dfff_b486a5b5",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-11T16:32:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0d68dc6b_60198dac",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ab88a0ae_8e9a2afd",
@@ -2447,6 +2465,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "98c3bd13_db74c92a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-11T16:32:37Z",
+      "side": 1,
+      "message": "I think we could probably just remove the specifics for now, removing the \"Broadly however:\" and following points.",
+      "parentUuid": "b0bfe1e3_8402d979",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1c08cadb_562604ee",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -2625,6 +2661,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f9cebc4e_c94a70b6",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 631,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-11T16:32:37Z",
+      "side": 1,
+      "message": "SGTM.",
+      "parentUuid": "f0461097_a8f07ac7",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4d9f774d_713a6647",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 1
@@ -2779,6 +2833,30 @@
       "writtenOn": "2023-04-11T15:02:07Z",
       "side": 1,
       "message": "Agreed with @mpvl.",
+      "parentUuid": "079395c5_8ea33dbe",
+      "range": {
+        "startLine": 652,
+        "startChar": 26,
+        "endLine": 652,
+        "endChar": 35
+      },
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce64eacb_e110aa04",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 652,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-11T16:32:37Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "079395c5_8ea33dbe",
       "range": {
         "startLine": 652,
@@ -3275,6 +3353,24 @@
       "writtenOn": "2023-04-11T15:02:07Z",
       "side": 1,
       "message": "Reviewed wording with @mpvl after recent @rog proposed edits.",
+      "parentUuid": "3c10d222_d21298b4",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ccab8ef_f1731545",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 807,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-04-11T16:32:37Z",
+      "side": 1,
+      "message": "Done",
       "parentUuid": "3c10d222_d21298b4",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
