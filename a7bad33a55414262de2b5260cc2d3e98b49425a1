@@ -2481,6 +2481,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f198e62_a95306d2",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 613,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T18:50:51Z",
+      "side": 1,
+      "message": "That wording was, per previous comments in this thread, added at Marcel\u0027s suggestion and reviewed earlier. Leaving in therefore as finessing this point is not critical, because we don\u0027t say the rules are final.",
+      "parentUuid": "98c3bd13_db74c92a",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1c08cadb_562604ee",
@@ -2673,6 +2691,24 @@
       "side": 1,
       "message": "SGTM.",
       "parentUuid": "f0461097_a8f07ac7",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51662670_2e0308ee",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 631,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T18:50:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9cebc4e_c94a70b6",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },

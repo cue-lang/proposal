@@ -1499,6 +1499,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef9e64e6_a596af56",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 714,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T18:50:51Z",
+      "side": 1,
+      "message": "For anyone following along here, @rog\u0027s comments were made before the discussion with @mpvl in my last comment. @rog simply forgot to publish the replies until some time after that discussion. So @rog, not disagreeing with your point per se, but we reached conclusion prior to reading your comments. Again, I don\u0027t think we\u0027ve boxed ourselves into a corner with respect to dealing with the points you\u0027ve raised, so we can cover them in a subsequent revision or at implementation time.",
+      "parentUuid": "f8ca153a_7abce45f",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0df61556_ff8ec35b",

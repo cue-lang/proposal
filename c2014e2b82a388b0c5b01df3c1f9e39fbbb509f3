@@ -52,6 +52,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd20d690_24ab203f",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 495,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T18:50:51Z",
+      "side": 1,
+      "message": "Done, and I\u0027ve also removed the comment that refers to the default.",
+      "parentUuid": "ace6e513_0e8c8f36",
+      "revId": "c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "820eb7a8_8169854a",
@@ -65,6 +83,24 @@
       "writtenOn": "2023-04-11T16:32:37Z",
       "side": 1,
       "message": "I\u0027d maybe merge the last two points here, as the last point is really not an implementation step. Something like:\n\n```\n  * Implement `cue mod publish`, retaining the GitHub app for those people who want Go-style \"auto publish\".\n```",
+      "revId": "c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "360d1477_87025f7b",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 834,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T18:50:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "820eb7a8_8169854a",
       "revId": "c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
