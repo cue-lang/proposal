@@ -1305,6 +1305,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5de61be1_66b18857",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 653,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-04-11T15:39:43Z",
+      "side": 1,
+      "message": "I agree that having a single publish command as you suggested is better.",
+      "parentUuid": "772fe4d8_55f8519c",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8c85a1bd_98283706",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
