@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6431fc8d_2824f05d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:41:30Z",
+      "side": 1,
+      "message": "Patchset 5 rendered version available at https://github.com/cue-lang/proposal/blob/c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3/designs/2330-modules-v2.md",
+      "revId": "c2014e2b82a388b0c5b01df3c1f9e39fbbb509f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
