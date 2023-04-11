@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd905d34_78ade600",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T18:51:14Z",
+      "side": 1,
+      "message": "The rendered version of patchset 8 is available at https://github.com/cue-lang/proposal/blob/7d41975c6e57fd1342f38305ba1546017198c67f/designs/2330-modules-v2.md",
+      "revId": "7d41975c6e57fd1342f38305ba1546017198c67f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
