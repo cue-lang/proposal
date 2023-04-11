@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "212ffbde_c1ad3197",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:38:45Z",
+      "side": 1,
+      "message": "@mpvl @rog @mvdan - please see latest diff at:\n\nhttps://review.gerrithub.io/c/cue-lang/proposal/+/552362/7..8/designs/2330-modules-v2.md\n\nThe things to focus on in this last change are:\n\n* I have removed `cue mod release` in favour of collapsing into `cue mod publish`. Please review the corresponding wording changes for `cue mod publish`. \n* `cue mod upload` now provides a brief motivation for its existence as distinct from `cue mod release`. \n\nFrom my perspective all changes are now made and this is ready. \n\n@mpvl if you are happy, I need a +2 please. ",
+      "revId": "14828f44639233fe6dc7d0772cc15db42ca1476d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

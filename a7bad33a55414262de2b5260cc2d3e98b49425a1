@@ -1526,6 +1526,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1e1fe5c_1347f1db",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 413,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:38:45Z",
+      "side": 1,
+      "message": "Updated the text and link in anticipation of the imminent release.",
+      "parentUuid": "733d0d59_8a4af7f1",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "51da2758_7226bcd1",
@@ -2583,6 +2601,24 @@
       "side": 1,
       "message": "Chatted with @mpvl. The `cue mod upload` step is distinct in order that any errors/analysis can be clearly associated with an upload, as opposed to simply being reported to one user when that user runs `cue mod publish` and it fails. This also allows uploads which _might_ become a release, just that the artefacts are already uploaded, analysed etc and then \"just\" need to be `cue mod release`-ed.\n\nWill add some short wording that hints at this, detail to follow later.",
       "parentUuid": "f0461097_a8f07ac7",
+      "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6b9248a_a0545d80",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 631,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:38:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7c0d1ca1_40355d1b",
       "revId": "a7bad33a55414262de2b5260cc2d3e98b49425a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
