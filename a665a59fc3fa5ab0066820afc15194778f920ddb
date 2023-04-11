@@ -843,6 +843,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "13dfbe39_cf9fa190",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-04-11T08:25:03Z",
+      "side": 1,
+      "message": "I think it is critical to have at least the core mentioned here. We should not have modules without the core notion of compatibility.\n\nI agree we can work out details in a separate doc, but this should be covered here as a minimum.",
+      "parentUuid": "b7c0a489_40838200",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2f6bc468_3057ad5a",
