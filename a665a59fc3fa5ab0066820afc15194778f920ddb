@@ -1321,6 +1321,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc2519ee_81fb297d",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 653,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T15:41:38Z",
+      "side": 1,
+      "message": "Bizarre that this comment reappeared. This change has already been made.",
+      "parentUuid": "5de61be1_66b18857",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8c85a1bd_98283706",
