@@ -754,6 +754,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d6e9b84_d42755f2",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5d81a0aa_e03d3b90",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5d3bcf4_9aeda2e7",
@@ -809,6 +827,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b7c0a489_40838200",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "To be clear, I\u0027m not against moving this into a separate document. I\u0027m suggesting we be mindful of when this is \"necessary\". An initial version of the modules proposal would, IMO, suffice with the compatibility piece included. It would also then work to split it out into a separate document in a later revision.\n\nJust as it would work but be more effort at this point in time to split out into a separate document. \n\nLeaving unresolved for a final decision with @mpvl and @rog.",
+      "parentUuid": "c388150d_884999b4",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2f6bc468_3057ad5a",
         "filename": "designs/2330-modules-v2.md",
         "patchSetId": 4
@@ -856,6 +892,24 @@
       "side": 1,
       "message": "I still think it might read better in the singular form.\n\ns/authors/author/",
       "parentUuid": "848253c2_eb30a97e",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f33f86b_7b1ad063",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "4052866d_cf21c2d0",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -944,6 +998,24 @@
       "side": 1,
       "message": "```\n// #Scope defines the visibility of a module.\n// The public scope is visible to all. The private\n// scope restricts visibility to a subset of authorized\n// clients. The default scope is private.\n```\n\n?",
       "parentUuid": "3addcb24_918d3fef",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f99ead26_5d614480",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 495,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9177991_e7524ef2",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -1067,6 +1139,24 @@
       "side": 1,
       "message": "I was specifically talking about the \"unless those packages are explicitly imported by other packages.\" exception, which I think we should remove. Based around offline chat, I don\u0027t think it\u0027s that which you\u0027ve found useful.",
       "parentUuid": "ce267610_bcf0540b",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f888d80_27d363b3",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 581,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "Thanks for clarifying. Indeed, I thought you were talking about \"named testdata or with names that start with . or _\" because that\u0027s how in the Gerrit UI I see the majority of the highlight. \n\nRemove the the \"unless\" bit (for now).",
+      "parentUuid": "1d3afcf4_d09b28db",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -1243,6 +1333,24 @@
       "side": 1,
       "message": "```\nNote that in module mode, the contents of the `cue/mod/{pkg,gen,usr}` directories are ignored.\n```\n?",
       "parentUuid": "7eb0f834_73fe366e",
+      "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9fee450_25f6b486",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 714,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "Are you suggesting to add that text? If so, I don\u0027t understand what it means. What is \"module mode\"? And are those directories really ignored? This feels like a detail we could punt to a later revision/implementation IMO.\n\nLeaving for @rog or @mpvl to comment.",
+      "parentUuid": "2635be08_fbf1bc3c",
       "revId": "a665a59fc3fa5ab0066820afc15194778f920ddb",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },

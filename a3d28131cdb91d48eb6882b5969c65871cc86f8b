@@ -18,6 +18,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d00c6294_e5fe8464",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "More points addressed. \n\n@rog @mpvl please take a look.",
+      "revId": "a3d28131cdb91d48eb6882b5969c65871cc86f8b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "150af0f5_280144c8",
@@ -31,6 +48,24 @@
       "writtenOn": "2023-04-10T13:47:56Z",
       "side": 1,
       "message": "Suggestion:\n\n// A entry in the deps struct may be marked with the @indirect()\n// attribute to signify that it is not directly used by the current\n// module. This will be added by the `cue mod tidy` tooling.\n\n?",
+      "revId": "a3d28131cdb91d48eb6882b5969c65871cc86f8b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b08430e3_0f866b4a",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 443,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2023-04-11T04:33:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "150af0f5_280144c8",
       "revId": "a3d28131cdb91d48eb6882b5969c65871cc86f8b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
