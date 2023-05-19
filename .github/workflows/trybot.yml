@@ -81,6 +81,7 @@ jobs:
           path: |-
             ${{ steps.go-mod-cache-dir.outputs.dir }}/cache/download
             ${{ steps.go-cache-dir.outputs.dir }}
+            ~/.cache/dockercache
           key: ${{ runner.os }}-1.20.x-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-1.20.x
       - if: |-
@@ -91,6 +92,7 @@ jobs:
           path: |-
             ${{ steps.go-mod-cache-dir.outputs.dir }}/cache/download
             ${{ steps.go-cache-dir.outputs.dir }}
+            ~/.cache/dockercache
           key: ${{ runner.os }}-1.20.x-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-1.20.x
       - if: |-
