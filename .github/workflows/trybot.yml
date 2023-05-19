@@ -74,8 +74,8 @@ jobs:
         name: Get go build/test cache directory
         run: echo "dir=$(go env GOCACHE)" >> ${GITHUB_OUTPUT}
       - if: |-
-          ((github.ref == 'refs/heads/main') && (! (contains(github.event.head_commit.message, '
-          Dispatch-Trailer: {"type":"'))))
+          (((github.ref == 'refs/heads/main') && (! (contains(github.event.head_commit.message, '
+          Dispatch-Trailer: {"type":"')))) || (github.ref == 'refs/heads/ci/test'))
         uses: actions/cache@v3
         with:
           path: |-
@@ -84,8 +84,8 @@ jobs:
           key: ${{ runner.os }}-1.20.x-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-1.20.x
       - if: |-
-          ! ((github.ref == 'refs/heads/main') && (! (contains(github.event.head_commit.message, '
-          Dispatch-Trailer: {"type":"'))))
+          ! (((github.ref == 'refs/heads/main') && (! (contains(github.event.head_commit.message, '
+          Dispatch-Trailer: {"type":"')))) || (github.ref == 'refs/heads/ci/test'))
         uses: actions/cache/restore@v3
         with:
           path: |-
