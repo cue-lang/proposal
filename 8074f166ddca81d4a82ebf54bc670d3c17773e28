@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "119c108e_99337d6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-16T15:50:58Z",
+      "side": 1,
+      "message": "LGTM with a few minor suggestions, thanks.",
+      "revId": "8074f166ddca81d4a82ebf54bc670d3c17773e28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d0737df_26cc5033",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-16T15:50:58Z",
+      "side": 1,
+      "message": "You suggested to me recently that \"Overview\" wasn\u0027t a great name for a section. Maybe \"Abstract\" ?",
+      "revId": "8074f166ddca81d4a82ebf54bc670d3c17773e28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9432e2e_1a3aeeb1",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-16T15:50:58Z",
+      "side": 1,
+      "message": "Could we put placeholder links in here that can be updated in a later CL to be real links. That way we can see at least where they will be (will each subsection heading be a link to the relevant sub-proposal, for example?).\nHow do relative links between github pages actually work, in fact?",
+      "revId": "8074f166ddca81d4a82ebf54bc670d3c17773e28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de6d0ad7_53a6c799",
+        "filename": "designs/2330-modules-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-16T15:50:58Z",
+      "side": 1,
+      "message": "Perhaps we could remove this section, given the security-focused sub-proposal mentioned at the start.",
+      "revId": "8074f166ddca81d4a82ebf54bc670d3c17773e28",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
