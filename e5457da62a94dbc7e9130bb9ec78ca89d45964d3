@@ -415,6 +415,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5e9dbb9_9f912eb4",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:55:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "00985195_25b6aa01",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d271ffbf_d1a6047d",
@@ -603,6 +621,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "extra newline. Also below.",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe4ac58c_47e99c8b",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:55:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "074c9c17_34550434",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
