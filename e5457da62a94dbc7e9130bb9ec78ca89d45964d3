@@ -35,6 +35,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbcd285e_be98f05a",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "379bbdcd_91ba0217",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "505b9953_3e6705e0",
@@ -58,6 +76,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfac4bee_58f44f4c",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "505b9953_3e6705e0",
+      "range": {
+        "startLine": 13,
+        "startChar": 11,
+        "endLine": 13,
+        "endChar": 16
+      },
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3c92ad90_1f04e105",
@@ -71,6 +113,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "The channel is discord. You can linkto the discord channel here.",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc27aa61_e82026b4",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Is it worth linking to an internal discord within a private document?",
+      "parentUuid": "3c92ad90_1f04e105",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -109,6 +169,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3a3dde4_2ebc9f08",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2079aa66_3a246d9d",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01dfc99a_9b6db295",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2dcedefb_1c21fa0e",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c89a9caa_c3c7851f",
@@ -143,6 +239,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b862ca64_ea9223cc",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c89a9caa_c3c7851f",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ac343c2_166335ea",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d1e2a4f0_4537a0d8",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "73cd995f_d76fc290",
@@ -156,6 +288,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "Not a fan of semicolons generally. Breaking up in sentences or using colons results in clearer text. In this case probably multiple sentences.",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7024ba65_22690371",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "73cd995f_d76fc290",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -211,6 +361,60 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e234f1b_9d5213d5",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "82561f42_2ab15fca",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5910609d_9f26097e",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3cd75830_4a53896e",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00985195_25b6aa01",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Some notion weirdness. Fixed.",
+      "parentUuid": "e399410e_daff3248",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d271ffbf_d1a6047d",
@@ -224,6 +428,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "Ideally two newlines between sections. This follows the Go-team\u0027s guidelines for Markdown.",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "538fd9c4_e35bc006",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d271ffbf_d1a6047d",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -245,6 +467,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8af8d8fe_5fbc40a7",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d77d0af1_ee883130",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "048e6ed0_5abdb257",
@@ -258,6 +498,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "Oxford comma before or to be consistent.",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c77df05f_0e3b6859",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "048e6ed0_5abdb257",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -279,6 +537,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "44c5785c_76401c23",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b63eb84_7aa0a057",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "57ca115b_58e7bfef",
@@ -292,6 +568,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "Maybe Specifically:  ?",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a4e4825_cfba4fda",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "57ca115b_58e7bfef",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -330,6 +624,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "091ae657_0960047b",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "67f5170b_dd7a024d",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c8f015e7_4672ed43",
@@ -343,6 +655,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "is has",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1a5a335_6c09c013",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c8f015e7_4672ed43",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -366,6 +696,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cf4967af_6e60bde8",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Maybe the Supply Chain Security document should just be Security? Although in the end, I think it could be argued that almost all security aspects of modules boil down to supply-chain security...",
+      "parentUuid": "fe9f27ad_57b46457",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0faade7f_97c8ace0",
         "filename": "designs/2449-modules-storage-model.md",
         "patchSetId": 2
@@ -377,6 +725,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "s/will have/may have/ ?",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50d0639e_1699631d",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0faade7f_97c8ace0",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -394,6 +760,24 @@
       "writtenOn": "2023-06-19T14:42:22Z",
       "side": 1,
       "message": "Periods at end of sentences to be consistent  with other bulleted lists and with the fact that the sentences start with an upper-case letter.",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9da30c2_2f6febf3",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-19T17:02:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a7defa90_191781ab",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
