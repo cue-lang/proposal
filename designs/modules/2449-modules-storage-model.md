@@ -15,7 +15,7 @@ Discussion Channel: [GitHub](https://github.com/cue-lang/cue/discussions/2449)
 
 ## Abstract
 
-This document is an adjunct to the [modules proposal document](./2330-modules-v2.md).
+This document is an adjunct to the [modules proposal document](../2330-modules-v2.md).
 We propose using OCI registries to store CUE modules
 and proposes a specific storage format for doing so.
 
@@ -23,7 +23,7 @@ and proposes a specific storage format for doing so.
 ## Background
 
 In our proposal document,
-we proposed that a [central registry](https://github.com/cue-lang/proposal/blob/main/designs/2330-modules-v2.md#registry) be used
+we proposed that a [central registry](../2330-modules-v2.md#registry) be used
 without being specific as to the protocol involved.
 In this document, we propose that CUE use the Open Container Initiative (OCI) [registry API](https://github.com/opencontainers/distribution-spec/blob/main/spec.md)
 to access and store CUE modules.
