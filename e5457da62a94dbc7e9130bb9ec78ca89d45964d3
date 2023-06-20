@@ -124,6 +124,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a04ef9ba_590dfe28",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T10:02:43Z",
+      "side": 1,
+      "message": "failed to upload somehow. done now, i think.",
+      "parentUuid": "91caa5ff_8ed8ee88",
+      "range": {
+        "startLine": 13,
+        "startChar": 11,
+        "endLine": 13,
+        "endChar": 16
+      },
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3c92ad90_1f04e105",
@@ -173,6 +197,24 @@
       "side": 1,
       "message": "Sorry, I meant Github.",
       "parentUuid": "dc27aa61_e82026b4",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "434e67d3_edc42312",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T10:02:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2915f452_20070aaf",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -804,6 +846,24 @@
       "side": 1,
       "message": "Yeah, I agree. The reason for that is just that for the other aspects we rely on OCI\u0027s builtin security. May be worth mentioning. Maybe not.",
       "parentUuid": "cf4967af_6e60bde8",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc73421e_c457f119",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T10:02:43Z",
+      "side": 1,
+      "message": "OCI has no inherent security, FWIW. There are security aspects that the model enables and that various registries implement, but those are all opt-in.",
+      "parentUuid": "c8c4ba6a_40182bc4",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
