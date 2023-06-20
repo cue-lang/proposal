@@ -35,6 +35,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3d57eaf_1e49ae49",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1fe8cf89_2b04dcca",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e20041ce_f83ad7d7",
@@ -48,6 +66,24 @@
       "writtenOn": "2023-06-20T11:02:39Z",
       "side": 1,
       "message": "What\u0027s the difference between \"schema\" and \"validation\"?",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3c6667f_2cdc4275",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "Removed.",
+      "parentUuid": "e20041ce_f83ad7d7",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -71,6 +107,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9725f3df_0f6d083d",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "I think we just don\u0027t know how that is gonna pan out yet. But I\u0027ll not something along those lines.",
+      "parentUuid": "42ec03fd_fdb3e38c",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0134152d_a67bfead",
         "filename": "designs/modules/2451-modules-compat.md",
         "patchSetId": 1
@@ -82,6 +136,24 @@
       "writtenOn": "2023-06-20T11:02:39Z",
       "side": 1,
       "message": "extra newline before section.",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0ee5c99_00e1143d",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0134152d_a67bfead",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -105,6 +177,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a209921f_059bfa74",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "Changed.\n\nSometimes it is okay to clarify a definition, especially abbreviations, as long as it is not a substitute for properly structuring sentences.\n\nBut the only made its use ugly indeed. So restructured it to define definitions in the Background section instead.",
+      "parentUuid": "8ce9ea9f_0baf2c7a",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "db64530f_8e59937f",
         "filename": "designs/modules/2451-modules-compat.md",
         "patchSetId": 1
@@ -116,6 +206,24 @@
       "writtenOn": "2023-06-20T11:02:39Z",
       "side": 1,
       "message": "extra newline before section?",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d5f22d5_144b113c",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "I usually skip it if another section heading is preceding it.",
+      "parentUuid": "db64530f_8e59937f",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -139,6 +247,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "42509e87_5980c445",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "I think that definitions not at the top level and that are accessible by the importer, so not hidden, should indeed also be checked.\n\nInitially I considered only top level, which is what is reflected here.\n\nMade it clearer this holds for any definition within a configuration.\n\nInstead of configuration we could also use \"CUE Program\". We should standardize on a name.",
+      "parentUuid": "acc07361_81fef814",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fab4b3a2_064f8218",
         "filename": "designs/modules/2451-modules-compat.md",
         "patchSetId": 1
@@ -150,6 +276,24 @@
       "writtenOn": "2023-06-20T11:02:39Z",
       "side": 1,
       "message": "I\u0027m not convinced by \"a regular field may become a required field\". What about this example, where changing a regular field to a required field causes breakage?\n\nThis test case fails, for example: https://gist.github.com/rogpeppe/8d3683c917e7182bc6bdea744ae2ea9b",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f542096_0f296d05",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "This rule is a direct consequence of the subsumption relation.\n\nYour argument also holds for allowing to relax a field (next rule).\n\nGenerally, it is discouraged to put regular fields in definitions, which should mitigate this issue. In this case, a vet rule should probably warn a schema writer of future compatibility issues arising from the fact that the schema is a template hybrid.\n\nThe discussion also lays out what responsibility schema users have in ensuring that their configurations are compatible.\n\nAnyway, I see why this is a trickier case, but I would prefer to rather distill the specific rules from practice rather than hypothesizing here. It is not clear to me this will be a problem in practice after required fields have been ubiquitously adopted.",
+      "parentUuid": "fab4b3a2_064f8218",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -173,6 +317,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "33400119_f1c1349b",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "added a brief explanation in the background.",
+      "parentUuid": "afb6b50d_d49aa28e",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c3834962_63ca7c0a",
         "filename": "designs/modules/2451-modules-compat.md",
         "patchSetId": 1
@@ -184,6 +346,24 @@
       "writtenOn": "2023-06-20T11:02:39Z",
       "side": 1,
       "message": "extra newline before section.",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d205dae_6fe9b1c9",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c3834962_63ca7c0a",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -222,6 +402,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d6f64e6_9f052f7b",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "92369ee1_83eafb4d",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f376bd48_0aa462a2",
@@ -235,6 +433,24 @@
       "writtenOn": "2023-06-20T11:02:39Z",
       "side": 1,
       "message": "I might have missed it, but I don\u0027t think this document has mentioned about what kind of compatibility is being talked about, so it seems a little odd to start distinguishing here. Perhaps it would be good to say near the start of the document, at least informally, what \"compatibility\" means for the purposes of this document.",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d930b65_2949f3cb",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:49:28Z",
+      "side": 1,
+      "message": "I think it does, it mentions backwards compatibility throughout. 😊\nAnd we state that the backwards compatibility is defined by subsumption.\n\nReiterated the subsumption part here.",
+      "parentUuid": "f376bd48_0aa462a2",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
