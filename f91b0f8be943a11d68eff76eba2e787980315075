@@ -546,6 +546,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "576c9aad_0d20e49e",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:13:25Z",
+      "side": 1,
+      "message": "ha, thought i\u0027d done that globally. done now.",
+      "parentUuid": "d0314cc1_1c7301e8",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1ec4cd2c_3f42dc70",
         "filename": "designs/modules/2450-supply-chain-security.md",
         "patchSetId": 6
@@ -628,6 +646,24 @@
       "side": 1,
       "message": "Is that stable enough? Will that not change the hash if, say, the encryption algorithm changes? How do we ensure reproducibility?",
       "parentUuid": "d284508e_6a944997",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27cbde37_bf294570",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:13:25Z",
+      "side": 1,
+      "message": "That\u0027s a great question.\n\nThe blobs won\u0027t be encrypted. But they will change if the compression algorithm changes. Or if the file metadata isn\u0027t consistent. This is definitely an area ripe for discussion: in general OCI registries do have this issue of non-reproducible builds by virtue of building on tar archives. This is something that Nix deals with and perhaps we should do something similar. I mentioned the possibility of using Nar (nix archive) files in the storage sub-proposal. But there would still be the problem of compression because that layers on top of the archive format AIUI and OCI hashes the compressed form, not the uncompressed form. There\u0027s a related proposal here: https://github.com/opencontainers/distribution-spec/issues/235\n\nI think we must work in terms of blob hashes at least at one level, because that\u0027s the level that OCI attestation works at AIUI, but at the CUE level I guess we could do file-contents hashing as well as blob hashing.",
+      "parentUuid": "15106935_08fb1745",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
