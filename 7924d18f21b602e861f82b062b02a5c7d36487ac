@@ -337,6 +337,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "65eafeeb_a9c97f8d",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T13:58:07Z",
+      "side": 1,
+      "message": "I know there is a feature gap. That is why the check is not mandatory. The feasibility of this really all depends on how configurations look like in real life.\n\nUsing package now.",
+      "parentUuid": "420823a5_0210fbdf",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fab4b3a2_064f8218",
         "filename": "designs/modules/2451-modules-compat.md",
         "patchSetId": 1
@@ -384,6 +402,24 @@
       "side": 1,
       "message": "\u003e Your argument also holds for allowing to relax a field (next rule).\n\nI wondered if that might be the case, but couldn\u0027t come up with a concrete example where it would do so.\n\n\u003e Generally, it is discouraged to put regular fields in definitions, which should mitigate this issue. In this case, a vet rule should probably warn a schema writer of future compatibility issues arising from the fact that the schema is a template hybrid.\n\nYeah, one possibility could be to say that a definition containing a regular field does not participate in backwards-compatibility checking because our compatibility checking is defined for pure schema only.\n\nWe could produce an error for definitions that have regular fields unless some annotation is added.\n\n\u003e Anyway, I see why this is a trickier case, but I would prefer to rather distill the specific rules from practice rather than hypothesizing here. It is not clear to me this will be a problem in practice after required fields have been ubiquitously adopted.\n\nThe concern I have here is that the goals for backward compatibility have not been explicitly stated and, as I demonstrated, even when someone does adhere to the rules they might still encounter breakage. So I\u0027m not entirely convinced how useful this checking is.\n\nI agree about distilling specific rules from practice, but ISTM that would be an argument for postponing the rules defined in this document until we\u0027ve actually experimented with them in practice for real CUE code.\n\nThat is, the rules in this document seem to me to be half way between theory (subsumption) and practice (schema only) but I think more experimentation is needed to see if the right balance has been struck.",
       "parentUuid": "4f542096_0f296d05",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51a80e1c_8268236a",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T13:58:07Z",
+      "side": 1,
+      "message": "\u003e \u003e Your argument also holds for allowing to relax a field (next rule).\n\u003e \n\u003e I wondered if that might be the case, but couldn\u0027t come up with a concrete example where it would do so.\nThere is an example in the discussion below.\n\n\n\u003e \u003e Generally, it is discouraged to put regular fields in definitions, which should mitigate this issue. In this case, a vet rule should probably warn a schema writer of future compatibility issues arising from the fact that the schema is a template hybrid.\n\u003e \n\u003e Yeah, one possibility could be to say that a definition containing a regular field does not participate in backwards-compatibility checking because our compatibility checking is defined for pure schema only.\nThat is a possibility indeed. We need data to see if that works in practice.\n \n\u003e We could produce an error for definitions that have regular fields unless some annotation is added.\nAlso a possibility.\n\n\u003e \u003e Anyway, I see why this is a trickier case, but I would prefer to rather distill the specific rules from practice rather than hypothesizing here. It is not clear to me this will be a problem in practice after required fields have been ubiquitously adopted.\n\u003e \n\u003e The concern I have here is that the goals for backward compatibility have not been explicitly stated and, as I demonstrated, even when someone does adhere to the rules they might still encounter breakage. So I\u0027m not entirely convinced how useful this checking is.\n\nI think the main purpose is for module writers to verify that they are not _inadvertently_ are breaking compatibility. Similar problems exist for Go. The Go tooling does API validation that is quite strict and often wrong. Yet it is very useful and catches a lot of errors.\n\n\n\u003e I agree about distilling specific rules from practice, but ISTM that would be an argument for postponing the rules defined in this document until we\u0027ve actually experimented with them in practice for real CUE code.\n\nI strongly disagree. The rules here are principled, from a theoretical point of view, and a good starting point for figuring out what we need in practice. Without such seeding it is futile.\n\nAlso, MVS is useless without a notion of backwards compatibility. We should either include this or also remove MVS from the proposal.\n\n\n\u003e That is, the rules in this document seem to me to be half way between theory (subsumption) and practice (schema only) but I think more experimentation is needed to see if the right balance has been struck.\n\nAgain. Strongly disagree. This is a draft, not a final proposal. We need to address this in relation to MVS, even if incomplete.",
+      "parentUuid": "1f5af7b0_ac105fab",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -507,6 +543,24 @@
       "side": 1,
       "message": "By the definition of Schema earlier in the document, I think this is _not_ a schema FWIW, because `gauge: ...` is not a field constraint, but an actual field.",
       "parentUuid": "668a2c6f_96049428",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61ccad5d_e59a1fb3",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T13:58:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "68189804_27da1bd7",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },

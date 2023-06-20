@@ -36,6 +36,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "51a35243_dcfbef95",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T13:58:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a7f0db9c_6983d4de",
+      "revId": "53a18c67dd2cb4375a6ad6e166851c5b0ce589a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "17071a93_ca36a6c6",
@@ -71,6 +89,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc4846ec_99202568",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T13:58:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "17071a93_ca36a6c6",
+      "revId": "53a18c67dd2cb4375a6ad6e166851c5b0ce589a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2ee5caa0_8cdb5a0a",
@@ -101,6 +137,24 @@
       "writtenOn": "2023-06-20T13:54:31Z",
       "side": 1,
       "message": "Acknowledged",
+      "parentUuid": "2ee5caa0_8cdb5a0a",
+      "revId": "53a18c67dd2cb4375a6ad6e166851c5b0ce589a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94d042c1_0079441c",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T13:58:07Z",
+      "side": 1,
+      "message": "For one, the recommendation is that schema have a name starting with # and policy do not.",
       "parentUuid": "2ee5caa0_8cdb5a0a",
       "revId": "53a18c67dd2cb4375a6ad6e166851c5b0ce589a1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
