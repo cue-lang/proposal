@@ -670,6 +670,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "47f260db_5b27adb6",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T13:35:54Z",
+      "side": 1,
+      "message": "Interesting. Needs further investigation indeed. But not for now. Maybe some smaller comment along the line that we would like to have reproducible verification.",
+      "parentUuid": "27cbde37_bf294570",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6d460074_c1fd62dd",
         "filename": "designs/modules/2450-supply-chain-security.md",
         "patchSetId": 6
