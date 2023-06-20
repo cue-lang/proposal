@@ -528,6 +528,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d0314cc1_1c7301e8",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:57:03Z",
+      "side": 1,
+      "message": "not Done?",
+      "parentUuid": "646b37e9_80609d71",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1ec4cd2c_3f42dc70",
         "filename": "designs/modules/2450-supply-chain-security.md",
         "patchSetId": 6
@@ -592,6 +610,24 @@
       "side": 1,
       "message": "changed to \"zip archive blobs\" which should be clearer hopefully.",
       "parentUuid": "8c203c35_e269e9ea",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15106935_08fb1745",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T11:57:03Z",
+      "side": 1,
+      "message": "Is that stable enough? Will that not change the hash if, say, the encryption algorithm changes? How do we ensure reproducibility?",
+      "parentUuid": "d284508e_6a944997",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
