@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4381e2ed_2efcca00",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bea14c3c_42fc851d",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c0dd988c_270e6a9a",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "GH discussion link.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b0d7085_8fe06f48",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c0dd988c_270e6a9a",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ad3f5d0_7149f714",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "72291e93_172413ce",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dc37b40e_ac0ed1f8",
@@ -65,6 +119,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "extra newline before sections.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb3b6120_ac21962a",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc37b40e_ac0ed1f8",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -86,6 +158,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "95c7bae0_934fb280",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "47db8713_7c8063e5",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a0971495_aa0abe5f",
@@ -103,6 +193,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "80d019d3_a4b42edf",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a0971495_aa0abe5f",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "167055aa_2bd173b6",
@@ -116,6 +224,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "s/that the module is being uploaded to/to which the module is being uploaded/ ?",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dee89c99_0d911176",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "167055aa_2bd173b6",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -154,6 +280,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fb9cee8_a80f8303",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c236d1d4_0ce7391f",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de525d51_fec91d45",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e2b8eea1_357568db",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ce592aec_a140c26c",
@@ -167,6 +329,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "Newline at new sentence.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b499c3b9_b6b9bb25",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ce592aec_a140c26c",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -188,6 +368,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "970b5ec4_b642e8bd",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3de42524_0ac34c71",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5f8aecd0_1cde75d3",
@@ -201,6 +399,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "s/For assurance .. a module//\n\nRepeated downstream of the sentence.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ddc567e6_1b197aa3",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f8aecd0_1cde75d3",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -222,6 +438,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dec0c94c_96073322",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "502b807c_87c3446a",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8d19967a_fef81b1b",
@@ -235,6 +469,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "I think you can rewrite this as follows:\n\nIn general, the model will be one of _attestation_.\nA trusted agent checks a module for a number of properties when it is uploaded\nto the central registry and before it is made available to the public.\nUpon passing, it creates a signed statement, ...",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bc6fc9e_3f2df3ce",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d19967a_fef81b1b",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -256,6 +508,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "646b37e9_80609d71",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9b07bf39_168fdc61",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1ec4cd2c_3f42dc70",
@@ -273,6 +543,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6af1e84f_ea8a682e",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1ec4cd2c_3f42dc70",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8c203c35_e269e9ea",
@@ -286,6 +574,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "What does a hash of an archive mean exactly?",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d284508e_6a944997",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "changed to \"zip archive blobs\" which should be clearer hopefully.",
+      "parentUuid": "8c203c35_e269e9ea",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -324,6 +630,42 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "885bc5df_71023aee",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6dd87cf5_6d838303",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6229cd10_b90a8194",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6d460074_c1fd62dd",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f3b4ecdc_056b38b1",
@@ -337,6 +679,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "s/don\u0027t/do not/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cea91ed_3ed7e1f0",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f3b4ecdc_056b38b1",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -358,6 +718,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "37ac732f_dea9fc1c",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "nice, done.",
+      "parentUuid": "fb36e723_dfe40a99",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1584cc81_39c9a285",
@@ -371,6 +749,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "s/it\u0027s/it is/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "68e78273_ebdcfa5e",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1584cc81_39c9a285",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -392,6 +788,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b49f022_efaa5544",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5d30f963_f5b8e439",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "86a79050_c5a110b9",
@@ -409,6 +823,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b21c03ff_3619e75b",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "86a79050_c5a110b9",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "236fdab1_ab673604",
@@ -422,6 +854,24 @@
       "writtenOn": "2023-06-20T10:50:16Z",
       "side": 1,
       "message": "Clearly? Please elaborate.\n\ns/we\u0027d/we would/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5453006_896d1043",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T11:22:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "236fdab1_ab673604",
       "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
