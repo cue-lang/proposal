@@ -1,0 +1,429 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bea14c3c_42fc851d",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "Maybe include modules in the title somewhere?",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c0dd988c_270e6a9a",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "GH discussion link.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72291e93_172413ce",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "Should it be `../` ?\n\nI would probably not move the 2330 doc into the subdirectory to not break existing links to it.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc37b40e_ac0ed1f8",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "extra newline before sections.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47db8713_7c8063e5",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "Doesn\u0027t the abstract already say this? Probably no need to repeat.\n\nMaybe:\n\n\"We identify two core aspects of module security:\"",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a0971495_aa0abe5f",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/Upload authorization/Which upload authorization strategy to use/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "167055aa_2bd173b6",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/that the module is being uploaded to/to which the module is being uploaded/ ?",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2b8eea1_357568db",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/github/GitHub/ \n\nhere and elsewhere except for in URLs.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c236d1d4_0ce7391f",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/ for now//\n\nor drop in the meantime.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce592aec_a140c26c",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "Newline at new sentence.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3de42524_0ac34c71",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/Github/GitHub/g",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f8aecd0_1cde75d3",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/For assurance .. a module//\n\nRepeated downstream of the sentence.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "502b807c_87c3446a",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/it\u0027s/it is/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8d19967a_fef81b1b",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "I think you can rewrite this as follows:\n\nIn general, the model will be one of _attestation_.\nA trusted agent checks a module for a number of properties when it is uploaded\nto the central registry and before it is made available to the public.\nUpon passing, it creates a signed statement, ...",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b07bf39_168fdc61",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "they are",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ec4cd2c_3f42dc70",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/module/module,/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c203c35_e269e9ea",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "What does a hash of an archive mean exactly?",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d460074_c1fd62dd",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "The : seems a bit contrived here. I would start \"see\" as a new sentence.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6dd87cf5_6d838303",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/that\u0027s/that has/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f3b4ecdc_056b38b1",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/don\u0027t/do not/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb36e723_dfe40a99",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "Overall, this is a very complicated sentence. Maybe:\n\nIn particular, there is the assurance that\nif you do not control a given domain, you cannot upload a module inside that domain.\nFor some special-cased multi-home domains, such as GitHub, an analogous\nmechanism would exist for sub-parts of the domain.",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1584cc81_39c9a285",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/it\u0027s/it is/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d30f963_f5b8e439",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "There is still the issue that DNS names...   ??",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86a79050_c5a110b9",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "s/they\u0027re/they are/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "236fdab1_ab673604",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:50:16Z",
+      "side": 1,
+      "message": "Clearly? Please elaborate.\n\ns/we\u0027d/we would/",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
