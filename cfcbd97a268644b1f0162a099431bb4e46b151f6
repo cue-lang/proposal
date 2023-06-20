@@ -1,0 +1,9 @@
+Code-Review+2: Marcel van Lohuizen <mpvl@gmail.com>
+TryBot-Result+1: CUEcueckoo <cueckoo+gerrithub@cuelang.org>
+Submitted-by: Roger Peppe <rogpeppe@gmail.com>
+Submitted-at: Tue, 20 Jun 2023 13:46:45 +0000
+Reviewed-on: https://review.gerrithub.io/c/cue-lang/proposal/+/555738
+Comments-Total: 56
+Comments-Unresolved: 1
+Project: cue-lang/proposal
+Branch: refs/heads/main
