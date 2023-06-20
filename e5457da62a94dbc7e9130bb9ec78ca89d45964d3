@@ -100,6 +100,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "91caa5ff_8ed8ee88",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T09:11:28Z",
+      "side": 1,
+      "message": "not done?",
+      "parentUuid": "dfac4bee_58f44f4c",
+      "range": {
+        "startLine": 13,
+        "startChar": 11,
+        "endLine": 13,
+        "endChar": 16
+      },
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3c92ad90_1f04e105",
@@ -131,6 +155,24 @@
       "side": 1,
       "message": "Is it worth linking to an internal discord within a private document?",
       "parentUuid": "3c92ad90_1f04e105",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2915f452_20070aaf",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T09:11:28Z",
+      "side": 1,
+      "message": "Sorry, I meant Github.",
+      "parentUuid": "dc27aa61_e82026b4",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -744,6 +786,24 @@
       "side": 1,
       "message": "Maybe the Supply Chain Security document should just be Security? Although in the end, I think it could be argued that almost all security aspects of modules boil down to supply-chain security...",
       "parentUuid": "fe9f27ad_57b46457",
+      "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8c4ba6a_40182bc4",
+        "filename": "designs/2449-modules-storage-model.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T09:11:28Z",
+      "side": 1,
+      "message": "Yeah, I agree. The reason for that is just that for the other aspects we rely on OCI\u0027s builtin security. May be worth mentioning. Maybe not.",
+      "parentUuid": "cf4967af_6e60bde8",
       "revId": "e5457da62a94dbc7e9130bb9ec78ca89d45964d3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
