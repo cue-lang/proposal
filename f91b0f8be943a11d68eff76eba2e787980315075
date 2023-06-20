@@ -686,6 +686,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c08ec8ef_934447ec",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T13:43:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "47f260db_5b27adb6",
+      "revId": "f91b0f8be943a11d68eff76eba2e787980315075",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6d460074_c1fd62dd",
