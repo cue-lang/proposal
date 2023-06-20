@@ -3,6 +3,7 @@
 We provide a high-level overview of a module system for CUE.
 Some of the details are to be worked out in separate subproposals.
 
+
 # Background
 
 There is a big demand from the CUE community to allow sharing CUE code within a
@@ -30,10 +31,11 @@ common to bump major versions of configuration, for instance. Also, there are
 more opportunities for analyzing restricted languages like CUE, and thus
 enforcing certain properties, than for general purpose languages.*
 
+
 # Overview
 
 We propose a modules ecosystem approach for CUE consisting of the following
-components:
+components.
 
 - A central registry service that allows authors to publish both public and
   private modules.
@@ -53,12 +55,15 @@ next section.
 
 Here we describe the design of the CUE registry in more detail.
 
+
 ## Subproposals
+
 Module support is a large addition to the CUE ecosystem.
 Development will commence along the lines of several subproposals.
 Not all of these will be completed before the first release of the registry.
 
-The following subproposals are currently planned:
+The following subproposals have been made or are currently planned:
+
 
 ### Storage Model
 The overarching design of the registry is agnostic to the storage model.
@@ -66,9 +71,22 @@ We propose to store CUE modules in OCI registries.
 For applications that require local replication, this allows
 building on existing tools and infrastructure.
 
+This is proposed [here](./modules/2449-modules-storage-model.md).
+
+
 ### Publishing: GitHub
 Initially we propose that modules be published through GitHub.
 At a later state we may add support for other publishing mechanisms.
+
+This is proposed [here](./modules/2448-modules-github.md).
+
+
+### Supply Chain Security
+
+This sub-proposal discusses security aspects relating to modules.
+
+This is proposed [here](./modules/2450-supply-chain-security.md).
+
 
 ### Backwards Compatibility
 We propose that the semantic versions of modules follow some guidelines
@@ -76,6 +94,9 @@ of what we consider major, minor, or patch changes.
 By default, tooling will fail when proving a tag for a module that
 does not follow these guidelines, but will allow users to override
 such checks, as they are not always desirable.
+
+This is proposed [here](./modules/2451-modules-compat.md).
+
 
 ### Compatibility Attributes
 Sometimes publishers will deliberately break compatibility.
@@ -88,6 +109,7 @@ We plan to support annotations that allow publishers to indicate
 the life cycle of certain features.
 The backwards compatibility checks will verify that the contracts
 expressed by these annotations are not violated.
+
 
 ### Publishing: Generic
 We intend to allow users to publish modules to the public CUE registry
@@ -118,6 +140,7 @@ Although the design of CUE modules is heavily influenced by the Go modules
 design, there are many aspects where it deviates, incorporating lessons learned,
 but also taking into account the different use case of CUE versus Go.  In this
 section we discuss some of the details along with motivations for the design.
+
 
 ## Registry
 
@@ -186,6 +209,7 @@ the need for complicated
 [pseudo-versions](https://go.dev/ref/mod#pseudo-versions). However, pre-release
 conventions like `-beta` and `-alpha` can still be used when appropriate.
 
+
 ## Module and Package Paths
 
 A CUE module currently defines a domain name-based path that is used as a prefix
@@ -194,6 +218,7 @@ approach for identifying modules.
 
 For example, this will allow modules with paths `github.com/my/pkg@v1` or
 `my.domain/pkg@v2` to be published to the CUE registry.
+
 
 ### Canonical Module Path
 
@@ -205,6 +230,7 @@ Explicitly defining the major version in the `module.cue` file allows for better
 automated validation during publishing and prevents accidents. We plan to
 provide convenience functionality in the `cue` CLI  for changing the major
 version of imported modules.
+
 
 ### Rationale
 
@@ -246,12 +272,14 @@ Motivation for including the major version in the module path:
     - Some users have expressed interest in having more accurate pinning than
       major version.
 
+
 ### Disallowing module nesting (for now)
 
 Currently, we will not allow nested module identifiers. That is, the registry
 will not allowed to have both module `example.com/foo` and
 `example.com/foo/bar`. Down the line we will probably allow this to support
 module “splitting”.
+
 
 ### Imports
 
@@ -371,10 +399,12 @@ publish?: {
 // The public scope is visible to all. The private
 // scope restricts visibility to a subset of authorized
 // clients.
+
 #Scope: "private" | "public"
 
 // #RetractedVersion specifies either a single version
 // to retract, or an inclusive range of versions to retract.
+
 #RetractedVersion: #SemVer | {
 	from!: #SemVer
 	// TODO constrain to to be after from?
@@ -384,6 +414,7 @@ publish?: {
 // #Replacement specifies a replacement for a module. It can either
 // be a reference to a local directory or an alternative module with associated
 // version.
+
 #Replacement: #LocalPath | {
 	m!: #Module
 	v!: #SemVer
@@ -391,6 +422,7 @@ publish?: {
 
 // #LocalPath constrains a filesystem path used for a module replacement,
 // which must be either explicitly relative to the current directory or root-based.
+
 #LocalPath: =~"^(./|../|/)"
 
 // #Module constrains a module path.
@@ -398,12 +430,15 @@ publish?: {
 // in a normalized module.cue file.
 // TODO encode the module path rules as regexp:
 // WIP: (([\-_~a-zA-Z0-9][.\-_~a-zA-Z0-9]*[\-_~a-zA-Z0-9])|([\-_~a-zA-Z0-9]))(/([\-_~a-zA-Z0-9][.\-_~a-zA-Z0-9]*[\-_~a-zA-Z0-9])|([\-_~a-zA-Z0-9]))*
+
 #Module: =~#"^[^@]+(@v(0|[1-9]\d*))?$"#
 
 // #SemVer constrains a semantic version. This regular expression is taken from
 // https://semver.org/spec/v2.0.0.html, but includes a mandatory initial "v".
+
 #SemVer: =~#"^v(?P<major>0|[1-9]\d*)\.(?P<minor>0|[1-9]\d*)\.(?P<patch>0|[1-9]\d*)(?:-(?P<prerelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?P<buildmetadata>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$"#
 ```
+
 
 ### `sum.cue` file
 
@@ -411,12 +446,15 @@ We will likely support a `cue.mod/sum.cue` file analogous to the
 [`go.sum`](https://go.dev/ref/mod#go-sum-files) file. Format as yet to be
 defined.
 
+
 ## `cue` commands extensions
 
 Here we discuss the initial set of supported commands. The first to be
 implemented are `init`, `tidy`, and `publish`. Others will follow later.
 
+
 ### main module
+
 
 ### module cache
 
@@ -425,7 +463,9 @@ We will maintain a module cache in
 
 Files are stored as read-only in the module cache.
 
+
 ### version queries
+
 
 ### `cue mod init`
 
@@ -479,6 +519,7 @@ more detail on when `@indirect()` dependencies and comments are added.)
 If the `-cue` flag is set, `cue mod tidy` will update the `cue` field to the
 indicated version.
 
+
 ### `cue mod publish`
 
 Usage:
@@ -521,6 +562,7 @@ The `--scope` flag sets the visibility for the package, which may not be more
 permissive than the scope set in the module file, although public packages
 cannot be made private or removed. The default scope is private.
 
+
 ### `cue mod upload`
 
 Usage:
@@ -534,6 +576,7 @@ registry and reports a unique identifier for this module. `cue mod upload`
 allows for errors, analysis and the like to be reported against that unique
 identifier, without requiring that the files pointed to by the identifier be
 published as a module version.
+
 
 ### `cue mod download`
 
@@ -562,6 +605,7 @@ execution. The `cue mod download` command is useful mainly for pre-filling the
 
 By default, `download` writes nothing to standard output. It prints progress
 messages and errors to standard error.
+
 
 ### `cue mod vendor`
 
@@ -606,9 +650,11 @@ path relative to the module root.
 The `vendor` command is expected to be expanded in the future to support
 co-versioning of CUE with other package managers.
 
+
 ### `cue mod clean`
 
 Removes all files in the [module cache](#module-cache).
+
 
 ### `cue mod edit`
 
@@ -616,11 +662,13 @@ This command will provide command-line-driven editing of the module.cue file,
 with a similar design to Go's `go mod edit`. The exact design remains to be
 specified.
 
+
 ## Minimum Version Selection
 
 We plan to use [Minimum Version Selection
 (MVS)](https://go.dev/ref/mod#minimal-version-selection) for resolving
 dependency versions.
+
 
 ### Rationale
 
@@ -636,6 +684,7 @@ dependency versions.
       changes, possibly making this manageable. We recognize, though, that many
       users want something more predictable.
     - An always on HEAD approach can still be simulated with MVS.
+
 
 # Implementation Plan
 
