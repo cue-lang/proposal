@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d9a51507_57064034",
+        "filename": "designs/modules/2448-modules-github.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:09:34Z",
+      "side": 1,
+      "message": "newline.",
+      "revId": "11bd1175ae6e613ae52599818c7173b1ff93eabc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b9205e5_0b5b21ed",
+        "filename": "designs/modules/2448-modules-github.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:09:34Z",
+      "side": 1,
+      "message": "extra newline between sections. And elsewhere.",
+      "revId": "11bd1175ae6e613ae52599818c7173b1ff93eabc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bfdf5fef_d0a4b1f3",
+        "filename": "designs/modules/2448-modules-github.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:09:34Z",
+      "side": 1,
+      "message": "s/github/GitHub/\n\nAlso elsewhere where it is not part of an URL.",
+      "revId": "11bd1175ae6e613ae52599818c7173b1ff93eabc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39c83252_1bcee51a",
+        "filename": "designs/modules/2448-modules-github.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:09:34Z",
+      "side": 1,
+      "message": "s/the GitHub/GitHub/ ?",
+      "revId": "11bd1175ae6e613ae52599818c7173b1ff93eabc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28c5a9ff_956e58ac",
+        "filename": "designs/modules/2448-modules-github.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2023-06-20T10:09:34Z",
+      "side": 1,
+      "message": "s/there\u0027s/there is/",
+      "revId": "11bd1175ae6e613ae52599818c7173b1ff93eabc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
