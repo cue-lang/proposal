@@ -123,6 +123,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "57146f57_c357630d",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "9725f3df_0f6d083d",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0134152d_a67bfead",
@@ -193,6 +211,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb7483ef_5e7d552c",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "a209921f_059bfa74",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "db64530f_8e59937f",
@@ -224,6 +260,24 @@
       "side": 1,
       "message": "I usually skip it if another section heading is preceding it.",
       "parentUuid": "db64530f_8e59937f",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4feafe7c_b9448aca",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3d5f22d5_144b113c",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -265,6 +319,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "420823a5_0210fbdf",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "\u003e I think that definitions not at the top level and that are accessible by the importer, so not hidden, should indeed also be checked.\n\nI suspect that will be problematic, as definitions are currently in common use to define parameters and other non-exported aspects of a configuration because there\u0027s no other alternative that\u0027s available to other packages. There\u0027s definitely a feature-gap here.\n\n\u003e Instead of configuration we could also use \"CUE Program\". We should standardize on a name.\n\nNeither \"configuration\" nor \"CUE program\" seem very well defined to me currently. \"Package\" is better; \"module\" might also be a possibility, but then that would have to leverage some package-level definition too. In fact, module-level compatibility is a necessity for defining module versioning and isn\u0027t talked about in this document at all. For example, I don\u0027t think there\u0027s anywhere that says it\u0027s backwardly incompatible to remove a package from a module.",
+      "parentUuid": "42509e87_5980c445",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fab4b3a2_064f8218",
         "filename": "designs/modules/2451-modules-compat.md",
         "patchSetId": 1
@@ -300,6 +372,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1f5af7b0_ac105fab",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "\u003e Your argument also holds for allowing to relax a field (next rule).\n\nI wondered if that might be the case, but couldn\u0027t come up with a concrete example where it would do so.\n\n\u003e Generally, it is discouraged to put regular fields in definitions, which should mitigate this issue. In this case, a vet rule should probably warn a schema writer of future compatibility issues arising from the fact that the schema is a template hybrid.\n\nYeah, one possibility could be to say that a definition containing a regular field does not participate in backwards-compatibility checking because our compatibility checking is defined for pure schema only.\n\nWe could produce an error for definitions that have regular fields unless some annotation is added.\n\n\u003e Anyway, I see why this is a trickier case, but I would prefer to rather distill the specific rules from practice rather than hypothesizing here. It is not clear to me this will be a problem in practice after required fields have been ubiquitously adopted.\n\nThe concern I have here is that the goals for backward compatibility have not been explicitly stated and, as I demonstrated, even when someone does adhere to the rules they might still encounter breakage. So I\u0027m not entirely convinced how useful this checking is.\n\nI agree about distilling specific rules from practice, but ISTM that would be an argument for postponing the rules defined in this document until we\u0027ve actually experimented with them in practice for real CUE code.\n\nThat is, the rules in this document seem to me to be half way between theory (subsumption) and practice (schema only) but I think more experimentation is needed to see if the right balance has been struck.",
+      "parentUuid": "4f542096_0f296d05",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "afb6b50d_d49aa28e",
         "filename": "designs/modules/2451-modules-compat.md",
         "patchSetId": 1
@@ -329,6 +419,24 @@
       "side": 1,
       "message": "added a brief explanation in the background.",
       "parentUuid": "afb6b50d_d49aa28e",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3938203_9fbfadd5",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "33400119_f1c1349b",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -381,6 +489,24 @@
       "writtenOn": "2023-06-20T11:02:39Z",
       "side": 1,
       "message": "Given that\u0027s got a regular field, is it actually a template...?\nMaybe best just to say \"definition\".",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68189804_27da1bd7",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "By the definition of Schema earlier in the document, I think this is _not_ a schema FWIW, because `gauge: ...` is not a field constraint, but an actual field.",
+      "parentUuid": "668a2c6f_96049428",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -451,6 +577,24 @@
       "side": 1,
       "message": "I think it does, it mentions backwards compatibility throughout. 😊\nAnd we state that the backwards compatibility is defined by subsumption.\n\nReiterated the subsumption part here.",
       "parentUuid": "f376bd48_0aa462a2",
+      "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a335c1d_61da04d9",
+        "filename": "designs/modules/2451-modules-compat.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2023-06-20T12:32:19Z",
+      "side": 1,
+      "message": "But what does \"compatibility\" actually _mean_?\n\nI think we\u0027re missing overarching goal for what we mean be compatibility with respect to modules, so we can have something to measure compatibility by. Maybe something like the following?\n\n\u003e Module B is compatible with module A if A can be substituted with B without causing an error.",
+      "parentUuid": "6d930b65_2949f3cb",
       "revId": "7924d18f21b602e861f82b062b02a5c7d36487ac",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
