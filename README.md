@@ -1,7 +1,6 @@
 # Proposing changes to CUE
 CUE Project Design Documents
 
-
 ## Introduction
 
 Significant changes to the language, libraries, or tools
@@ -135,7 +134,7 @@ In the worst case, skipping these steps only leads to an unnecessary design doc.
 ### Proposal Review
 
 Design docs are currently reviewed periodically without a
-predetermined cadence. 
+predetermined cadence.
 
 The principal goal of the review meeting is to make sure that proposals
 are receiving attention from the right people,
