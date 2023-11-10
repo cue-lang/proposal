@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cfa51fc8_50bff839",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-11-10T11:38:03Z",
+      "side": 1,
+      "message": "SGTM, though I imagined at this point we would focus on a new proposal version entirely.",
+      "revId": "5054ae8b571b603bc245ec7eed9664d625307074",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
