@@ -34,6 +34,24 @@
       "parentUuid": "cfa51fc8_50bff839",
       "revId": "5054ae8b571b603bc245ec7eed9664d625307074",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5a256c9_30af334d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2023-11-10T11:54:09Z",
+      "side": 1,
+      "message": "Ah, gotcha, this was an old CL.",
+      "parentUuid": "d95c4ec9_192b1096",
+      "revId": "5054ae8b571b603bc245ec7eed9664d625307074",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ],
   "submitRequirementResults": [
