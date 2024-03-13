@@ -33,6 +33,23 @@
       "message": "Mention `cue/load` changes here?",
       "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d134fe4_8e752ec2",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:21:08Z",
+      "side": 1,
+      "message": "I think we can flesh this out a bit more to discuss that the experiment will help support this proposal, by giving us real world experience etc.\n\nThen, assuming the experiment is successful, we will accept the proposal, at which point we will make modules a first class citizen of `cmd/cue` and the Go API, and `CUE_EXPERIMENT` will \"disappear\".\n\nPerhaps also make the point that this proposal represents the core of a modules design, and whilst the experiment might not fully implement the proposal, it is aimed to do the minimum amount to give us confidence in any decision we then reach with respect to the proposal.\n\nThoughts?",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
