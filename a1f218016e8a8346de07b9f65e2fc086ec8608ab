@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad97d633_2b9f9f92",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c102acf4_b06fadc9",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f9e93f9a_46a0a0fc",
@@ -41,6 +59,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4feaeb9_288f44ab",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9e93f9a_46a0a0fc",
+      "range": {
+        "startLine": 13,
+        "startChar": 1,
+        "endLine": 14,
+        "endChar": 46
+      },
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0319c4c9_36985ebc",
@@ -54,6 +96,30 @@
       "writtenOn": "2024-03-13T20:24:21Z",
       "side": 1,
       "message": "Feels like it\u0027s worth mentioning `cue/load` here?",
+      "range": {
+        "startLine": 25,
+        "startChar": 15,
+        "endLine": 26,
+        "endChar": 31
+      },
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2aec47c2_f318a387",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0319c4c9_36985ebc",
       "range": {
         "startLine": 25,
         "startChar": 15,
@@ -99,6 +165,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8737e041_961ba1fb",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f848ffc2_765bac27",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5a358220_fc181237",
@@ -112,6 +196,24 @@
       "writtenOn": "2024-03-13T20:38:01Z",
       "side": 1,
       "message": "Per offline discussion with @rogpeppe@gmail.com and quoting him:\n\n\u003e We should explicitly talk about the separation between module path and storage location.\n\u003e \n\u003e essentially a module path is an abstraction where a storage location is concrete, and the registry configuration defines the mapping between them",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92935dd6_a41c4562",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a358220_fc181237",
       "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -133,6 +235,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7cc84e85_d12559e9",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 325,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e90b716b_14b304c8",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b2edd51f_59077fd2",
@@ -146,6 +266,24 @@
       "writtenOn": "2024-03-13T21:15:32Z",
       "side": 1,
       "message": "This list appears to miss of `login`?",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9275f7b9_66f5fe16",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 328,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b2edd51f_59077fd2",
       "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -167,6 +305,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa5cc16e_68bdaec6",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 331,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bb0cc125_eba432e8",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2f3701bc_102b5810",
@@ -184,6 +340,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "37c29832_7732b1c5",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 334,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2f3701bc_102b5810",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6122ed3e_8d5102d3",
@@ -197,6 +371,24 @@
       "writtenOn": "2024-03-13T20:14:06Z",
       "side": 1,
       "message": "Mention `cue/load` changes here?",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7442d3c4_d2f9cdfa",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6122ed3e_8d5102d3",
       "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -236,6 +428,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b170c97c_3b59da23",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9d134fe4_8e752ec2",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ef24a43b_0fbff4f7",
@@ -259,6 +469,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0115c96_7c14b276",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ef24a43b_0fbff4f7",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 51
+      },
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3203ac6_af79f73c",
@@ -272,6 +506,24 @@
       "writtenOn": "2024-03-13T20:31:57Z",
       "side": 1,
       "message": "Ground this with mention of popular OCI registries? \n\nThat GitLab, AWS, Google, GitHub, ... those we have encountered during the experiment thus far?",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2fb899d8_623d02de",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a3203ac6_af79f73c",
       "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }

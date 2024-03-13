@@ -71,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8621326_6d97b9bf",
+        "filename": "designs/2939-modules-v3.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "Done, although I might have missed some occurrences depending on the nature of that \"etc\".",
+      "parentUuid": "be6ea16c_5d456b4b",
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae41ac4c_eb77b794",
@@ -84,6 +102,24 @@
       "writtenOn": "2024-03-13T20:14:06Z",
       "side": 1,
       "message": "Does this need a reference to the supply chain part of the proposal?",
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a64b25f0_e13a7d36",
+        "filename": "designs/2939-modules-v3.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 320,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-13T21:31:05Z",
+      "side": 1,
+      "message": "I actually think we should remove this section, as it\u0027s not implemented, and I\u0027m not convinced of its likeliness in fact (there are a bunch of other implementation options). Given that we have a supply-chain security document, I think we can delegate to that.\n\nRemoved for now.",
+      "parentUuid": "ae41ac4c_eb77b794",
       "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
