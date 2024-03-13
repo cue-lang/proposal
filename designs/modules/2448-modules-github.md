@@ -1,4 +1,4 @@
-# Proposal: Module-publishing GitHub app
+# Proposal: Module-publishing GitHub app (OBSOLETE)
 Status: **Draft**
 
 Lifecycle:  **Proposed**
@@ -13,6 +13,9 @@ Discussion Channel: [GitHub](https://github.com/cue-lang/cue/discussions/2448)
 
 
 ## Objective
+
+Note: this proposal has now been superceded. See the
+revised module proposal [here](../2939-module-v3.md)
 
 A large percentage of CUE users have their schema in GitHub repositories.
 We will provide a GitHub app that will simplify publishing modules to the registry.
