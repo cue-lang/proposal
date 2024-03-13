@@ -8,10 +8,12 @@ Author(s): mpvl@cue.works
 
 Reviewers: rogpeppe@cue.works myitcv@cue.works
 
-Discussion channel: [GitHub](https://github.com/cue-lang/cue/discussions/2451)
+Discussion channel: [GitHub](https://github.com/cue-lang/cue/discussions/2943)
 
 
 # Abstract
+
+This document is an adjunct to the [modules proposal document](2939-modules.md).
 
 The CUE modules proposal relies on MVS.
 MVS, in turn, relies on the notion of backwards compatibility.
