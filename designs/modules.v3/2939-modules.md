@@ -10,20 +10,24 @@ There is a big demand from the CUE community to allow sharing CUE code within a
 broader ecosystem, much like the package managers that are available for
 programming languages or schema stores.
 
-To address this demand, we propose the creation of a CUE registry that will
-serve as a central repository for CUE modules. A module is a collection of
-packages that are released, versioned, and distributed together. The registry
-will allow users to share and discover CUE modules and will provide versioning
-and dependency management features.
+To address this demand, we propose that CUE's native dependency
+management will be based on [OCI](https://opencontainers.org/)
+[registries](https://github.com/opencontainers/distribution-spec/blob/main/spec.md),
+and that there will be a public registry available to serve as a
+central repository for CUE _modules_: the _Central Registry_. A module is a collection of
+packages that are released, versioned, and distributed together. The
+Central Registry will allow users to share and discover CUE modules
+and will provide versioning and dependency management features.
 
 Non-goals for this project include replacing existing package managers or schema
 stores, or providing a full-fledged dependency management solution for all
 programming languages. That said, we will aim for a design that is compatible
 with supporting co-versioning with other languages in the future.
 
-The registry will be implemented as a web service. Users will typically
-interface with this web service through the `cue` command line or integrations
-with code hosting sites such as a GitHub app.
+The Central Registry will be implemented as a web service using the standard
+OCI protocol. Users will typically interface with this web service
+through the `cue` command or a language-specific API such
+as Go, for example via the `cue/load` package.
 
 *Note: CUE, or API definitions in general, seem to exhibit a somewhat different
 life cycle from a typical programming language. We have observed it is more
@@ -37,24 +41,17 @@ enforcing certain properties, than for general purpose languages.*
 We propose a modules ecosystem approach for CUE consisting of the following
 components:
 
-- A central registry service that allows authors to publish both public and
+- A Central Registry service that allows authors to publish both public and
   private modules.
-- Modification of the `cue` tool so that it is capable of resolving module
+- Modification of the `cue` command so that it is capable of resolving module
   dependencies in a predictable and consistent manner, as well as downloading
-  them.
-- A GitHub app that authors can use as a convenience for publishing
-  GitHub-hosted modules to the registry.
+  them from a registry.
+- A way for the `cue` command to publish modules to a registry.
 - Use of Semantic Versioning for modules.
 - Standardized module identifiers for major versions.
 
 Each of these design aspects is motivated and explained in more detail in the
 next section.
-
-
-## Section
-
-Here we describe the design of the CUE registry in more detail.
-
 
 ## Subproposals
 
@@ -66,72 +63,31 @@ The following subproposals have been made or are currently planned:
 
 
 ### Storage Model
+
 The overarching design of the registry is agnostic to the storage model.
 We propose to store CUE modules in OCI registries.
 For applications that require local replication, this allows
 building on existing tools and infrastructure.
 
-This is proposed [here](./modules/2449-modules-storage-model.md).
-
-
-### Publishing: GitHub
-Initially we propose that modules be published through GitHub.
-At a later state we may add support for other publishing mechanisms.
-
-This is proposed [here](./modules/2448-modules-github.md).
+This is proposed [here](2941-modules-storage-model.md).
 
 
 ### Supply Chain Security
 
 This sub-proposal discusses security aspects relating to modules.
 
-This is proposed [here](./modules/2450-supply-chain-security.md).
+This is proposed [here](2942-supply-chain-security.md).
 
 
 ### Backwards Compatibility
+
 We propose that the semantic versions of modules follow some guidelines
 of what we consider major, minor, or patch changes.
 By default, tooling will fail when proving a tag for a module that
 does not follow these guidelines, but will allow users to override
 such checks, as they are not always desirable.
 
-This is proposed [here](./modules/2451-modules-compat.md).
-
-
-### Compatibility Attributes
-Sometimes publishers will deliberately break compatibility.
-For instane, features may be deprecated or removed, some features
-may be changed during an alpha or beta release cycle, while
-feature flags may be valid for a limited time only if they
-correspond to an experiment.
-
-We plan to support annotations that allow publishers to indicate
-the life cycle of certain features.
-The backwards compatibility checks will verify that the contracts
-expressed by these annotations are not violated.
-
-
-### Publishing: Generic
-We intend to allow users to publish modules to the public CUE registry
-using an API and CLI, without the need to have this originate from GitHub.
-
-We plan to allow users to allow vanity URLs for module names.
-This is especially important for user-uploaded modules as it allows
-for a namespace without any landgrab issues.
-
-
-### Supply Chain Security
-An important aspect of the registry is to ensure that locally replicated
-modules are identical to the original.
-There are several ways to achieve this.
-Go uses the sum DB.
-Another possibility is to use SigStore.
-The choice of this is orthogonal to the design of the registry and
-the current design does not commit to any particular solution.
-
-CUE's module builder will probably apply some file filtering to reduce the
-size of modules.
-It is important that such minimization is reproducible.
+This is proposed [here](2943-modules-compat.md).
 
 
 # Detailed Design
@@ -158,8 +114,14 @@ Go deviates from this approach by using a direct approach. Users use a Version
 Control System (VCS) to publish modules to a namespace of their choice, combined
 with a [proxy](https://proxy.golang.org) to improve speed and reliability.
 
-Advantages of using a registry:
+Advantages of using an OCI registry:
 
+- OCI registries are in widespread use already
+  - Almost all cloud deployments already have access to an OCI
+    registry to fetch Docker images, and they are becoming standard
+    for distribution of [other kinds of artifacts too](https://www.youtube.com/watch?v=BpKF_0M37-0)
+  - The protocol is HTTP-based and relatively straightforward to implement,
+    making it easy to deploy and implement custom registry servers if desired.
 - No need to support VCS integrations in the client
     - Overall greater simplicity and simplified security concerns.
     - There is a clear, simple contract against which VCS integrations can be
@@ -188,8 +150,9 @@ The historical context that led to the choice of the direct, VCS-based design
 for Go does not apply to CUE. It seems likely that Go would have opted for a
 registry design if the historical context would have permitted it.
 
-The CUE tooling will allow user-provided registries. This allows users, for
-instance, to have an in-house registry for private modules.
+The CUE tooling will allow custom registries. This allows users, for
+instance, to have an in-house registry for private modules. Note: there
+is nothing that inherently ties the CUE tooling to the Central Registry.
 
 
 ## Versioning
@@ -209,6 +172,50 @@ the need for complicated
 [pseudo-versions](https://go.dev/ref/mod#pseudo-versions). However, pre-release
 conventions like `-beta` and `-alpha` can still be used when appropriate.
 
+## Minimum Version Selection
+
+We plan to use [Minimum Version Selection
+(MVS)](https://go.dev/ref/mod#minimal-version-selection) for resolving
+dependency versions.
+
+### Rationale
+
+- MVS results in stable behavior when recomputing dependencies, resulting in the
+  minimum set of required changes to meet new requirements. This fits well with
+  the general properties desirable for configurations.
+- MVS provides a clear path to support co-versioning of CUE schemas that are
+  stored along code in package managers of other languages.
+- Compared to a SAT solver (as required by most more general versioning
+  schemes): MVS has much more predictable running times.
+- We considered using an “always on tip/latest” approach.
+    - With the CUE registry it is possible to analyze the impact of schema
+      changes, possibly making this manageable. We recognize, though, that many
+      users want something more predictable.
+    - An always on HEAD approach can still be simulated with MVS.
+
+### Independent dependency resolution
+
+MVS is an excellent algorithm when the requirement is that different
+minor versions of the same major version of a module are collapsed
+into one module. It makes it possible for a collection of cooperating
+modules to agree on a single version of a dependency to use.
+
+However there are some times when that is not the desired behavior.
+For example a user might encounter a situation where a configuration
+needs disparate versions of the same schema, perhaps because they are
+deploying different versions of the same program and the configuration
+contains input to both versions of the program. In that situation, it
+would be useful to be able to model the results of several different
+_independent_ dependency resolutions.
+
+We can think of the above scenario as incorporating several dependency
+"islands" each of which applies the MVS algorithm independently. As
+there is no inherent requirement for CUE to de-duplicate modules
+(there are no global variables and no per-module mutable state), it
+should be possible to do this.
+
+We would like to address this, but the precise design still remains as
+future work.
 
 ## Module and Package Paths
 
@@ -219,6 +226,23 @@ approach for identifying modules.
 For example, this will allow modules with paths `github.com/my/pkg@v1` or
 `my.domain/pkg@v2` to be published to the CUE registry.
 
+Despite containing a domain name, module paths are _abstract_. There
+is no inherent association between a module path and the registry
+from which that module is pulled. Some registries (the Central Registry in
+particular) may use the module path to leverage permission checks
+to determine whether some user has permission to publish
+or access a module, but in general the existence of a module with
+a given name does not imply that the module can be fetched from a registry
+using that name.
+
+A [registry configuration](2941-modules-storage-model.md#registry-configuration)
+defines the mapping from an abstract module path
+to the actual location within the registry where that module is stored.
+This means that a CUE user can have complete assurance that fetching
+a module's dependencies will not reach out to arbitrary network hosts,
+and that the modules available to a given CUE instance can
+be fully vetted if desired.
+
 
 ### Canonical Module Path
 
@@ -228,13 +252,17 @@ module is uniquely identified by the module path and major version:
 
 Explicitly defining the major version in the `module.cue` file allows for better
 automated validation during publishing and prevents accidents. We plan to
-provide convenience functionality in the `cue` CLI  for changing the major
+provide convenience functionality in the `cue` command  for changing the major
 version of imported modules.
 
 
 ### Rationale
 
 Motivation for a domain-name-based approach:
+
+Since, as [discussed above](#module-and-package-paths), module paths are independent of registry
+location, there is no inherent reason why the first element of module paths
+must be a domain name. However this approach has its own merits:
 
 - Backwards compatible
     - CUE currently already uses the domain name-based approach for imports, so
@@ -273,14 +301,6 @@ Motivation for including the major version in the module path:
       major version.
 
 
-### Disallowing module nesting (for now)
-
-Currently, we will not allow nested module identifiers. That is, the registry
-will not allowed to have both module `example.com/foo` and
-`example.com/foo/bar`. Down the line we will probably allow this to support
-module “splitting”.
-
-
 ### Imports
 
 CUE package imports need to be able to specify the major version of a module. We
@@ -302,12 +322,12 @@ module dependency across a large set of configuration files. Considering that
 bumping major versions seems more common in configuration land, this can help
 productivity considerably.
 
-The `cue.mod/module.cue` file will need to be able to indicate a default version
-in case the CUE code depends on two major versions of a given module.
+The `cue.mod/module.cue` file indicates a default version of a module which
+will be chosen when an import path does not contain a major version,
+making import paths unambiguous when considered together with that file.
 
 For a newly added module, the tooling will choose the latest major version that
 has a non-prerelease version.
-
 
 ## The `cue.mod/module.cue` file
 
@@ -315,11 +335,6 @@ Module dependencies are configured in this file. It has the format below. Note
 that there is no package clause. This is deliberate. All module-related data
 must be specified in this single file. Authors should treat this schema as
 closed. A field for user-defined data may be added later.
-
-_Also note that this schema relies on [required
-fields](https://github.com/cue-ang/cue/discussions/1951). Required fields are
-implemented as of CUE
-[`v0.6.0-alpha.1`](https://cuelang.org/releases/v0.6.0-alpha.1)._
 
 Initially we will require this to be a data-only file.
 
@@ -332,21 +347,15 @@ Initially we will require this to be a data-only file.
 // module indicates the module's path.
 module!: #Module
 
-// lang indicates the language version used by the code
-// in this module - the minimum version of CUE required
+// The language version indicates minimum version of CUE required
 // to evaluate the code in this module. When a later version of CUE
 // is evaluating code in this module, this will be used to
 // choose version-specific behavior. If an earlier version of CUE
 // is used, an error will be given.
-cue?: lang?: #SemVer
+language?: version?: #SemVer
 
 // description describes the purpose of this module.
 description?: string
-
-// When present, deprecated indicates that the module
-// is deprecated and includes information about that deprecation, ideally
-// mentioning an alternative that can be used instead.
-deprecated?: string
 
 // deps holds dependency information for modules, keyed by module path.
 //
@@ -354,118 +363,38 @@ deprecated?: string
 // attribute to signify that it is not directly used by the current
 // module. This will be added by the cue mod tidy tooling.
 deps?: [#Module]: {
-	// replace and replaceAll are mutually exclusive.
-	mustexist(<=1, replace, replaceAll)
-
-	// There must be at least one field specified for a given module.
-	mustexist(>=1, v, exclude, replace, replaceAll)
-
 	// v indicates the minimum required version of the module.
 	// This can be null if the version is unknown and the module
 	// entry is only present to be replaced.
 	v!: #SemVer | null
 
-	// default indicates this module is used as a default in case
-	// more than one major version is specified for the same module
-	// path. Imports must specify the exact major version for a
+	// default indicates this module is used as a default for
+	// import paths within the module that do not contain
+	// a major version. Imports must specify the exact major version for a
 	// module path if there is more than one major version for that
 	// path and default is not set for exactly one of them.
 	default?: bool
-
-	// exclude excludes a set of versions of the module.
-	exclude?: [#SemVer]: true
-
-	// replace specifies replacements for specific versions of
-	// the module. This field is exclusive with replaceAll.
-	replace?: [#SemVer]: #Replacement
-
-	// replaceAll specifies a replacement for all versions of the module.
-	// This field is exclusive with replace.
-	replaceAll?: #Replacement
 }
 
-// The publish section can be used to restrict the scope of a module to prevent
-// accidental publishing. This cannot be overridden on the command line.
-// A published module cannot widen the scope of what is reported here.
-publish?: {
-	// Define the scope that is allowed by default.
-	allow!: #Scope
-
-	// default overrides the default scope that is used on the command line.
-	default?: #Scope
-}
-
-// #Scope defines the visibility of a module.
-// The public scope is visible to all. The private
-// scope restricts visibility to a subset of authorized
-// clients.
-
-#Scope: "private" | "public"
-
-// #RetractedVersion specifies either a single version
-// to retract, or an inclusive range of versions to retract.
-
-#RetractedVersion: #SemVer | {
-	from!: #SemVer
-	// TODO constrain to to be after from?
-	to!: #SemVer
-}
-
-// #Replacement specifies a replacement for a module. It can either
-// be a reference to a local directory or an alternative module with associated
-// version.
-
-#Replacement: #LocalPath | {
-	m!: #Module
-	v!: #SemVer
-}
-
-// #LocalPath constrains a filesystem path used for a module replacement,
-// which must be either explicitly relative to the current directory or root-based.
-
-#LocalPath: =~"^(./|../|/)"
+// TODO encode the module path rules as regexp:
+// WIP: (([\-_~a-zA-Z0-9][.\-_~a-zA-Z0-9]*[\-_~a-zA-Z0-9])|([\-_~a-zA-Z0-9]))(/([\-_~a-zA-Z0-9][.\-_~a-zA-Z0-9]*[\-_~a-zA-Z0-9])|([\-_~a-zA-Z0-9]))*
 
 // #Module constrains a module path.
 // The major version indicator is optional, but should always be present
 // in a normalized module.cue file.
-// TODO encode the module path rules as regexp:
-// WIP: (([\-_~a-zA-Z0-9][.\-_~a-zA-Z0-9]*[\-_~a-zA-Z0-9])|([\-_~a-zA-Z0-9]))(/([\-_~a-zA-Z0-9][.\-_~a-zA-Z0-9]*[\-_~a-zA-Z0-9])|([\-_~a-zA-Z0-9]))*
-
 #Module: =~#"^[^@]+(@v(0|[1-9]\d*))?$"#
 
 // #SemVer constrains a semantic version. This regular expression is taken from
 // https://semver.org/spec/v2.0.0.html, but includes a mandatory initial "v".
-
 #SemVer: =~#"^v(?P<major>0|[1-9]\d*)\.(?P<minor>0|[1-9]\d*)\.(?P<patch>0|[1-9]\d*)(?:-(?P<prerelease>(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+(?P<buildmetadata>[0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$"#
 ```
 
-
-### `sum.cue` file
-
-We will likely support a `cue.mod/sum.cue` file analogous to the
-[`go.sum`](https://go.dev/ref/mod#go-sum-files) file. Format as yet to be
-defined.
-
-
-## `cue` commands extensions
+## `cue` command extensions
 
 Here we discuss the initial set of supported commands. The first to be
-implemented are `init`, `tidy`, and `publish`. Others will follow later.
+implemented are `init`, `tidy`, `publish`, and `login`. Others will follow later.
 
-
-### main module
-
-
-### module cache
-
-We will maintain a module cache in
-[`os.UserCacheDir()/cuelang`](https://pkg.go.dev/os#UserCacheDir).
-
-Files are stored as read-only in the module cache.
-
-
-### version queries
-
+Note that existing commands will work with modules without change.
 
 ### `cue mod init`
 
@@ -479,7 +408,7 @@ be added.
 Usage:
 
 ```
-cue mod tidy [-i] [-v] [-cue=version] [-compat=version]
+cue mod tidy [--check]
 ```
 
 `cue mod tidy` ensures that the `cue.mod/module.cue` file matches the CUE code
@@ -487,12 +416,6 @@ in the module. It adds any missing module requirements necessary to build the
 current module's packages and dependencies, and it removes requirements on
 modules that don't provide any relevant packages. It also adds any missing
 entries to `cue.sum` and removes unnecessary entries.
-
-The `-i` flag causes `cue mod tidy` to attempt to proceed despite errors
-encountered while loading packages.
-
-The `-v` flag causes `cue mod tidy` to print information about removed modules
-to standard error.
 
 `cue mod tidy` works by loading all of the packages in the [main
 module](#main-module) and all of the packages they import, recursively. `cue mod
@@ -510,198 +433,67 @@ tidy` will add a requirement on the latest version of each missing module (see
 the `latest` version). `cue mod tidy` will remove dependencies for modules that
 don't provide any packages in the set described above.
 
-`cue mod tidy` may also add or remove `@indirect()` attributes on entries in
-`deps`. An `@indirect()` attribute denotes a module that does not provide a
-package imported by a package in the [main module](#main-module). (See the
-`deps` field in [The `cue.mod/module.cue` file](#the-cuemodmodulecue-file) for
-more detail on when `@indirect()` dependencies and comments are added.)
-
-If the `-cue` flag is set, `cue mod tidy` will update the `cue` field to the
-indicated version.
-
+If the `--check` flag is set, `cue mod tidy` will check that the requirements
+are correct and the language version is present, but will not update the
+`module.cue` file.
 
 ### `cue mod publish`
 
 Usage:
 
 ```
-cue mod publish [-n] [--scope=version] [version]
+cue mod publish version
 ```
 
 Example:
 
 ```
-$ cue mod publish
-$ cue mod publish @v1.1.2
-$ cue mod publish ab34ab342a342bf@v1.3.1
+$ cue mod publish v1.1.2
 ```
 
 The `cue mod publish` command uploads the [main module](#main-module) to the
-registry and tags it with the given version. If no version is given, it selects
-the next available minor or patch release. The heuristics as to what constitutes
-a major vs minor vs patch release are closely related to the concept of
-[backwards compatibility](#backwards-compatibility) and will be more precisely
-defined when this command is implemented (see [Implementation
-Plan](#implementation-plan)). Broadly however:
+registry and tags it with the given version.
 
-* A major version increment is _required_ when a version is not backwards
-  compatible (with respect to schema).
-* A minor version increment is _required_ when a version is strictly subsumed
-  by an older release, (with respect to schema).
-* A patch version increment is _preferred_ when a new version is identical to
-  previous version (with respect to schema).
+### `cue login`
 
-When `cue mod publish` is called with an `<id>` returned by [`cue mod
-upload`](#cue-mod-upload), it assigns a version and publishes the module
-contents pointed to by that identifier.
+This provides a way of logging into a registry without relying
+on Docker-specific configuration mechanisms. Initially this
+will apply only to the Central Registry, but can be expanded to
+cover other registries in time.
 
-The `-n` flag causes `publish` to do a dry run and report all errors without
-actually changing the registry.
+## Go API changes
 
-The `--scope` flag sets the visibility for the package, which may not be more
-permissive than the scope set in the module file, although public packages
-cannot be made private or removed. The default scope is private.
+We will provide support for using modules when using the Go API.
+Specifically in the `cuelang.org/go/cue/load` module, the `Config`
+struct will take a `Registry` field containing an interface value
+that the loading code will use to fetch dependencies.
 
+See [here](https://pkg.go.dev/cuelang.org/go@v0.8.0-rc.1/cue/load#Config)
+for the API that's exposed in the experimental implementation.
 
-### `cue mod upload`
+## Module cache
 
-Usage:
+We will maintain a cache of downloaded module contents in
+[`os.UserCacheDir()/cue`](https://pkg.go.dev/os#UserCacheDir).
 
-```
-cue mod upload
-```
-
-The `cue mod upload` command uploads the [main module](#main-module) to the
-registry and reports a unique identifier for this module. `cue mod upload`
-allows for errors, analysis and the like to be reported against that unique
-identifier, without requiring that the files pointed to by the identifier be
-published as a module version.
-
-
-### `cue mod download`
-
-Usage:
-
-```
-cue mod download [-x] [modules]
-```
-
-Example:
-
-```
-$ cue mod download
-$ cue mod download github.com/foo/bar/mod@v0.2.0
-```
-
-The `cue mod download` command downloads the named modules into the module
-cache. Arguments can be module paths or module patterns selecting dependencies
-of the [main module](#main-module) or version queries of the
-form `path@version`. With no arguments, `download` applies to all dependencies
-of the main module.
-
-The `cue` command will automatically download modules as needed during ordinary
-execution. The `cue mod download` command is useful mainly for pre-filling the
-[module cache](#module-cache).
-
-By default, `download` writes nothing to standard output. It prints progress
-messages and errors to standard error.
-
-
-### `cue mod vendor`
-
-Usage:
-
-```
-cue mod vendor [-i] [-v] [-o]
-```
-
-The `cue mod vendor` command constructs a directory named `cue.mod/vendor` in
-the [main module](#main-module)`s root directory that contains copies of all
-packages needed to support evaluations and tests of packages in the [main
-module](#main-module).
-
-When vendoring is enabled, the `cue` command will load packages from
-the `vendor` directory instead of downloading modules from their sources into
-the [module cache](#module-cache) and using packages those downloaded copies.
-
-`cue mod vendor` also creates the file `cue.mod/vendor/modules.cue` that
-contains a list of vendored packages and the module versions they were copied
-from.  When the `cue` command reads `vendor/modules.txt`, it checks that the
-module versions are consistent with `cue.mod/module.cue`.
-If `cue.mod/module.cue` changed since `vendor/modules.txt` was generated, `cue
-mod vendor` should be run again.
-
-Note that `cue mod vendor` removes the `vendor` directory if it exists before
-re-constructing it. Local changes should not be made to vendored packages.
-The `cue` command does not check that packages in the `vendor` directory have
-not been modified, but one can verify the integrity of the `vendor` directory by
-running `cue mod vendor` and checking that no changes were made.
-
-The `-i` flag causes `cue mod vendor` to attempt to proceed despite errors
-encountered while loading packages.
-
-The `-v` flag causes `cue mod vendor` to print the names of vendored modules and
-packages to standard error.
-
-The `-o` flag causes `cue mod vendor` to output the vendor tree at the specified
-directory instead of `vendor`. The argument can be either an absolute path or a
-path relative to the module root.
-
-The `vendor` command is expected to be expanded in the future to support
-co-versioning of CUE with other package managers.
-
-
-### `cue mod clean`
-
-Removes all files in the [module cache](#module-cache).
-
-
-### `cue mod edit`
-
-This command will provide command-line-driven editing of the module.cue file,
-with a similar design to Go's `go mod edit`. The exact design remains to be
-specified.
-
-
-## Minimum Version Selection
-
-We plan to use [Minimum Version Selection
-(MVS)](https://go.dev/ref/mod#minimal-version-selection) for resolving
-dependency versions.
-
-
-### Rationale
-
-- MVS results in stable behavior when recomputing dependencies, resulting in the
-  minimum set of required changes to meet new requirements. This fits well with
-  the general properties desirable for configurations.
-- MVS provides a clear path to support co-versioning of CUE schemas that are
-  stored along code in package managers of other languages.
-- Compared to a SAT solver (as required by most more general versioning
-  schemes): MVS has much more predictable running times.
-- We considered using an “always on tip/latest” approach.
-    - With the CUE registry it is possible to analyze the impact of schema
-      changes, possibly making this manageable. We recognize, though, that many
-      users want something more predictable.
-    - An always on HEAD approach can still be simulated with MVS.
+Files are stored as read-only in the module cache.
+This directory can be configured by setting `$CUE_CACHE_DIR`.
 
 
 # Implementation Plan
 
-At this stage, the first two phases of our implementation plan look like this:
+All the features described here have been implemented and are
+currently available, guarded by the `CUE_EXPERIMENT=modules` flag.
 
-* Phase 1:
-  * Implement initial version of the registry.
-  * Implement `cue mod tidy`.
-  * Imlement initial version of the GitHub app.
-* Phase 2:
-  * Implement GitHub auth-based registry accounts for publishers.
-  * Implement `cue mod publish`, retaining the GitHub app for those people who
-    want Go-style "auto publish".
+The experiment will help support this proposal by giving us real world
+experience of how modules interact with actual registry
+implementations and use cases.
 
-As discussed earlier, later phases will add support for private modules amongst
-other things.
+After iteration based on feedback, if the experiment is deemed
+successful, we will make modules a first class citizen of cmd/cue and
+the Go API, and modules will be enabled by default.
 
-We look forward to sharing updates to this plan in due course.
-
-
+This proposal represents the core of a modules design. There are many
+areas for enhancement that are not mentioned here. The proposal is
+aimed to provide the minimum amount to give us confidence in any
+decision we reach with respect to the proposal.
