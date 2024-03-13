@@ -66,6 +66,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5a358220_fc181237",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:38:01Z",
+      "side": 1,
+      "message": "Per offline discussion with @rogpeppe@gmail.com and quoting him:\n\n\u003e We should explicitly talk about the separation between module path and storage location.\n\u003e \n\u003e essentially a module path is an abstraction where a storage location is concrete, and the registry configuration defines the mapping between them",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6122ed3e_8d5102d3",
         "filename": "designs/modules.v3/2939-modules.md",
         "patchSetId": 7
