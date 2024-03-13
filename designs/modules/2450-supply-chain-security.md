@@ -15,7 +15,7 @@ Discussion Channel: [GitHub](https://github.com/cue-lang/cue/discussions/2450)
 
 ## Overview
 
-This document is an adjunct to the [modules proposal document](../2330-modules-v2.md).
+This document is an adjunct to the [modules proposal document](../2939-modules-v3.md).
 In this document, we discuss security aspects of CUE modules.
 
 
@@ -24,25 +24,27 @@ In this document, we discuss security aspects of CUE modules.
 As configuration is commonly used to configure crucial infrastructure,
 it is clearly important to consider the security implications of CUE modules.
 In this document, we discuss the security aspects of CUE modules,
-as an adjunct to the [modules proposal document](../2330-modules-v2.md).
+as an adjunct to the [modules proposal document](../2939-modules-v3.md).
 We identify two core aspects of module security:
 authorization of uploads and assurance of the contents of a module.
 
 
 ## Upload authorization
 
-Which upload authorization strategy to use depends a lot on which registry is being uploaded to.
-For private registries, we anticipate that people will define their own authorization strategies.
-For the central registry,
-we will need a solution that checks that the entity uploading a module
+Which upload authorization strategy to use depends on which registry is being uploaded to.
+
+For private registries, each registry will have its own requirements.
+We will implement the de-facto standard of using the Docker configuration file
+to provide auth info. That is, an upload to a custom registry will use exactly
+the same authorization tokens that a regular use of the `docker` command would.
+
+For the central registry, we will check that the entity uploading a module
 has been given authority to do so from
 someone that controls the namespace to which the module is being uploaded.
 
-That solution has not been implemented yet.
-Instead, in the meantime, we are proposing to sidestep the question
-by relying on a GitHub app to act as an upload agent.
-See [here](./2448-modules-github.md) for a discussion of the GitHub app.
-
+Initially that will be done only for GitHub modules by implementing OAuth2
+authentication on the registry and using GitHub's metadata to check
+that the uploader has the required authorization.
 
 ## Module contents assurance
 
@@ -74,16 +76,6 @@ but are not limited to:
 For our initial implementation, we will not implement attestation.
 When fetching a module for the first time,
 clients will have to trust the central registry to provide the expected content.
-However, when downloading a module, the `cue` command will store the digest (SHA256 hash) of the contents of its dependencies.
-This is analagous to the `go.sum` file used by Go:
-the difference is that `go.sum` hashes source code
-whereas this will hash the zip archive blobs that are stored in the registry.
-
-This does mean that there is the potential for a non-deterministic
-association between the original files in a module and the resulting
-blob hash due to changing compression algorithms or inconsistent
-file metadata, so we may end up needing the Go-style
-source code checksum too.
 
 ## Dependency confusion?
 
