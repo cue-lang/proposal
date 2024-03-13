@@ -15,7 +15,7 @@ Discussion Channel: [GitHub](https://github.com/cue-lang/cue/discussions/2450)
 
 ## Overview
 
-This document is an adjunct to the [modules proposal document](../2330-modules-v2.md).
+This document is an adjunct to the [modules proposal document](../2939-modules-v3.md).
 In this document, we discuss security aspects of CUE modules.
 
 
@@ -24,25 +24,27 @@ In this document, we discuss security aspects of CUE modules.
 As configuration is commonly used to configure crucial infrastructure,
 it is clearly important to consider the security implications of CUE modules.
 In this document, we discuss the security aspects of CUE modules,
-as an adjunct to the [modules proposal document](../2330-modules-v2.md).
+as an adjunct to the [modules proposal document](../2939-modules-v3.md).
 We identify two core aspects of module security:
-authorization of uploads and assurance of the contents of a module.
+authorization of publish requests and assurance of the contents of a module.
 
 
-## Upload authorization
+## Publish authorization
 
-Which upload authorization strategy to use depends a lot on which registry is being uploaded to.
-For private registries, we anticipate that people will define their own authorization strategies.
-For the central registry,
-we will need a solution that checks that the entity uploading a module
+Which authorization strategy to use depends on which registry is being published to.
+
+For private registries, each registry will have its own requirements.
+We will implement the de-facto standard of using the Docker configuration file
+to provide auth info. That is, a publish to a custom registry can use exactly
+the same authorization tokens that a regular use of the `docker` command would.
+
+For the central registry, we will check that the entity publishing a module
 has been given authority to do so from
-someone that controls the namespace to which the module is being uploaded.
+someone that controls the namespace to which the module is being published.
 
-That solution has not been implemented yet.
-Instead, in the meantime, we are proposing to sidestep the question
-by relying on a GitHub app to act as an upload agent.
-See [here](./2448-modules-github.md) for a discussion of the GitHub app.
-
+Initially that will be done only for modules under the `github.com` namespace
+via a GitHub OAuth2 integration, allowing the registry to check whether a user
+has the required authorization to publish or fetch a module.
 
 ## Module contents assurance
 
@@ -50,7 +52,7 @@ For assurance of the contents of a module,
 we hope to leverage existing technical solutions regarding the contents of OCI images,
 such as [Sigstore](https://www.sigstore.dev/) and [OCI image signing](https://github.com/notaryproject/notaryproject).
 In general, the model will be one of _attestation_.
-A trusted agent checks a module for a number of properties when it is uploaded
+A trusted agent checks a module for a number of properties when it is published
 to the central registry and before it is made available to the public.
 Upon passing, it creates a signed statement,
 a *[reference manifest](https://github.com/oras-project/artifacts-spec/blob/main/manifest-referrers-api.md)*,
@@ -74,16 +76,6 @@ but are not limited to:
 For our initial implementation, we will not implement attestation.
 When fetching a module for the first time,
 clients will have to trust the central registry to provide the expected content.
-However, when downloading a module, the `cue` command will store the digest (SHA256 hash) of the contents of its dependencies.
-This is analagous to the `go.sum` file used by Go:
-the difference is that `go.sum` hashes source code
-whereas this will hash the zip archive blobs that are stored in the registry.
-
-This does mean that there is the potential for a non-deterministic
-association between the original files in a module and the resulting
-blob hash due to changing compression algorithms or inconsistent
-file metadata, so we may end up needing the Go-style
-source code checksum too.
 
 ## Dependency confusion?
 
@@ -95,7 +87,7 @@ a good discussion of some specific cases and the overall topic.
 
 Our proposal for CUE avoids this issue by its use of DNS-namespaced names.
 In particular, there is the assurance that
-if you do not control a given domain, you cannot upload a module inside that domain.
+if you do not control a given domain, you cannot publish a module inside that domain.
 For some special-cased multi-home domains, such as GitHub, an analogous
 mechanism would exist for sub-parts of the domain.
 
@@ -119,6 +111,6 @@ We can mitigate against that attack by
 associating some secret or public key
 with a given domain owner.
 Although a new domain owner technically has control over the domain,
-the central registry would deny their upload because
+the central registry would not allow them to publish because
 they are unable to prove ownership of the same key.
 As with all key-based attestation, we would need to support key rotation too.
