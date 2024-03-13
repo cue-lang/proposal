@@ -10,12 +10,12 @@ Relevant Links:
 
 Reviewers: mpvl@cue.works myitcv@cue.works
 
-Discussion Channel: [GitHub](https://github.com/cue-lang/cue/discussions/2450)
+Discussion Channel: [GitHub](https://github.com/cue-lang/cue/discussions/2942)
 
 
 ## Overview
 
-This document is an adjunct to the [modules proposal document](../2330-modules-v2.md).
+This document is an adjunct to the [modules proposal document](2939-modules.md).
 In this document, we discuss security aspects of CUE modules.
 
 
@@ -24,7 +24,7 @@ In this document, we discuss security aspects of CUE modules.
 As configuration is commonly used to configure crucial infrastructure,
 it is clearly important to consider the security implications of CUE modules.
 In this document, we discuss the security aspects of CUE modules,
-as an adjunct to the [modules proposal document](../2330-modules-v2.md).
+as an adjunct to the [modules proposal document](2939-modules.md).
 We identify two core aspects of module security:
 authorization of uploads and assurance of the contents of a module.
 
