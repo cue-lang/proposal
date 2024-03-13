@@ -66,6 +66,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f848ffc2_765bac27",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:47:45Z",
+      "side": 1,
+      "message": "I think one big point we are missing here is calling out companies heavily rely on a registry based approach already for various artefacts. So there are ~zero new concepts involved when it comes to working with CUE modules.",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5a358220_fc181237",
         "filename": "designs/modules.v3/2939-modules.md",
         "patchSetId": 7
