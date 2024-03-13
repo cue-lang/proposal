@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c102acf4_b06fadc9",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:15:12Z",
+      "side": 1,
+      "message": "This section and the overview needs to make clear that the modules proposal is not tied to the central registry. That the central registry exists as a well-known place for well-known schemas for well-known services, software etc.",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6122ed3e_8d5102d3",
         "filename": "designs/modules.v3/2939-modules.md",
         "patchSetId": 7
