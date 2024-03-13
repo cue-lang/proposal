@@ -119,6 +119,23 @@
       },
       "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3203ac6_af79f73c",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:31:57Z",
+      "side": 1,
+      "message": "Ground this with mention of popular OCI registries? \n\nThat GitLab, AWS, Google, GitHub, ... those we have encountered during the experiment thus far?",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
