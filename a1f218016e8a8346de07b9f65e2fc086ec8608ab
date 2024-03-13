@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6122ed3e_8d5102d3",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:14:06Z",
+      "side": 1,
+      "message": "Mention `cue/load` changes here?",
+      "revId": "a1f218016e8a8346de07b9f65e2fc086ec8608ab",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

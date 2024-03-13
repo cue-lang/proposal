@@ -56,6 +56,40 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "be6ea16c_5d456b4b",
+        "filename": "designs/2939-modules-v3.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:14:06Z",
+      "side": 1,
+      "message": "I think we should help ourselves here by referring to the \"`cue` CLI\" instead of \"`cue` command line\" or \"`cue` tool\" etc.",
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae41ac4c_eb77b794",
+        "filename": "designs/2939-modules-v3.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 320,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-13T20:14:06Z",
+      "side": 1,
+      "message": "Does this need a reference to the supply chain part of the proposal?",
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "536398f4_6d93a500",
         "filename": "designs/2939-modules-v3.md",
         "patchSetId": 2
