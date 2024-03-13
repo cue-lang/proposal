@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75b6948a_04a66447",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2024-03-13T15:08:05Z",
+      "side": 1,
+      "message": "I think we should mention `cue login` in passing; I would personally mention the OAuth2 Device Authorization flow very briefly, but I\u0027m also fine with leaving it vague and just saying that it\u0027s used to authenticate with the central registry.",
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "536398f4_6d93a500",
+        "filename": "designs/2939-modules-v3.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 337,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2024-03-13T15:08:05Z",
+      "side": 1,
+      "message": "this is `cue` as implemented.",
+      "range": {
+        "startLine": 337,
+        "startChar": 20,
+        "endLine": 337,
+        "endChar": 27
+      },
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51e48da2_14bb01dd",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2024-03-13T15:08:05Z",
+      "side": 1,
+      "message": "nit: should the docs still talk about \"upload\" when the command is now `cue mod publish`?",
+      "range": {
+        "startLine": 32,
+        "startChar": 3,
+        "endLine": 32,
+        "endChar": 9
+      },
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b54f88d2_2603aaf9",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2024-03-13T15:08:05Z",
+      "side": 1,
+      "message": "nit: \"can\"? because if $CUE_CONFIG_DIR/logins.json exists, it takes precedence, and there\u0027s no reason `cue login` wouldn\u0027t work with custom registries if they support the device flow like ours.",
+      "range": {
+        "startLine": 38,
+        "startChar": 62,
+        "endLine": 38,
+        "endChar": 66
+      },
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6674265_e7fd1a4f",
+        "filename": "designs/modules/2450-supply-chain-security.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2024-03-13T15:08:05Z",
+      "side": 1,
+      "message": "How about:\n\n```suggestion\nInitially that will be done only for modules under the github.com namespace\nvia a GitHub OAuth2 integration, allowing the registry to check whether a user\nhas the required authorization to publish or fetch a module.\n```\n\nThis is still vague, but slightly more precise and clear, I think.",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 47,
+        "endChar": 49
+      },
+      "revId": "afd9df83948dafd7d170459de4ef5eb8529e0398",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
