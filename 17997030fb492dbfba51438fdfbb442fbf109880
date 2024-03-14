@@ -75,6 +75,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "67614c97_beccdc26",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d6ffd81c_b61a0ba4",
+      "range": {
+        "startLine": 13,
+        "startChar": 40,
+        "endLine": 14,
+        "endChar": 4
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "121f2b5b_8badea6a",
@@ -88,6 +112,30 @@
       "writtenOn": "2024-03-14T11:01:22Z",
       "side": 1,
       "message": "Per our offline comment, we should consistently refer to the thing that is the central registry as \"the Central Registry\"",
+      "range": {
+        "startLine": 15,
+        "startChar": 25,
+        "endLine": 15,
+        "endChar": 40
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b4a9001_8fdf4355",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "121f2b5b_8badea6a",
       "range": {
         "startLine": 15,
         "startChar": 25,
@@ -121,6 +169,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d086839_5dc7b2f7",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "56a4d09b_d8ba0e2e",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 12
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cb920188_592378df",
@@ -134,6 +206,30 @@
       "writtenOn": "2024-03-14T11:01:22Z",
       "side": 1,
       "message": "\"... such as [`cue/load`](https://pkg.go.dev/cuelang.org/go/cue/load)\"\n\n??\n\nJust allows us to be specific for those people already using that API. Otherwise it\u0027s a little unclear that we are referring to it.",
+      "range": {
+        "startLine": 30,
+        "startChar": 3,
+        "endLine": 30,
+        "endChar": 5
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b4b954f_7126e2c0",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cb920188_592378df",
       "range": {
         "startLine": 30,
         "startChar": 3,
@@ -167,6 +263,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "30726e99_0107c2e2",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "171c093e_a8df3759",
+      "range": {
+        "startLine": 48,
+        "startChar": 6,
+        "endLine": 48,
+        "endChar": 7
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cf29ed3d_3063f3a0",
@@ -180,6 +300,30 @@
       "writtenOn": "2024-03-14T11:01:22Z",
       "side": 1,
       "message": "See previous point. Might be fine as is",
+      "range": {
+        "startLine": 49,
+        "startChar": 54,
+        "endLine": 49,
+        "endChar": 62
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ef83d09_5d0f9cd6",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cf29ed3d_3063f3a0",
       "range": {
         "startLine": 49,
         "startChar": 54,
@@ -282,6 +426,54 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "873e9f44_f18d2b50",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4a7b2135_7144fd11",
+      "range": {
+        "startLine": 153,
+        "startChar": 27,
+        "endLine": 153,
+        "endChar": 40
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42ac40ad_c6918c39",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f8adf25d_ae4acc0b",
+      "range": {
+        "startLine": 153,
+        "startChar": 16,
+        "endLine": 153,
+        "endChar": 26
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b089762c_ace12334",
@@ -323,6 +515,54 @@
         "startChar": 26,
         "endLine": 208,
         "endChar": 32
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e2b0d99_1ed0f819",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "I think the case is a bit less clear cut there (because a registry might actually check the origin with respect to the uploader\u0027s auth). I think this is probably OK.",
+      "parentUuid": "8a488f94_d1b40167",
+      "range": {
+        "startLine": 208,
+        "startChar": 26,
+        "endLine": 208,
+        "endChar": 32
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3064f64_450255ee",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b089762c_ace12334",
+      "range": {
+        "startLine": 208,
+        "startChar": 55,
+        "endLine": 208,
+        "endChar": 71
       },
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
@@ -374,6 +614,54 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "62099aaf_4850ba46",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e7da098_d2f69cc8",
+      "range": {
+        "startLine": 210,
+        "startChar": 31,
+        "endLine": 210,
+        "endChar": 41
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30b45239_411d4918",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "38a5b481_19863a9d",
+      "range": {
+        "startLine": 210,
+        "startChar": 56,
+        "endLine": 210,
+        "endChar": 62
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "883474c6_cc0151fa",
@@ -387,6 +675,30 @@
       "writtenOn": "2024-03-14T11:01:22Z",
       "side": 1,
       "message": "I\u0027m struggling to follow this sentence. As such I don\u0027t have any good suggestions on rewording 😊\n\nAre you trying to say that simply because I\u0027m referring to `my.example/pkg` I am not necessarily going \"hit\" the server behind `my.example`?",
+      "range": {
+        "startLine": 211,
+        "startChar": 20,
+        "endLine": 212,
+        "endChar": 72
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8134f895_5716423a",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Yes, that\u0027s it. It\u0027s not a URL, so I can\u0027t say \"from that URL\". Suggestions welcome!",
+      "parentUuid": "883474c6_cc0151fa",
       "range": {
         "startLine": 211,
         "startChar": 20,
@@ -414,6 +726,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3d0c3d1_ab26beb6",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e491a61a_9db68980",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dbe4cd7d_6f5dd1c5",
@@ -427,6 +757,30 @@
       "writtenOn": "2024-03-14T11:01:22Z",
       "side": 1,
       "message": "\"location\" is used for the first time here. Perhaps borrow from the language in the storage model which talks about \"location in an OCI registry\"?",
+      "range": {
+        "startLine": 216,
+        "startChar": 14,
+        "endLine": 216,
+        "endChar": 22
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "885ed154_a5ea8774",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dbe4cd7d_6f5dd1c5",
       "range": {
         "startLine": 216,
         "startChar": 14,
@@ -454,6 +808,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e57b6ac8_3bd45e43",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "It seems like we\u0027ve already talked about that in the \"Module and Package Paths\" section above, and whether we\u0027re using domain-name-based paths is arguably orthogonal to the separation of concerns (after all, Go uses a domain-name-based approach, but _doesn\u0027t_ have that separation).\n\nI\u0027ve added a small section referring back to that section and reminding the reader of the separation.",
+      "parentUuid": "a4df53f5_1c166396",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "22ad1573_0981eb52",
@@ -471,6 +843,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e323c1d9_b032eccb",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 356,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "22ad1573_0981eb52",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "93ca5a22_b0093654",
@@ -484,6 +874,24 @@
       "writtenOn": "2024-03-14T11:01:22Z",
       "side": 1,
       "message": "Delete blank line to make this a doc comment?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "067ee40b_1077383f",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 361,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "93ca5a22_b0093654",
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -545,6 +953,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "410d0217_671a8bc3",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "151fd63d_6369fc58",
+      "range": {
+        "startLine": 150,
+        "startChar": 4,
+        "endLine": 150,
+        "endChar": 12
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "160f7597_fac8678c",
@@ -558,6 +990,24 @@
       "writtenOn": "2024-03-14T11:17:31Z",
       "side": 1,
       "message": "I think we should be clear (in this bullet point) the manifest that will be used. For completeness, and consistency with the next bullet point.",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f221cf5_07192971",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "I don\u0027t understand this comment. Do you mean \"media type\" rather than \"manifest\" ?\nAssuming that, I\u0027ve changed to reference `application/zip` directly.",
+      "parentUuid": "160f7597_fac8678c",
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -579,6 +1029,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "47a05f27_24edbdbf",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d4c2f070_9f53ee08",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "364bddd8_bd02b40d",
@@ -596,6 +1064,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "056631da_52fafb49",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 254,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "364bddd8_bd02b40d",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c80f2ff8_169565a4",
@@ -609,6 +1095,24 @@
       "writtenOn": "2024-03-14T11:17:31Z",
       "side": 1,
       "message": "Remove/fix?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3f7bef4_c1d9f35a",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c80f2ff8_169565a4",
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -636,6 +1140,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "19576479_7b9f350a",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8c2c756d_2627f7ca",
+      "range": {
+        "startLine": 378,
+        "startChar": 68,
+        "endLine": 378,
+        "endChar": 71
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5e770b25_1664ee47",
@@ -649,6 +1177,24 @@
       "writtenOn": "2024-03-14T11:17:31Z",
       "side": 1,
       "message": "I\u0027m struggling to understand this paragraph. What is it trying to get at?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "871ba68a_1cba3f00",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "It was relevant before (with the original self-contained module+dependencies design) but isn\u0027t true any more. I\u0027ve removed it - good catch!",
+      "parentUuid": "5e770b25_1664ee47",
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -670,6 +1216,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8a76947_bc7fcf49",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "It\u0027s referring to the repository location within a registry. This is no longer true in fact - things are significantly more complex with the advent of pathEncoding, so I\u0027ll just remove this.",
+      "parentUuid": "04c042a5_38969fe0",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "285a9eb3_642a0b45",
@@ -687,6 +1251,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "33e90bec_3679c634",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 425,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "285a9eb3_642a0b45",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e74d5570_d0f959e6",
@@ -700,6 +1282,30 @@
       "writtenOn": "2024-03-14T11:32:16Z",
       "side": 1,
       "message": "\"custom\" for consistency?",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 11
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5322e2e5_7c70748d",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e74d5570_d0f959e6",
       "range": {
         "startLine": 36,
         "startChar": 4,
@@ -733,6 +1339,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "867e8e76_98f0a063",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "817480fd_6a19c33a",
+      "range": {
+        "startLine": 41,
+        "startChar": 8,
+        "endLine": 41,
+        "endChar": 24
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4e26118a_ecc01b60",
@@ -746,6 +1376,30 @@
       "writtenOn": "2024-03-14T11:32:16Z",
       "side": 1,
       "message": "Make code for emphasis?",
+      "range": {
+        "startLine": 69,
+        "startChar": 45,
+        "endLine": 69,
+        "endChar": 59
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe4cae51_ab84f45a",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4e26118a_ecc01b60",
       "range": {
         "startLine": 69,
         "startChar": 45,
@@ -779,6 +1433,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a23d1f5f_9187a31f",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a0bc31ba_376c521f",
+      "range": {
+        "startLine": 70,
+        "startChar": 19,
+        "endLine": 70,
+        "endChar": 25
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "eafdcb23_90852d1e",
@@ -792,6 +1470,30 @@
       "writtenOn": "2024-03-14T11:32:16Z",
       "side": 1,
       "message": "ditto",
+      "range": {
+        "startLine": 71,
+        "startChar": 19,
+        "endLine": 71,
+        "endChar": 25
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c688b9b_15607db3",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-14T18:07:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eafdcb23_90852d1e",
       "range": {
         "startLine": 71,
         "startChar": 19,
