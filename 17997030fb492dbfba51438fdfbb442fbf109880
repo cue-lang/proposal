@@ -35,6 +35,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "016c2966_6d0ce025",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:32:16Z",
+      "side": 1,
+      "message": "Only minor points here.",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d6ffd81c_b61a0ba4",
@@ -666,6 +683,121 @@
       "writtenOn": "2024-03-14T11:17:31Z",
       "side": 1,
       "message": "Worth calling out the caching we have already implemented?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e74d5570_d0f959e6",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:32:16Z",
+      "side": 1,
+      "message": "\"custom\" for consistency?",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 11
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "817480fd_6a19c33a",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:32:16Z",
+      "side": 1,
+      "message": "\"Central Registry\" because it\u0027s a thing?",
+      "range": {
+        "startLine": 41,
+        "startChar": 8,
+        "endLine": 41,
+        "endChar": 24
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e26118a_ecc01b60",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:32:16Z",
+      "side": 1,
+      "message": "Make code for emphasis?",
+      "range": {
+        "startLine": 69,
+        "startChar": 45,
+        "endLine": 69,
+        "endChar": 59
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a0bc31ba_376c521f",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:32:16Z",
+      "side": 1,
+      "message": "\"of\"?",
+      "range": {
+        "startLine": 70,
+        "startChar": 19,
+        "endLine": 70,
+        "endChar": 25
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eafdcb23_90852d1e",
+        "filename": "designs/modules.v3/2942-supply-chain-security.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:32:16Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 71,
+        "startChar": 19,
+        "endLine": 71,
+        "endChar": 25
+      },
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
