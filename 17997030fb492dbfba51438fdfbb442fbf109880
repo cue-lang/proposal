@@ -1,0 +1,474 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b3ce1d7_7ff5512a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Great changes, thanks. A few more suggestions from my side.",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d6ffd81c_b61a0ba4",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "This is much better in terms of clarifying it\u0027s not just the central registry, thanks.\n\n\"pulled\" is quite specific, and \"modules\" is defined later. \n\nHow about something that talks about \"CUE\u0027s native dependency management will be based on OCI registries\"?",
+      "range": {
+        "startLine": 13,
+        "startChar": 40,
+        "endLine": 14,
+        "endChar": 4
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "121f2b5b_8badea6a",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Per our offline comment, we should consistently refer to the thing that is the central registry as \"the Central Registry\"",
+      "range": {
+        "startLine": 15,
+        "startChar": 25,
+        "endLine": 15,
+        "endChar": 40
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "56a4d09b_d8ba0e2e",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\"The Central Registry\"",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 12
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb920188_592378df",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\"... such as [`cue/load`](https://pkg.go.dev/cuelang.org/go/cue/load)\"\n\n??\n\nJust allows us to be specific for those people already using that API. Otherwise it\u0027s a little unclear that we are referring to it.",
+      "range": {
+        "startLine": 30,
+        "startChar": 3,
+        "endLine": 30,
+        "endChar": 5
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "171c093e_a8df3759",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\", from an OCI registry\"\n\n(unless we can, per your comment yesterday, introduce a line above that allows us to contract \"OCI registry\" to \"registry\"?)",
+      "range": {
+        "startLine": 48,
+        "startChar": 6,
+        "endLine": 48,
+        "endChar": 7
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf29ed3d_3063f3a0",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "See previous point. Might be fine as is",
+      "range": {
+        "startLine": 49,
+        "startChar": 54,
+        "endLine": 49,
+        "endChar": 62
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "080436d3_c75f0bc5",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Despite the comments above about using the contracted \"registry\" in most/various places, I think (per our exchange this is the right place to emphasise the OCI bit. Just noting out loud.",
+      "range": {
+        "startLine": 117,
+        "startChar": 23,
+        "endLine": 117,
+        "endChar": 26
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4bc8fcbd_d80e4cc8",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Despite the comments above about using the contracted \"registry\" in most/various places, I think (per our exchange this is the right place to emphasise the OCI bit. Just noting out loud.",
+      "range": {
+        "startLine": 119,
+        "startChar": 2,
+        "endLine": 119,
+        "endChar": 5
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a7b2135_7144fd11",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "In the tutorial, we now refer to this as a \"Custom registry\" - that seems good language to standardise on?\n\nhttps://alpha.cuelang.org/docs/tutorial/working-with-a-custom-module-registry/",
+      "range": {
+        "startLine": 153,
+        "startChar": 27,
+        "endLine": 153,
+        "endChar": 40
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f8adf25d_ae4acc0b",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "It might even be worth stressing here that the CUE tooling is not tied to the Central Registry, just to be explicit?",
+      "range": {
+        "startLine": 153,
+        "startChar": 16,
+        "endLine": 153,
+        "endChar": 26
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b089762c_ace12334",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\"Central Registry\" per previous comment, because it is a thing.",
+      "range": {
+        "startLine": 208,
+        "startChar": 55,
+        "endLine": 208,
+        "endChar": 71
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a488f94_d1b40167",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\"pulled\" is quite specific; presumably the same applies to the publishing of a module, no?",
+      "range": {
+        "startLine": 208,
+        "startChar": 26,
+        "endLine": 208,
+        "endChar": 32
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0e7da098_d2f69cc8",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\"has\"\n\nReads simpler?",
+      "range": {
+        "startLine": 210,
+        "startChar": 31,
+        "endLine": 210,
+        "endChar": 41
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "38a5b481_19863a9d",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\"publish\" to be consistent with later verbs/commands?",
+      "range": {
+        "startLine": 210,
+        "startChar": 56,
+        "endLine": 210,
+        "endChar": 62
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "883474c6_cc0151fa",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "I\u0027m struggling to follow this sentence. As such I don\u0027t have any good suggestions on rewording 😊\n\nAre you trying to say that simply because I\u0027m referring to `my.example/pkg` I am not necessarily going \"hit\" the server behind `my.example`?",
+      "range": {
+        "startLine": 211,
+        "startChar": 20,
+        "endLine": 212,
+        "endChar": 72
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e491a61a_9db68980",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Broken link (perhaps this is the one you were talking about?)",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbe4cd7d_6f5dd1c5",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "\"location\" is used for the first time here. Perhaps borrow from the language in the storage model which talks about \"location in an OCI registry\"?",
+      "range": {
+        "startLine": 216,
+        "startChar": 14,
+        "endLine": 216,
+        "endChar": 22
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4df53f5_1c166396",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "One point we discussed last night was emphasising (and you phrased it well) at this point that the abstraction of a module path from its storage location itself has benefits, compared to the registry location being part of the import path. It feels like we could/should make more of that here?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22ad1573_0981eb52",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 356,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Delete blank line to make this a doc comment?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "93ca5a22_b0093654",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 361,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Delete blank line to make this a doc comment?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d3df53f_77a2b11f",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:01:22Z",
+      "side": 1,
+      "message": "Nice.",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
