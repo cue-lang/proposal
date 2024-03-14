@@ -18,6 +18,23 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "227520e4_b5db7997",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "Just minor points from me.",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d6ffd81c_b61a0ba4",
@@ -467,6 +484,188 @@
       "writtenOn": "2024-03-14T11:01:22Z",
       "side": 1,
       "message": "Nice.",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9c7b57d_e914897b",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "This is great. Really adds weight to the point (in case anyone were not sure).",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "151fd63d_6369fc58",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "Emphasis because this is a defined term?",
+      "range": {
+        "startLine": 150,
+        "startChar": 4,
+        "endLine": 150,
+        "endChar": 12
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "160f7597_fac8678c",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "I think we should be clear (in this bullet point) the manifest that will be used. For completeness, and consistency with the next bullet point.",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d4c2f070_9f53ee08",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "Worth mentioning that we will be looking to submit these to the standards body place?!",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "364bddd8_bd02b40d",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 254,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "Worth making the import paths code for emphasis?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c80f2ff8_169565a4",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "Remove/fix?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c2c756d_2627f7ca",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 378,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "`CUE_REGISTRY` is not guaranteed to be just one. I think this wording needs to be tweaked to refer more precisely to the network addresses implied by `CUE_REGISTRY` (or some such).",
+      "range": {
+        "startLine": 378,
+        "startChar": 68,
+        "endLine": 378,
+        "endChar": 71
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e770b25_1664ee47",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 383,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "I\u0027m struggling to understand this paragraph. What is it trying to get at?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04c042a5_38969fe0",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "What is this referring to?",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "285a9eb3_642a0b45",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 425,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-14T11:17:31Z",
+      "side": 1,
+      "message": "Worth calling out the caching we have already implemented?",
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
