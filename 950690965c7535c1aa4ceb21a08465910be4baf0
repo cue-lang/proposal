@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6974c58_198bfd96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-15T05:38:36Z",
+      "side": 1,
+      "message": "Great edits, thanks. Will do one final glance later.",
+      "revId": "950690965c7535c1aa4ceb21a08465910be4baf0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e128adf_139bbd49",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 10
+      },
+      "lineNbr": 385,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-15T05:38:36Z",
+      "side": 1,
+      "message": "\"registry/registries\"\n\n??",
+      "range": {
+        "startLine": 385,
+        "startChar": 6,
+        "endLine": 385,
+        "endChar": 14
+      },
+      "revId": "950690965c7535c1aa4ceb21a08465910be4baf0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}

@@ -1014,6 +1014,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ca3c86a7_bfdea2b6",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-03-15T05:38:36Z",
+      "side": 1,
+      "message": "Ah, I was actually thinking this first bullet point needed to reference the `application/vnd.cue.module.v1+json`, i.e. these two bullet points \"mirror\" the two media types listed in the two bullet points proposed in:\n\nhttps://github.com/cue-lang/cue/issues/2817#issuecomment-1953796090",
+      "parentUuid": "3f221cf5_07192971",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d4c2f070_9f53ee08",
         "filename": "designs/modules.v3/2941-modules-storage-model.md",
         "patchSetId": 8
