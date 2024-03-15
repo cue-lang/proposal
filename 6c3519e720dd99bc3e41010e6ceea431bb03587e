@@ -1,0 +1,7 @@
+Code-Review+2: Daniel Martí <mvdan@mvdan.cc>
+TryBot-Result+1: CUEcueckoo <cueckoo@gmail.com>
+Submitted-by: Roger Peppe <rogpeppe@gmail.com>
+Submitted-at: Fri, 15 Mar 2024 09:35:43 +0000
+Reviewed-on: https://review.gerrithub.io/c/cue-lang/proposal/+/1178267
+Project: cue-lang/proposal
+Branch: refs/heads/main
