@@ -1,3 +1,18 @@
+# Proposal: CUE Modules and package management (V3)
+
+Status: **Draft**
+
+Lifecycle:  **Proposed**
+
+Author(s): rog@cue.works
+
+Relevant Links:
+
+Reviewers: mpvl@cue.works myitcv@cue.works
+
+Discussion Channel: [GitHub](https://github.com/cue-lang/cue/discussions/2939)
+
+
 # Abstract
 
 We provide a high-level overview of a module system for CUE.
