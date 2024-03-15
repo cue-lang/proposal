@@ -709,6 +709,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "388b8a0a_debb12a0",
+        "filename": "designs/modules.v3/2939-modules.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-15T09:25:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8134f895_5716423a",
+      "range": {
+        "startLine": 211,
+        "startChar": 20,
+        "endLine": 212,
+        "endChar": 72
+      },
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e491a61a_9db68980",
@@ -1026,6 +1050,24 @@
       "side": 1,
       "message": "Ah, I was actually thinking this first bullet point needed to reference the `application/vnd.cue.module.v1+json`, i.e. these two bullet points \"mirror\" the two media types listed in the two bullet points proposed in:\n\nhttps://github.com/cue-lang/cue/issues/2817#issuecomment-1953796090",
       "parentUuid": "3f221cf5_07192971",
+      "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5e177ee_bad490aa",
+        "filename": "designs/modules.v3/2941-modules-storage-model.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 173,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-03-15T09:25:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca3c86a7_bfdea2b6",
       "revId": "17997030fb492dbfba51438fdfbb442fbf109880",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
