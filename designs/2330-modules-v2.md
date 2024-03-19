@@ -100,7 +100,7 @@ This is proposed [here](./modules/2451-modules-compat.md).
 
 ### Compatibility Attributes
 Sometimes publishers will deliberately break compatibility.
-For instane, features may be deprecated or removed, some features
+For instance, features may be deprecated or removed, some features
 may be changed during an alpha or beta release cycle, while
 feature flags may be valid for a limited time only if they
 correspond to an experiment.
@@ -146,7 +146,7 @@ section we discuss some of the details along with motivations for the design.
 
 ### Rationale
 
-Most schema stores and package managers for programming languages follow follow
+Most schema stores and package managers for programming languages follow
 a registry design. For example, Rust with [crates.io](https://crates.io/) and
 JavaScript with [NPM](https://www.npmjs.com/).
 
