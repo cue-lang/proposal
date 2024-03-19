@@ -58,7 +58,7 @@ For this proposal we will focus on backwards compatibility for definitions only.
 We propose to support a backwards compatibility checks for
 definitions based on subsumption:
 
-- a major change occurs when a newer defintion does not subsume an older
+- a major change occurs when a newer definition does not subsume an older
   version,
 - a minor change occurs when a newer definition subsumes an older version,
   and is not semantically equivalent to this older version,
@@ -254,7 +254,7 @@ rules.
 However, not doing so may result in uncaught bugs and may even pose a
 security issue.
 
-The CUE tooling should therefore allow for a  process by which the compatibility
+The CUE tooling should therefore allow for a process by which the compatibility
 rule can be bypassed.
 
 We are aware of this need and are still figuring out how to best go about this.
