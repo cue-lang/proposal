@@ -105,6 +105,11 @@ such checks, as they are not always desirable.
 This is proposed [here](2943-modules-compat.md).
 
 
+### Module content
+
+A more thorough treatment of how the content of a module is
+determined is proposed [here](3017-module-files.md).
+
 # Detailed Design
 
 Although the design of CUE modules is heavily influenced by the Go modules
