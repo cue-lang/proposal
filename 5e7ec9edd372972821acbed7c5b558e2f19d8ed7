@@ -1,0 +1,95 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "788b565a_d3b078db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-04-11T05:30:11Z",
+      "side": 1,
+      "message": "LGTM, but I defer to Marcel for final review. Specifically, I know you were both going backwards and forwards a bit on the naming of the field.",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eea8c6e5_b66dfb98",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-04-11T05:30:11Z",
+      "side": 1,
+      "message": "Please be specific here and say \"When `vcs` is `git`, ...\" Because it\u0027s ambiguous whether not setting the field also counts as it not being `none`, and in any case the behaviour we are describing is, for now at least, specific to `git`.",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa10654b_62651b76",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-04-11T05:30:11Z",
+      "side": 1,
+      "message": "`source.vcs` I think is what you meant here, otherwise it\u0027s confusing?",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd18d17c_c9b73743",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-04-11T05:30:11Z",
+      "side": 1,
+      "message": "I would add a follow-on here, to say that the introduction of heuristics to guide default behaviour and the smoothing of any rough edges (better language than that!) will be guided by real world experience with the implementation.",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f84a2f7_635f24b7",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-04-11T05:30:11Z",
+      "side": 1,
+      "message": "Missing space following `.`.",
+      "range": {
+        "startLine": 158,
+        "startChar": 44,
+        "endLine": 158,
+        "endChar": 45
+      },
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
