@@ -35,6 +35,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d50b946b_d75feb06",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-04-11T15:58:45Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "4fa89c41_2a716d46",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "eea8c6e5_b66dfb98",
@@ -48,6 +66,24 @@
       "writtenOn": "2024-04-11T05:30:11Z",
       "side": 1,
       "message": "Please be specific here and say \"When `vcs` is `git`, ...\" Because it\u0027s ambiguous whether not setting the field also counts as it not being `none`, and in any case the behaviour we are describing is, for now at least, specific to `git`.",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27a3a9e8_e3daca02",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-04-11T15:58:45Z",
+      "side": 1,
+      "message": "I\u0027d like us to be able to add support for more VCS systems without enumerating them all in this sentence. I\u0027ve changed the wording a bit to take your suggestion into account.",
+      "parentUuid": "eea8c6e5_b66dfb98",
       "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -69,6 +105,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd2c747a_00216d53",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-04-11T15:58:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa10654b_62651b76",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd18d17c_c9b73743",
@@ -86,6 +140,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b69297ff_8b492909",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-04-11T15:58:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd18d17c_c9b73743",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1f84a2f7_635f24b7",
@@ -99,6 +171,30 @@
       "writtenOn": "2024-04-11T05:30:11Z",
       "side": 1,
       "message": "Missing space following `.`.",
+      "range": {
+        "startLine": 158,
+        "startChar": 44,
+        "endLine": 158,
+        "endChar": 45
+      },
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56a9afbb_a0f5b0a0",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-04-11T15:58:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1f84a2f7_635f24b7",
       "range": {
         "startLine": 158,
         "startChar": 44,
