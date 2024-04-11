@@ -20,6 +20,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4fa89c41_2a716d46",
+        "filename": "designs/modules.v3/3017-module-files.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2024-04-11T07:08:10Z",
+      "side": 1,
+      "message": "Gating any algorithm changes via a semver version in cue.mod definitely sounds right to me. Otherwise reproducibility over time would be rather difficult.\n\nWe only have one such version today, `language.version`, so we almost don\u0027t have a choice in terms of what version we use for this logic.\n\n`language.version` doesn\u0027t seem like a bad choice overall, although strictly speaking the spec language version and the \"packaging\" or \"releasing\" version don\u0027t need to be the same. As a library author I might want to write against the v0.7.0 language spec via `language.version\u003d0.7.0`, making that CUE version the minimum for my library downstreams, but I might want to opt into newer behavior such as a newer algorithm to dictate what files get included in my module zip, via e.g. `target.version\u003d0.9.0`.\n\nI don\u0027t think we need to decide right now, all I want to point out is that we don\u0027t _have_ to tie this to `language.version`. We might later choose to use a different semver version field inside cue.mod.",
+      "revId": "5e7ec9edd372972821acbed7c5b558e2f19d8ed7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "eea8c6e5_b66dfb98",
         "filename": "designs/modules.v3/3017-module-files.md",
         "patchSetId": 1
