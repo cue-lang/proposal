@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aedcba4c_37c91dc2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2024-04-15T10:03:03Z",
+      "side": 1,
+      "message": "To be clear, we require source.kind to be set at time of publication, for now at least.",
+      "revId": "783b018f5bbf2caa8b19ac43d5ba7189ac50ee00",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
