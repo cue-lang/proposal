@@ -84,23 +84,23 @@ source?: #Source
 #Source: {
 	// kind specifies the kind of source.
 	//
-	// The special value "none" signifies that
+	// The special value "self" signifies that
 	// the module that is standalone,
 	// associated with no particular source other than
 	// the contents of the module itself.
-	kind!: "none" | "git"
+	kind!: "self" | "git"
 
 	// TODO support for other VCSs:
-	// kind!: "none" | "git" | "bzr" | "hg" | "svn"
+	// kind!: "self" | "git" | "bzr" | "hg" | "svn"
 }
 ```
 
-If the `source` field is present and `source.kind` is `none` the
+If the `source` field is present and `source.kind` is `self` the
 behavior will be exactly as it is currently: the files present in the
 module directory at the time of publishing will be those chosen as the
 initial file set.
 
-When the `source field is present and `source.kind` is not `none`, it
+When the `source field is present and `source.kind` is not `self`, it
 usually names a VCS; `cue mod publish` will include only files that
 are considered by that VCS to be part of the current commit. It will
 also fail if the current directory is not clean with respect to the
@@ -140,7 +140,7 @@ to the advertised VCS commit (see [Verification](#verification)
 below).
 
 The above implies that single VCS's metadata is published
-with a module and that if `source.kind` is `none`, there will be no metadata
+with a module and that if `source.kind` is `self`, there will be no metadata
 published, even if there is a VCS directory present. This seems
 consistent, but it would also be possible to publish auxiliary metadata
 about VCS commits if that were deemed useful, although that
