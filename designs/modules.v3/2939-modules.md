@@ -110,6 +110,9 @@ This is proposed [here](2943-modules-compat.md).
 A more thorough treatment of how the content of a module is
 determined is proposed [here](3017-module-files.md).
 
+A proposal for how to attach metadata to module manifests is
+[here](3057-module-metadata.md).
+
 # Detailed Design
 
 Although the design of CUE modules is heavily influenced by the Go modules
