@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c4da71a_5fe2db6e",
+        "filename": "designs/modules.v3/3057-module-metadata.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2024-04-24T11:49:54Z",
+      "side": 1,
+      "message": "this paragraph seems to have rather odd line wrapping",
+      "revId": "64a40c9fe9430f31909f9ee2871c0966a4682058",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
