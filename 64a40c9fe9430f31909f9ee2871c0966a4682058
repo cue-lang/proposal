@@ -16,6 +16,24 @@
       "message": "this paragraph seems to have rather odd line wrapping",
       "revId": "64a40c9fe9430f31909f9ee2871c0966a4682058",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d850a2d_e8aba8b7",
+        "filename": "designs/modules.v3/3057-module-metadata.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-04-24T12:16:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0c4da71a_5fe2db6e",
+      "revId": "64a40c9fe9430f31909f9ee2871c0966a4682058",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
