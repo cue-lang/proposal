@@ -16,6 +16,443 @@
       "message": "This is rendered at https://github.com/cue-lang/proposal/blob/ci/test/designs/3264-embed.md for ease of review.",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25abdd43_fe95aea9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "I like this proposal 😊\nA bunch of minor nits but no significant ones (other than the suggestion that file type should always be explicit in `dir\u003d...`).",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c799f267_85b40800",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "\"any type\" is arguably a bit too broad. And \"directly loading\" doesn\u0027t seem quite right to me, as the loading arguably isn\u0027t \"direct\" 😊.\n\n```suggestion\nWe propose a solution for including non-CUE files as part of a CUE\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "309e59a5_a795935f",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\nHowever, files that are part of a CUE module can be considered hermetic. We\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62445d42_e8161057",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "I think the important property here is that it\u0027s JSON, not that JSON is usually encoded in unicode, no?\n\n```suggestion\n// Load a single JSON file\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "631cbbab_03bf0dd1",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "Might be worth being a bit more explicit about what it\u0027s doing\nrather than assuming the user knows what the pattern might match?\n\n```suggestion\n// Load all files with a name containing a dot (\".\") in the images directory\n// as binary files.\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f3685925_0bd5c913",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\n// Unusual file names may be quoted to prevent\n// misinterpretation.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "78b756d6_07114e16",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\n  allows for quick identification of the use of embeddings by tooling.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a3ff337_d6537465",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "What does \"compile time\" mean in the context of CUE, which has no compiler as such?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "38b15669_05296665",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\n- By default, files are decoded using the encoding implied by the\nfile name extension. It\u0027s an error if the extension is not known.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8226a95b_684be514",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\n  This can be overridden using `type\u003d$filetype`, where `$filetype` can be\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90c0822b_baea1f60",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\n  any file type described in `cue help filetypes`.\n```\n\nAlthough perhaps we should mention that `filetype\u003dcue` will be disallowed initially?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f4d7e50_513c4f51",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\n- For glob, if the pattern does not have a constant filename extension,\n the `type` field is required.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d267b779_2eab8d0d",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "\"The current directory\" is misleading here, as the current directory from the user\u0027s perspective is the directory they\u0027re running the `cue` command in, which is not what\u0027s meant here.\n\nAlso, I\u0027m not sure what\u0027s meant by \"any of the embed attributes types\" when there\u0027s only one embed attribute type (`@embed`) that can hold a file reference AFAICS.\n\n```suggestion\nWhen an embed attribute refers to a file, the file path is\ninterpreted relative to the directory containing the\nembed attribute and may not include ‘.’ or ‘..’ or empty path elements.\n```",
+      "range": {
+        "startLine": 56,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 21
+      },
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e65aa498_632a5dbe",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\nIt is not possible to embed a file that is outside the containing module.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "effe9c23_996903e3",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "I\u0027m not entirely sure that we should decode files according to their file extension - as with globs, I suspect we\u0027d be better off requiring an explicit type annotation so all the files are consistent, to avoid the potential for arbitrary behaviour changes when an interpreter happens to understand more file types.",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f08035ad_1a9aac35",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "I\u0027d be more explicit about this rather than saying \"like those\", because that implies there might be other kinds of hidden file.\n\n```suggestion\nFiles starting with a doc (\u0027.\u0027) are not included. We could later\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b45c4896_5e5747f5",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "For those unfamiliar with the term \"glob\" (which is, to be fair, reasonably abstruse) how about linking to https://pkg.go.dev/path/filepath#Match as the documentation for the pattern semantics?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd18444e_df0d0f3a",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "Any glob metacharacter will cause failure here, so best to be more\nexplicit, I think:\n\n```suggestion\nAll files must be of the same type, as identified by the pattern\u0027s\nfile extension. When the extension is not constant or contains metacharacters\n(for example \"foo/*\") the type must to be explicitly specified\nby using `type\u003d$filetype`.\n```",
+      "range": {
+        "startLine": 88,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 0
+      },
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6dcf4926_2d7c9f06",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "The functionality here is actually more general than this: in general\n_any_ @embed attributes can be associated with the same field,whether\nthey\u0027re `glob\u003d` or `file\u003d`, and unification takes place anyway.\n\nSo perhaps worth mentioning it at a higher level too (probably worth mentioning here too, as it\u0027s certainly most useful for `glob\u003d`).",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2624ae86_2209db92",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "Perhaps worth pointing out that we will not support `.jsonl` initially,\nand maybe discuss briefly how we might want to deal with multi-document\nYAML files?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8aef9bb_13dd4fda",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\ninterpretation based on the contents. For instance, to interpret a JSON file as OpenAPI, `openapi`\n```\n\n(clearly it does automatically detect the interpretation from the file name).",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "66f97361_402c8a6c",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "ISTM that investigation is now complete, given that the embed CL does in fact use this mechanism...",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b6ab883_d5daf841",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "Again, \"current directory\" is misleading here.",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a572217_e95c26e9",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "It would be nice to explicitly enumerate any other benefits we might see at this point rather than hand-waving.",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aff73215_8255ff90",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2024-07-04T15:34:37Z",
+      "side": 1,
+      "message": "```suggestion\nthat sensitive files are not accidentally included in a published module.\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
