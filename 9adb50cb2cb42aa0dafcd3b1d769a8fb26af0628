@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f0112b4_e843da2d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-04T14:33:59Z",
+      "side": 1,
+      "message": "This is rendered at https://github.com/cue-lang/proposal/blob/ci/test/designs/3264-embed.md for ease of review.",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
