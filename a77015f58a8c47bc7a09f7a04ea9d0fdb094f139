@@ -33,6 +33,23 @@
       "message": "Noting another open point from our earlier conversation, which has overlap with `@embed(glob\u003d$pattern)`. \n\nThe original version of the design doc stated that we should be explicit with the `type` for the `glob` case. However the implementation (per the above comment with demo) highlights that we didn\u0027t actually implement that, instead we implemented auto-detection based on file extension (unless overridden), something that is consistent with the `@embed(file\u003d$file)` variant and the default command line interpretation.\n\nPer the open comment above, we therefore have a decision to make when it comes to `@embed(glob\u003d$pattern)`.\n\nNoting the point explicitly here, that decision has an impact on the interpretation for `@embed(dir\u003d$dir)`.\n\nIf we require a `type` (like the design doc proposes for `@embed(glob\u003d$pattern)`) then we limit a directory and its subdirectories to only being of a single type, else there will be an error, forcing cases of mixed file types to be `type\u003dtext` with subsequent decoding in CUE world.",
       "revId": "a77015f58a8c47bc7a09f7a04ea9d0fdb094f139",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d043592_e0b688b7",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T13:50:33Z",
+      "side": 1,
+      "message": "Need to explicitly document what we do/don\u0027t do with respect to `.cue` files.\n\n\"For now we don\u0027t support `.cue` files, although we could loosen this to support self-contained CUE files\"",
+      "revId": "a77015f58a8c47bc7a09f7a04ea9d0fdb094f139",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
