@@ -54,6 +54,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "21d13f64_03144928",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "\u003e \"any type\" is arguably a bit too broad\n\nWhy? Is it not the case that any type of file can be loaded in this way?\n\n\u003e And \"directly loading\" doesn\u0027t seem quite right to me, as the loading arguably isn\u0027t \"direct\"\n\nI don\u0027t see a particular reason for the word \"directly\" (although I don\u0027t think it\u0027s wrong per se) but \"loading\" is more inline with the process that happens in `cue/load` than \"including\".",
+      "parentUuid": "c799f267_85b40800",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "309e59a5_a795935f",
         "filename": "designs/3264-embed.md",
         "patchSetId": 1
@@ -65,6 +83,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "```suggestion\nHowever, files that are part of a CUE module can be considered hermetic. We\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48626b6a_55aab527",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "309e59a5_a795935f",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -86,6 +122,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc89d25e_746b0682",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "62445d42_e8161057",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "631cbbab_03bf0dd1",
@@ -99,6 +153,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "Might be worth being a bit more explicit about what it\u0027s doing\nrather than assuming the user knows what the pattern might match?\n\n```suggestion\n// Load all files with a name containing a dot (\".\") in the images directory\n// as binary files.\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8fd00335_42b81137",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "631cbbab_03bf0dd1",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -120,6 +192,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3cf6bb3d_a2526a57",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "f3685925_0bd5c913",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "78b756d6_07114e16",
@@ -133,6 +223,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "```suggestion\n  allows for quick identification of the use of embeddings by tooling.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98484af9_8abe89ae",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "78b756d6_07114e16",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -156,6 +264,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ddc16320_efa52539",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Proposed some alternative wording here to bring this in-line with the \"load\" wording elsewhere (and the name `cue/load`):\n\n\u003e Embedded files are resolved and interpreted at load time, before evaluation: it is a syntactic operation.",
+      "parentUuid": "9a3ff337_d6537465",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "38b15669_05296665",
         "filename": "designs/3264-embed.md",
         "patchSetId": 1
@@ -167,6 +293,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "```suggestion\n- By default, files are decoded using the encoding implied by the\nfile name extension. It\u0027s an error if the extension is not known.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "270a8e3e_d36b93ae",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "38b15669_05296665",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -188,6 +332,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a161299_dc4b65be",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8226a95b_684be514",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "90c0822b_baea1f60",
@@ -205,6 +367,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9da631cc_bc8f4446",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "90c0822b_baea1f60",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1f4d7e50_513c4f51",
@@ -218,6 +398,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "```suggestion\n- For glob, if the pattern does not have a constant filename extension,\n the `type` field is required.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4dcf29e2_bf0a9e9c",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Thanks for flagging this point because this jogs a point that nagged me. Neither the original text nor the suggestion correspond to what is implemented. And what is implemented is, I think, more \"correct\":\n\n```\nenv CUE_EXPERIMENT\u003dembed\nexec cue export x.cue\ncmp stdout stdout.golden\n\n-- dir/a.txt --\nThis is a file\n-- dir/b.json --\n{\n   \"field\" : \"name\"\n}\n-- x.cue --\n@extern(embed)\n\npackage x\n\nx: _ @embed(glob\u003ddir/*.*)\n\n-- stdout.golden --\n{\n    \"x\": {\n        \"dir/a.txt\": \"This is a file\\n\",\n        \"dir/b.json\": {\n            \"field\": \"name\"\n        }\n    }\n}\n```\n\ni.e. a glob follows the rule that if a file type can be determined by the extension it is used, otherwise it is an error. \n\nHowever I think this presents something of a problem:\n\n```\nx: _ @embed(glob\u003ddir/*, type\u003dtext) @embed(glob\u003ddir/*.json, type\u003djson)\n```\n\nDo we have a policy of \"last directive wins?\" Or do we need to ensure that `@embed` directives don\u0027t overlap?",
+      "parentUuid": "1f4d7e50_513c4f51",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -245,6 +443,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aeecd858_d01f6da0",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d267b779_2eab8d0d",
+      "range": {
+        "startLine": 56,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 21
+      },
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e65aa498_632a5dbe",
@@ -258,6 +480,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "```suggestion\nIt is not possible to embed a file that is outside the containing module.\n```\n\n?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8715b361_cb58bb44",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e65aa498_632a5dbe",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -281,6 +521,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "11933393_b89950d3",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "\u003e to avoid the potential for arbitrary behaviour changes when an interpreter happens to understand more file types.\n\nPer our offline exchange, I don\u0027t think this will happen. Because it is an error if the filetype is unknown. Hence the only change would be for something not being an error no longer being an error, or if we changed the interpretation of a file extension (extremely unlikely unless in case of bug fix)",
+      "parentUuid": "effe9c23_996903e3",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f08035ad_1a9aac35",
         "filename": "designs/3264-embed.md",
         "patchSetId": 1
@@ -298,6 +556,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "11b19d5a_07b04c1e",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "I read that as an intentional mechanism in case the definition needs to be changed/expanded later.",
+      "parentUuid": "f08035ad_1a9aac35",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b45c4896_5e5747f5",
         "filename": "designs/3264-embed.md",
         "patchSetId": 1
@@ -309,6 +585,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "For those unfamiliar with the term \"glob\" (which is, to be fair, reasonably abstruse) how about linking to https://pkg.go.dev/path/filepath#Match as the documentation for the pattern semantics?",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b04dab2b_498e43cc",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Done, by including a link to https://pkg.go.dev/cuelang.org/go@v0.9.2/pkg/path#Match",
+      "parentUuid": "b45c4896_5e5747f5",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -338,6 +632,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5a262f97_ce40dede",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Will leave this open per the discussion above. We can close once we have determined whether `glob` requires an explicit `type` or not.",
+      "parentUuid": "fd18444e_df0d0f3a",
+      "range": {
+        "startLine": 88,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 0
+      },
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6dcf4926_2d7c9f06",
         "filename": "designs/3264-embed.md",
         "patchSetId": 1
@@ -349,6 +667,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "The functionality here is actually more general than this: in general\n_any_ @embed attributes can be associated with the same field,whether\nthey\u0027re `glob\u003d` or `file\u003d`, and unification takes place anyway.\n\nSo perhaps worth mentioning it at a higher level too (probably worth mentioning here too, as it\u0027s certainly most useful for `glob\u003d`).",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad26aae8_33799df8",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "I\u0027ve moved this point to the general introduction to this section \"Embedding variants\" and adjusted the language to make it more general.",
+      "parentUuid": "6dcf4926_2d7c9f06",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -370,6 +706,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9084b1f_4c8aae01",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Done in the \"Other considerations\" section - please give that a look (I\u0027ll resolve this point)",
+      "parentUuid": "2624ae86_2209db92",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a8aef9bb_13dd4fda",
@@ -383,6 +737,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "```suggestion\ninterpretation based on the contents. For instance, to interpret a JSON file as OpenAPI, `openapi`\n```\n\n(clearly it does automatically detect the interpretation from the file name).",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cdcfb3e_c2b7ae26",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8aef9bb_13dd4fda",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -404,6 +776,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d1917e7_3e2b3c74",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "This feels like a minor point not worth rewording. Because we could consider the investigation complete once we have accepted the proposal. Leaving the wording as is.",
+      "parentUuid": "66f97361_402c8a6c",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4b6ab883_d5daf841",
@@ -417,6 +807,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "Again, \"current directory\" is misleading here.",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1731843e_9bd52c6e",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Fixed using language from the original edit you proposed.",
+      "parentUuid": "4b6ab883_d5daf841",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -440,6 +848,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6182ff40_818bfdc4",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Necessary to do so? Or just nice to have?",
+      "parentUuid": "8a572217_e95c26e9",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "aff73215_8255ff90",
         "filename": "designs/3264-embed.md",
         "patchSetId": 1
@@ -451,6 +877,24 @@
       "writtenOn": "2024-07-04T15:34:37Z",
       "side": 1,
       "message": "```suggestion\nthat sensitive files are not accidentally included in a published module.\n```",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8502171e_6d77f68d",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-05T10:28:46Z",
+      "side": 1,
+      "message": "Please can you motivate this edit? I wasn\u0027t going to even include `(published)` but decided to do so in parentheses to emphasise (despite the word being in parentheses) that published modules are more significant, but that ultimately you need to be careful in any module.",
+      "parentUuid": "aff73215_8255ff90",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
