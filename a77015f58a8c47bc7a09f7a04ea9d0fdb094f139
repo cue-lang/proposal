@@ -35,6 +35,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d336285_bb07336f",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "This subsection is now removed.",
+      "parentUuid": "982aff09_34722978",
+      "revId": "a77015f58a8c47bc7a09f7a04ea9d0fdb094f139",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2d043592_e0b688b7",
@@ -48,6 +66,24 @@
       "writtenOn": "2024-07-05T13:50:33Z",
       "side": 1,
       "message": "Need to explicitly document what we do/don\u0027t do with respect to `.cue` files.\n\n\"For now we don\u0027t support `.cue` files, although we could loosen this to support self-contained CUE files\"",
+      "revId": "a77015f58a8c47bc7a09f7a04ea9d0fdb094f139",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7c03580_339cec7a",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2d043592_e0b688b7",
       "revId": "a77015f58a8c47bc7a09f7a04ea9d0fdb094f139",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }

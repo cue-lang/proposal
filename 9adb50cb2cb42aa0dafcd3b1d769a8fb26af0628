@@ -88,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f96ba701_b8259a3a",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "\u003e Yes, we can technically embed (for example) JPEG files as bytes, but I\u0027m not sure that\u0027s quite the same thing.\n\nI agree the number of file types understood via `cue help filetypes` is not the same thing as the ability to load any file type. But we\u0027re not referring here to the list of filetypes known to CUE, rather the ability to load any file type via this mechanism. A subset of file types known to CUE are supported \"automatically\". Hence I understand the current wording to not be incorrect.",
+      "parentUuid": "48361d01_6ff72fd7",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "309e59a5_a795935f",
@@ -316,6 +334,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "364ab9a4_5324dc4f",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3eec5946_4a43353f",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "38b15669_05296665",
@@ -474,6 +510,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7e7b7cd_72177aad",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "As discussed offline, I understand and don\u0027t disagree with your observation, but to repeat my explanation from below as to where I see a problem arising without further attention to this proposal. \n\nRequiring a `type` argument for`@embed(glob\u003ddir/*)`, i.e. where the extension is not known (but could be auto-detected) means that `@embed(dir\u003dmydir)` would also not auto-detect (if we were to do things consistently) and hence requiring a `type` argument. Which would either restrict you to having a single file type in a directory hierarchy, or have to drop down to `type\u003dtext` and the do the decoding in CUE. That didn\u0027t feel satisfactory, hence flagging the issue. \n\nWhich I think means we need to work out what we could/would do in the case of `dir` (or some other mechanism). \n\nAnd indeed that\u0027s what with @mpvl@gmail.com I think we have now achieved: don\u0027t introduce `dir`, and instead commit to cover this case by implementing `**` support according to the LSP spec. I have linked to that in a new section under \"Other Considerations\".\n\nI have also left the wording as is:\n\n\u003e For glob, if the extension is not given, the `type` field is required.\n\nThat seems clear enough to me, and less technical than introducing the word \"constant\" (which doesn\u0027t appear to correspond to language in any description of a glob which was my main reservation).",
+      "parentUuid": "174727c8_e85aecab",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d267b779_2eab8d0d",
@@ -609,6 +663,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c049834a_e4036c21",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "Per our discussion, understood. In which case I don\u0027t believe there is anything to do here.",
+      "parentUuid": "7904d0b8_5d9bb912",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f08035ad_1a9aac35",
@@ -658,6 +730,24 @@
       "side": 1,
       "message": "Personally I think it\u0027s worth being explicit. If we need to change the definition later, that would be a breaking change and something we\u0027d need to change the spec for too.",
       "parentUuid": "11b19d5a_07b04c1e",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec56eef9_e1ed7b84",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2452d7c1_60d3e010",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -734,6 +824,30 @@
       "side": 1,
       "message": "Will leave this open per the discussion above. We can close once we have determined whether `glob` requires an explicit `type` or not.",
       "parentUuid": "fd18444e_df0d0f3a",
+      "range": {
+        "startLine": 88,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 0
+      },
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a8a9ca9_d0faf053",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "Per our discussion, dropping `@embed(dir\u003d$dir)` in favour of `glob` with `**` support to follow. Hence if the extension is not fully specified, we need a glob.",
+      "parentUuid": "5a262f97_ce40dede",
       "range": {
         "startLine": 88,
         "startChar": 0,
@@ -972,6 +1086,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "254c7315_1ae93693",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "Done, although I disagree with your reading that this is condescending: it\u0027s intentionally not specific, and simply an attempt to avoid filling this proposal with lots of detail.",
+      "parentUuid": "5144e44d_aa4ddc74",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aff73215_8255ff90",
@@ -1021,6 +1153,24 @@
       "side": 1,
       "message": "I just thought the parentheses didn\u0027t read so well.\n\nHow about just:\n\n```suggestion\nthat sensitive files are not accidentally included.\n```\n?\n\nWe don\u0027t need to include \"in a module\" at all really.",
       "parentUuid": "8502171e_6d77f68d",
+      "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62815094_c889a7cb",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-07T08:18:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55cbbd0e_2c49906a",
       "revId": "9adb50cb2cb42aa0dafcd3b1d769a8fb26af0628",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
