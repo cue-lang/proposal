@@ -16,6 +16,40 @@
       "message": "@rogpeppe@gmail.com - PTAL, also pushed a preview to https://github.com/cue-lang/proposal/blob/ci/test/designs/3264-embed.md",
       "revId": "995e5db1ba543ddebafe4d46f496bbcd75cb50bd",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa15525c_120f661b",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2024-07-08T13:45:20Z",
+      "side": 1,
+      "message": "We currently do not support it, but using the Interpreter infrastructure, we are at least prepared to use it.\n\nSo this is softened a bit.",
+      "revId": "995e5db1ba543ddebafe4d46f496bbcd75cb50bd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f830cc60_f03e6896",
+        "filename": "designs/3264-embed.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2024-07-08T13:45:20Z",
+      "side": 1,
+      "message": "It is more likely we will do the schema-guided encoding that this in the near future (as it will be easier to implement).",
+      "revId": "995e5db1ba543ddebafe4d46f496bbcd75cb50bd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
