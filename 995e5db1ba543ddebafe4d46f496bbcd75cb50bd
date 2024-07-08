@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67d2cc4d_2c1f89ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2024-07-08T09:03:46Z",
+      "side": 1,
+      "message": "@rogpeppe@gmail.com - PTAL, also pushed a preview to https://github.com/cue-lang/proposal/blob/ci/test/designs/3264-embed.md",
+      "revId": "995e5db1ba543ddebafe4d46f496bbcd75cb50bd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
