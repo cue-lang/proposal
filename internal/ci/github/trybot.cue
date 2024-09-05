@@ -37,6 +37,10 @@ workflows: trybot: _repo.bashWorkflow & {
 
 			let runnerOSExpr = "runner.os"
 			let runnerOSVal = "${{ \(runnerOSExpr) }}"
+			let installGo = _repo.installGo & {
+				#setupGo: with: "go-version": _repo.latestGo
+				_
+			}
 			let _setupGoActionsCaches = _repo.setupGoActionsCaches & {
 				#goVersion: _repo.latestGo
 				#os:        runnerOSVal
@@ -50,11 +54,7 @@ workflows: trybot: _repo.bashWorkflow & {
 
 			steps: [
 				for v in _repo.checkoutCode {v},
-
-				_repo.installGo & {
-					with: "go-version": _repo.latestGo
-				},
-
+				for v in installGo {v},
 				for v in _setupGoActionsCaches {v},
 
 				_repo.earlyChecks,
