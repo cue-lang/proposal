@@ -16,8 +16,9 @@ package github
 
 import (
 	"list"
+	"strings"
 
-	"github.com/SchemaStore/schemastore/src/schemas/json"
+	"github.com/cue-tmp/jsonschema-pub/exp1/githubactions"
 )
 
 // The trybot workflow.
@@ -31,52 +32,61 @@ workflows: trybot: _repo.bashWorkflow & {
 		pull_request: {}
 	}
 
-	jobs: {
-		test: {
-			"runs-on": _repo.linuxMachine
+	jobs: test: {
+		"runs-on": _repo.linuxMachine
 
-			let runnerOSExpr = "runner.os"
-			let runnerOSVal = "${{ \(runnerOSExpr) }}"
-			let _setupGoActionsCaches = _repo.setupGoActionsCaches & {
-				#goVersion: _repo.latestGo
-				#os:        runnerOSVal
-				_
-			}
+		let runnerOSExpr = "runner.os"
+		let runnerOSVal = "${{ \(runnerOSExpr) }}"
 
-			// Only run the trybot workflow if we have the trybot trailer, or
-			// if we have no special trailers. Note this condition applies
-			// after and in addition to the "on" condition above.
-			if: "\(_repo.containsTrybotTrailer) || ! \(_repo.containsDispatchTrailer)"
+		// The repo config holds the standard string representation of a Go
+		// version. setup-go, rather unhelpfully, strips the "go" prefix.
+		let goVersion = strings.TrimPrefix(_repo.latestGo, "go")
 
-			steps: [
-				for v in _repo.checkoutCode {v},
-
-				_repo.installGo & {
-					with: "go-version": _repo.latestGo
-				},
-
-				for v in _setupGoActionsCaches {v},
-
-				_repo.earlyChecks,
-				_#goGenerate,
-				_#goTest,
-				_#goCheck,
-				_repo.checkGitClean,
-			]
+		let _setupGoActionsCaches = _repo.setupGoActionsCaches & {
+			#goVersion: goVersion
+			#os:        runnerOSVal
+			_
 		}
+		let installGo = _repo.installGo & {
+			#setupGo: with: "go-version": goVersion
+			_
+		}
+
+		// Only run the trybot workflow if we have the trybot trailer, or
+		// if we have no special trailers. Note this condition applies
+		// after and in addition to the "on" condition above.
+		if: "\(_repo.containsTrybotTrailer) || ! \(_repo.containsDispatchTrailer)"
+
+		steps: [
+			for v in _repo.checkoutCode {v},
+
+			// Install and setup Go
+			for v in installGo {v},
+			for v in _setupGoActionsCaches {v},
+
+			// CUE setup
+			_installCUE,
+
+			_repo.earlyChecks,
+			_centralRegistryLogin,
+			_#goGenerate,
+			_#goTest,
+			_#goCheck,
+			_repo.checkGitClean,
+		]
 	}
 
-	_#goGenerate: json.#step & {
+	_#goGenerate: githubactions.#Step & {
 		name: "Generate"
 		run:  "go generate ./..."
 	}
 
-	_#goTest: json.#step & {
+	_#goTest: githubactions.#Step & {
 		name: "Test"
 		run:  "go test ./..."
 	}
 
-	_#goCheck: json.#step & {
+	_#goCheck: githubactions.#Step & {
 		// These checks can vary between platforms, as different code can be built
 		// based on GOOS and GOARCH build tags.
 		// However, CUE does not have any such build tags yet, and we don't use
@@ -86,4 +96,23 @@ workflows: trybot: _repo.bashWorkflow & {
 		name: "Check"
 		run:  "go vet ./..."
 	}
+}
+
+_installCUE: githubactions.#Step & {
+	name: "Install CUE"
+	uses: "cue-lang/setup-cue@v1.0.1"
+	with: version: "latest"
+}
+
+_centralRegistryLogin: githubactions.#Step & {
+	env: {
+		// Note: this token has read-only access to the registry
+		// and is used only because we need some credentials
+		// to pull dependencies from the Central Registry.
+		// The token is owned by notcueckoo and described as "ci readonly".
+		CUE_TOKEN: "${{ secrets.NOTCUECKOO_CUE_TOKEN }}"
+	}
+	run: """
+		cue login --token=${CUE_TOKEN}
+		"""
 }
