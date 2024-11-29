@@ -3,30 +3,67 @@ package base
 // This file contains aspects principally related to GitHub workflows
 
 import (
-	encjson "encoding/json"
+	"encoding/json"
 	"list"
 	"strings"
 	"strconv"
 
-	"github.com/SchemaStore/schemastore/src/schemas/json"
+	"github.com/cue-tmp/jsonschema-pub/exp1/githubactions"
 )
 
-bashWorkflow: json.#Workflow & {
+bashWorkflow: githubactions.#Workflow & {
 	jobs: [string]: defaults: run: shell: "bash"
 }
 
-installGo: json.#step & {
-	name: "Install Go"
-	uses: "actions/setup-go@v5"
-	with: {
-		// We do our own caching in setupGoActionsCaches.
-		cache:        false
-		"go-version": string
+installGo: {
+	#setupGo: githubactions.#Step & {
+		name: "Install Go"
+		uses: "actions/setup-go@v5"
+		with: {
+			// We do our own caching in setupGoActionsCaches.
+			cache:        false
+			"go-version": string
+		}
 	}
+
+	// Why set GOTOOLCHAIN here? As opposed to an environment variable
+	// elsewhere? No perfect answer to this question but here is the thinking:
+	//
+	// Setting the variable here localises it with the installation of Go. Doing
+	// it elsewhere creates distance between the two steps which are
+	// intrinsically related. And it's also hard to do: "when we use this step,
+	// also ensure that we establish an environment variable in the job for
+	// GOTOOLCHAIN".
+	//
+	// Environment variables can only be set at a workflow, job or step level.
+	// Given we currently use a matrix strategy which varies the Go version,
+	// that rules out using an environment variable based approach, because the
+	// Go version is only available at runtime via GitHub actions provided
+	// context. Whether we should instead be templating multiple workflows (i.e.
+	// exploding the matrix ourselves) is a different question, but one that
+	// has performance implications.
+	//
+	// So as clumsy as it is to use a step "template" that includes more than
+	// one step, it's the best option available to us for now.
+	[
+		#setupGo,
+
+		{
+			githubactions.#Step & {
+				name: "Set common go env vars"
+				run: """
+					go env -w GOTOOLCHAIN=local
+
+					# Dump env for good measure
+					go env
+					"""
+			}
+		},
+	]
 }
 
 checkoutCode: {
-	#actionsCheckout: json.#step & {
+	#actionsCheckout: githubactions.#Step & {
 		name: "Checkout code"
 		uses: "actions/checkout@v4"
 
@@ -53,17 +90,17 @@ checkoutCode: {
 		// per the bug report at https://github.com/MestreLion/git-tools/issues/47,
 		// so we first reset all directory timestamps to a static time as a fallback.
 		// TODO(mvdan): May be unnecessary once the Go bug above is fixed.
-		json.#step & {
+		githubactions.#Step & {
 			name: "Reset git directory modification times"
 			run:  "touch -t 202211302355 $(find * -type d)"
 		},
-		json.#step & {
+		githubactions.#Step & {
 			name: "Restore git file modification times"
 			uses: "chetan/git-restore-mtime-action@075f9bc9d159805603419d50f794bd9f33252ebe"
 		},
 
 		{
-			json.#step & {
+			githubactions.#Step & {
 				name: "Try to extract \(dispatchTrailer)"
 				id:   dispatchTrailerStepID
 				run:  """
@@ -87,7 +124,7 @@ checkoutCode: {
 
 		// Safety nets to flag if we ever have a Dispatch-Trailer slip through the
 		// net and make it to master
-		json.#step & {
+		githubactions.#Step & {
 			name: "Check we don't have \(dispatchTrailer) on a protected branch"
 			if:   "\(isProtectedBranch) && \(containsDispatchTrailer)"
 			run:  """
@@ -98,46 +135,9 @@ checkoutCode: {
 	]
 }
 
-earlyChecks: json.#step & {
+earlyChecks: githubactions.#Step & {
 	name: "Early git and code sanity checks"
-	run: #"""
-		# Ensure that commit messages have a blank second line.
-		# We know that a commit message must be longer than a single
-		# line because each commit must be signed-off.
-		if git log --format=%B -n 1 HEAD | sed -n '2{/^$/{q1}}'; then
-			echo "second line of commit message must be blank"
-			exit 1
-		fi
-
-		# All authors, including co-authors, must have a signed-off trailer by email.
-		# Note that trailers are in the form "Name <email>", so grab the email with sed.
-		# For now, we require the sorted lists of author and signer emails to match.
-		# Note that this also fails if a commit isn't signed-off at all.
-		#
-		# In Gerrit we already enable a form of this via https://gerrit-review.googlesource.com/Documentation/project-configuration.html#require-signed-off-by,
-		# but it does not support co-authors nor can it be used when testing GitHub PRs.
-		commit_authors="$(
-			{
-				git log -1 --pretty='%ae'
-				git log -1 --pretty='%(trailers:key=Co-authored-by,valueonly)' | sed -ne 's/.* <\(.*\)>/\1/p'
-			} | sort -u
-		)"
-		commit_signers="$(
-			{
-				git log -1 --pretty='%(trailers:key=Signed-off-by,valueonly)' | sed -ne 's/.* <\(.*\)>/\1/p'
-			} | sort -u
-		)"
-		if [[ "${commit_authors}" != "${commit_signers}" ]]; then
-			echo "Error: commit author email addresses do not match signed-off-by trailers"
-			echo
-			echo "Authors:"
-			echo "${commit_authors}"
-			echo
-			echo "Signers:"
-			echo "${commit_signers}"
-			exit 1
-		fi
-		"""#
+	run:  *"go run cuelang.org/go/internal/ci/checks@v0.11.0-0.dev.0.20240903133435-46fb300df650" | string
 }
 
 curlGitHubAPI: {
@@ -177,7 +177,7 @@ setupGoActionsCaches: {
 
 	let cacheRestoreKeys = "\(#os)-\(#goVersion)"
 
-	let cacheStep = json.#step & {
+	let cacheStep = githubactions.#Step & {
 		with: {
 			path: strings.Join(cacheDirs, "\n")
 
@@ -197,12 +197,12 @@ setupGoActionsCaches: {
 	[
 		// TODO: once https://github.com/actions/setup-go/issues/54 is fixed,
 		// we could use `go env` outputs from the setup-go step.
-		json.#step & {
+		githubactions.#Step & {
 			name: "Get go mod cache directory"
 			id:   goModCacheDirID
 			run:  #"echo "dir=$(go env GOMODCACHE)" >> ${GITHUB_OUTPUT}"#
 		},
-		json.#step & {
+		githubactions.#Step & {
 			name: "Get go build/test cache directory"
 			id:   goCacheDirID
 			run:  #"echo "dir=$(go env GOCACHE)" >> ${GITHUB_OUTPUT}"#
@@ -240,7 +240,7 @@ setupGoActionsCaches: {
 			//
 			// Critically we only want to do this in the main repo, not the trybot
 			// repo.
-			json.#step & {
+			githubactions.#Step & {
 				if:  "github.repository == '\(githubRepositoryPath)' && (\(isProtectedBranch) || github.ref == 'refs/heads/\(testDefaultBranch)')"
 				run: "go clean -testcache"
 			}
@@ -270,13 +270,13 @@ isReleaseTag: {
 	(_matchPattern & {variable: "github.ref", pattern: "refs/tags/\(releaseTagPattern)"}).expr
 }
 
-checkGitClean: json.#step & {
+checkGitClean: githubactions.#Step & {
 	name: "Check that git is clean at the end of the job"
 	if:   "always()"
 	run:  "test -z \"$(git status --porcelain)\" || (git status; git diff; false)"
 }
 
-repositoryDispatch: json.#step & {
+repositoryDispatch: githubactions.#Step & {
 	#githubRepositoryPath:         *githubRepositoryPath | string
 	#botGitHubUserTokenSecretsKey: *botGitHubUserTokenSecretsKey | string
 	#arg:                          _
@@ -285,7 +285,25 @@ repositoryDispatch: json.#step & {
 
 	name: string
 	run:  #"""
-			\#(_curlGitHubAPI) --fail --request POST --data-binary \#(strconv.Quote(encjson.Marshal(#arg))) https://api.github.com/repos/\#(#githubRepositoryPath)/dispatches
+			\#(_curlGitHubAPI) --fail --request POST --data-binary \#(strconv.Quote(json.Marshal(#arg))) https://api.github.com/repos/\#(#githubRepositoryPath)/dispatches
+			"""#
+}
+
+workflowDispatch: githubactions.#Step & {
+	#githubRepositoryPath:         *githubRepositoryPath | string
+	#botGitHubUserTokenSecretsKey: *botGitHubUserTokenSecretsKey | string
+	#workflowID:                   string
+
+	// params are defined per https://docs.github.com/en/rest/actions/workflows?apiVersion=2022-11-28#create-a-workflow-dispatch-event
+	#params: *{
+		ref: defaultBranch
+	} | _
+
+	_curlGitHubAPI: curlGitHubAPI & {#tokenSecretsKey: #botGitHubUserTokenSecretsKey, _}
+
+	name: string
+	run:  #"""
+			\#(_curlGitHubAPI) --fail --request POST --data-binary \#(strconv.Quote(json.Marshal(#params))) https://api.github.com/repos/\#(#githubRepositoryPath)/actions/workflows/\#(#workflowID)/dispatches
 			"""#
 }
 
