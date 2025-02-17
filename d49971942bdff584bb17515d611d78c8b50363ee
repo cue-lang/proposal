@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9c6074a_f3f399b4",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "I\u0027d suggest using markdown for section headings.",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "deb9a915_14c0097e",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "```suggestion\nWe propose that the unification of two non-concrete values cannot result\n```",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4484b6d4_96bbb2c8",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "I don\u0027t quite understand this. These simplifications _are_ leading to (potentially misguided) concrete results. Did you mean the other way around here?",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a1e95f46_f1aa1f94",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "```suggestion\n  or simply not implemented.\n```",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "686343fe_be27db95",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "```suggestion\nHere some of the bound simplifications kick into effect. For instance, CUE\n```",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbbb4683_29695057",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "```suggestion\n  the result will always be inconsistent.\n```",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "001a27ac_f57306e9",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "Despite saying this, the next paragraph immediately says something different.\nI think something slightly less absolute is needed: for example, state that simplifications are allowed but it is never allowed to make a concrete value from a non-concrete validation constraint.",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eaeaabb9_b4ea2524",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-02-17T17:03:28Z",
+      "side": 1,
+      "message": "```suggestion\nNote that we will still allow simplifications of the unification of\n```",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
