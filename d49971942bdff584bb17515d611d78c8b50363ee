@@ -37,6 +37,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "17a7d3a0_e36491fc",
+        "filename": "designs/language/simple-validators.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2025-02-17T17:20:46Z",
+      "side": 1,
+      "message": "It\u0027s not clear to me how this proposal, as stated, relates to the title. The \"unification of non-concrete values\" doesn\u0027t seem to me to be related to validators. I presume I\u0027m missing something?",
+      "revId": "d49971942bdff584bb17515d611d78c8b50363ee",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4484b6d4_96bbb2c8",
         "filename": "designs/language/simple-validators.md",
         "patchSetId": 1
