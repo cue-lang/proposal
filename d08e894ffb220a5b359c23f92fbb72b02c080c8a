@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba4e444e_95f29cf5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-02-19T18:37:12Z",
+      "side": 1,
+      "message": "PTAL: note that I originally uploaded a draft version.",
+      "revId": "d08e894ffb220a5b359c23f92fbb72b02c080c8a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
