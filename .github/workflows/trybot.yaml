@@ -100,9 +100,9 @@ jobs:
           version: latest
       - name: Early git and code sanity checks
         run: go run cuelang.org/go/internal/ci/checks@v0.11.0-0.dev.0.20240903133435-46fb300df650
-      - run: cue login --token=${CUE_TOKEN}
-        env:
+      - env:
           CUE_TOKEN: ${{ secrets.NOTCUECKOO_CUE_TOKEN }}
+        run: cue login --token=${CUE_TOKEN}
       - name: Generate
         run: go generate ./...
       - name: Test

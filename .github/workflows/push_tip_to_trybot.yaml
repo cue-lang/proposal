@@ -43,8 +43,8 @@ jobs:
           	 echo "Giving up"
           	 exit 1
           fi
+name: Push tip to trybot
 "on":
   push:
     branches:
       - main
-name: Push tip to trybot
