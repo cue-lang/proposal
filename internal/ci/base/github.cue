@@ -11,7 +11,11 @@ import (
 )
 
 bashWorkflow: githubactions.#Workflow & {
-	jobs: [string]: defaults: run: shell: "bash"
+	// Use a custom default shell that extends the GitHub default to also fail
+	// on access to unset variables.
+	//
+	// https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#defaultsrunshell
+	jobs: [string]: defaults: run: shell: "bash --noprofile --norc -euo pipefail {0}"
 }
 
 installGo: {
@@ -66,7 +70,7 @@ checkoutCode: {
 		name: "Checkout code"
 		uses: "actions/checkout@v4"
 
-		// "pull_request" builds will by default use a merge commit,
+		// "pull_request_target" builds will by default use a merge commit,
 		// testing the PR's HEAD merged on top of the master branch.
 		// For consistency with Gerrit, avoid that merge commit entirely.
 		// This doesn't affect builds by other events like "push",
@@ -365,3 +369,9 @@ containsUnityTrailer: containsDispatchTrailer & {
 }
 
 _dispatchTrailerVariable: "github.event.head_commit.message"
+
+loginCentralRegistry: githubactions.#Step & {
+	#cueCommand:      *cueCommand | string
+	#tokenExpression: *"${{ secrets.\(unprivilegedBotGitHubUserCentralRegistryTokenSecretsKey) }}" | string
+	run:              "\(#cueCommand) login --token=\(#tokenExpression)"
+}

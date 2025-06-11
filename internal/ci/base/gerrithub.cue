@@ -39,7 +39,6 @@ trybotDispatchWorkflow: bashWorkflow & {
 			branches: [testDefaultBranch]
 		}
 	}
-	jobs: [string]: defaults: run: shell: "bash"
 	jobs: {
 		(trybot.key): {
 			"runs-on": linuxMachine
@@ -156,8 +155,6 @@ trybotDispatchWorkflow: bashWorkflow & {
 }
 
 pushTipToTrybotWorkflow: bashWorkflow & {
-	jobs: [string]: defaults: run: shell: "bash"
-
 	on: {
 		push: branches: protectedBranchPatterns
 	}
@@ -250,20 +247,11 @@ evictCaches: bashWorkflow & {
 				githubactions.#Step & {
 					name: "Delete caches"
 					run:  """
-						set -x
-
 						echo ${{ secrets.\(botGitHubUserTokenSecretsKey) }} | gh auth login --with-token
-						gh extension install actions/gh-actions-cache
 						for i in \(githubRepositoryURL) \(trybotRepositoryURL)
 						do
 							echo "Evicting caches for $i"
-							cd $(mktemp -d)
-							git init -b initialbranch
-							git remote add origin $i
-							for j in $(gh actions-cache list -L 100 | grep refs/ | awk '{print $1}')
-							do
-							   gh actions-cache delete --confirm $j
-							done
+							gh cache delete --repo $i --all --succeed-on-no-caches
 						done
 						"""
 				},
