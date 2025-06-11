@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0669b31c_8d576c50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1021694
+      },
+      "writtenOn": "2025-06-11T12:29:29Z",
+      "side": 1,
+      "message": "I only have permission to +1 in this repo.",
+      "revId": "ec26fe684a6fdba0e06a6377e7a9e75673281431",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da4ee8a4_da20bc8b",
+        "filename": "cue.mod/module.cue",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1021694
+      },
+      "writtenOn": "2025-06-11T12:29:29Z",
+      "side": 1,
+      "message": "nit: this seems slightly out of place, given the \"update\" thrust of this stack.",
+      "range": {
+        "startLine": 3,
+        "startChar": 11,
+        "endLine": 3,
+        "endChar": 17
+      },
+      "revId": "ec26fe684a6fdba0e06a6377e7a9e75673281431",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
