@@ -12,7 +12,7 @@ jobs:
   test:
     defaults:
       run:
-        shell: bash
+        shell: bash --noprofile --norc -euo pipefail {0}
     runs-on: ubuntu-22.04
     if: |-
       (contains(github.event.head_commit.message, '
