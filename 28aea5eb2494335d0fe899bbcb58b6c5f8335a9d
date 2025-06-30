@@ -1,0 +1,547 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1498668_f8161920",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Thanks for this! This is an initial pass through of review comments.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b96aa169_1faf13cb",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "This title doesn\u0027t really make sense to me grammatically.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1e2b6d5_c136ec32",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "These long lines are hard to read in gerrit (no word wrap) and also make it harder to comment on individual parts of the paragraph.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e718ac87_5696faa9",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "It doesn\u0027t actually currently look like this FWIW, because the `exists` function isn\u0027t there yet.",
+      "range": {
+        "startLine": 13,
+        "startChar": 306,
+        "endLine": 13,
+        "endChar": 331
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98329de0_67bb50fa",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "It would be generally more common to write this the other way around, with the default value being `foo[a.b]`, otherwise this will almost always be \"default\" which is not that useful. We usually wish to fall back to the default value only if the expression cannot be evaluated.\n\nI\u0027d suggest using `\"fallback\"` instead of `\"default\"` to emphasise the distinction.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95e92fb1_a1932b22",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Is the `a` self-reference really necessary here? It seems to make things harder to understand to me, and I\u0027m not sure it helps much. Similarly the fact that the `a` field is nested. In fact, I\u0027m pretty sure the inner `a.b` is an mistake: it refers to a different `a` than the `a` in `exists(foo[a.b])`",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "239783b6_31dc431a",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Again, too many `a`s... AFAICS `exists(a)` is always true here because it\u0027s referring to the regular field `a` which definitely does exist.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a07a7f13_ef2a1a8e",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Personally, I find these long bold passages somewhat distracting.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b5cb330_d543bf22",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "I find this somewhat confusing. To me, a field reference is generally of the form `x.field` or `x[fieldExpr]`; a general reference `foo` _might_ be a field reference, but could also refer to non-fields such as a let expression or a package. It would be good to be clear about these different aspects.",
+      "range": {
+        "startLine": 58,
+        "startChar": 33,
+        "endLine": 58,
+        "endChar": 63
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da9e93f0_c82cb079",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Surely there are other cases too, not just optional fields? What about pattern constraints? What about referring to fields in open structs, such as:\n\n```\na: {\n\tx: _\n\ty: try x.a? else \"fallback\"\n}\n```\n\nThe above seems like it should probably be fine to me, but the description wouldn\u0027t cover that kind of usage.",
+      "range": {
+        "startLine": 59,
+        "startChar": 130,
+        "endLine": 59,
+        "endChar": 179
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04ddb561_39517339",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "I don\u0027t really understand what this means.",
+      "range": {
+        "startLine": 61,
+        "startChar": 229,
+        "endLine": 61,
+        "endChar": 267
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2c7fb8f_2d2ce1f2",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "This doesn\u0027t seem quite right to me. `field` is syntactically distinct from `x.field` and `x[expr]`. We could say `expr?` but then we\u0027d have to distinguish the various allowed expression forms.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7a58c31_8834310b",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "It would be good to be precise about what \"undefined\" means here. Because somehow, an optional field is \"undefined\" by this definition but a required field is not? Oh no, that\u0027s not right, because an actual defined field causes the operation to proceed without error too. So a required field is somehow more undefined than an optional field?\n\nAlso, I wonder whether \"undefined\" is enough. What if we\u0027re trying to refer into a non-struct value (something I\u0027ve definitely used the current disjunction-with-defaults idiom for previously)? For example:\n\n```\n#List: {\n\titem!: int\n\tnext!: null | #List\n}\n\nx: #List \u0026 {item: 4, next: null}\n\ny: try x.next.item? else \"not enough items in list\"\n```\n\nI think that should probably be fine, but I think we need to delineate the boundaries between \"undefined\" and \"error\" a little more explicitly to make it clear that\u0027s OK.",
+      "range": {
+        "startLine": 68,
+        "startChar": 85,
+        "endLine": 68,
+        "endChar": 97
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f66e4ae2_e007777b",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Could this be just `Expression`? Does it actually _need_ to be `StructLit`?",
+      "range": {
+        "startLine": 77,
+        "startChar": 49,
+        "endLine": 77,
+        "endChar": 65
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7c3d82a2_f83d79be",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "This is never referred to, so it\u0027s not clear how it fits into the grammar.\n\nAlso, do you actually intend all the arguments to be optional? And I think Expr should be Expression.\n\nMaybe you actually intended something like this?\n\n\n```suggestion\n      TryClause.          \u003d \"try\" [ identifier \"\u003d\" ] Expression .\n```",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e08a48d9_a47b2324",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "assing?",
+      "range": {
+        "startLine": 87,
+        "startChar": 114,
+        "endLine": 87,
+        "endChar": 120
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02c00e4c_324abc80",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Can\u0027t it be used in other parts of the comprehension too? If not, why not? I\u0027d presume that almost the same rules would apply here as if the try clause was used as a regular expression (for example, if multiple clauses are involved, they\u0027re unified together) but it might be good to make that clear.",
+      "range": {
+        "startLine": 87,
+        "startChar": 159,
+        "endLine": 87,
+        "endChar": 193
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54bc88fe_45a0788a",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "I don\u0027t understand what \"becoming generally available\" means here.",
+      "range": {
+        "startLine": 88,
+        "startChar": 24,
+        "endLine": 88,
+        "endChar": 51
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbb526ae_8a0bb3dc",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Do you actually mean \"expression\" here? I\u0027m trying to think of places where a \"field value\" is different from a regular expression.\n\nFor example, I _think_ this would be OK, but it\u0027s not clear from the text if it would:\n\n```\nstrconv.Atoi(try a.b? else {\"0\"})\n```",
+      "range": {
+        "startLine": 89,
+        "startChar": 51,
+        "endLine": 89,
+        "endChar": 72
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dcf1add7_9233de0b",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "I don\u0027t really understand what \"including a result in the configuration\" means in the context of a comprehension.",
+      "range": {
+        "startLine": 91,
+        "startChar": 59,
+        "endLine": 91,
+        "endChar": 106
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99934d59_b63839b9",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this distinguish between `?`-guarded expressions and other expressions?",
+      "range": {
+        "startLine": 91,
+        "startChar": 11,
+        "endLine": 91,
+        "endChar": 49
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad127181_b2b048f2",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "It would be good to have an example of this.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b2204527_0b09d1b5",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "It would be nice to have example output as well as the explanatory text, just to nail things down.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8981253c_2bc9e49d",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "This makes it seem like \"condition\" is a literal somewhere, but it\u0027s not.",
+      "range": {
+        "startLine": 134,
+        "startChar": 44,
+        "endLine": 134,
+        "endChar": 55
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c8b146f_b82c462b",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "Again, this would be way clearer with actual example input and output rather than just describing the behaviour in words.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "495a1835_6fa3930d",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "None of these seems like they add much overall value to the proposal.",
+      "range": {
+        "startLine": 149,
+        "startChar": 0,
+        "endLine": 153,
+        "endChar": 0
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a251365_265964ea",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-06-30T13:48:40Z",
+      "side": 1,
+      "message": "It would be nice to be a bit clearer about what we mean by \"brittle\" CUE, as it\u0027s the first time the term has been used. It might even be good to talk about that as part of the overall motivation near the top of the doc.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
