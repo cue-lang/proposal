@@ -1,0 +1,192 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a753a3c_012e02a1",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "you could back up the complexity by pointing out that there are three (!!!) currently open spec-deviation issues relating to aliases:\n* https://github.com/cue-lang/cue/issues/2194\n* https://github.com/cue-lang/cue/issues/2506\n* https://github.com/cue-lang/cue/issues/2736\n\nof course we could and should fix them, but the fact that so far haven\u0027t been able to make the evaluator and spec agree on alias semantics points to the fact that the design is too complex.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54ed73cc_91b0b5a6",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "are the spaces after the bullet points here intentional? they seem like minor formatting error\n\n(also with the bullet lists further below in the doc)",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fa085bb3_a5733235",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "As a new user of this feature, I might get confused between `keyOf` and `fieldOf`. Did we discard clearer alternatives to `keyOf` such as `fieldNameOf`?\n\nOr if we like `keyOf` as a counter to `valueOf`, and we think `fieldOf` should be rare, perhaps we call it something like `fieldValueOf`. Or since its use is mainly for cyclic structures, perhaps `cyclicFieldOf` or `cyclicValueOf`.\n\nI\u0027m especially worried about e.g. `[string]: string`, where the key and value are both strings. Choosing the wrong builtin could lead to a subtle bug.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3b728b4e_9c9d037d",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "nit: delete \"This\"?",
+      "range": {
+        "startLine": 79,
+        "startChar": 49,
+        "endLine": 79,
+        "endChar": 53
+      },
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90276e6b_53fe70dd",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "I think this begs the question - why not add a similar alias for the root/top of the file as well? That seems like a use case that\u0027s roughly as common as \"self\", so if we are avoiding it for any particular reason, I think this document should say.\n\nDoing the `let Top \u003d self` declaration is fine, but it\u0027s perhaps a bit odd to have to sprinkle that across many files if it\u0027s a relatively common need.\n\nAlso, nit: I don\u0027t think we should encourage the use of \"top\" in this way, because the word in CUE already means \"any value\". I\u0027d personally choose \"root\".",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3abbe957_91330033",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "typo: proposed",
+      "range": {
+        "startLine": 87,
+        "startChar": 11,
+        "endLine": 87,
+        "endChar": 19
+      },
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d72e530_c5df53cb",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "Is the first sentence here missing a word? It reads a bit weird to me. Perhaps \"We previously proposed...\".",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "754d8319_986d4dea",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "I\u0027d say that `~` is only relatively commonly used for regular expression or pattern matches, but I think that shouldn\u0027t cause confusion for users given the postfix notation.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b0556e96_07672f51",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "not sure I understand this sentence. Presumably the form without and with the new alias is `a:` and `a~X:`, so in the second case you\u0027re not seeing `a:` followed by `~X`, like `a: ~X`.",
+      "range": {
+        "startLine": 122,
+        "startChar": 231,
+        "endLine": 122,
+        "endChar": 321
+      },
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf3ae8ff_3aa00a15",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:09:42Z",
+      "side": 1,
+      "message": "Do we plan on having one language.version value, like v0.15, where both old and new forms work?\n\nI would suggest that that would be a good idea - because for large projects, it\u0027s useful to be able to gradually rewrite the code, for example package by package, without breaking anything or needing to cause project-wide git conflicts.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
