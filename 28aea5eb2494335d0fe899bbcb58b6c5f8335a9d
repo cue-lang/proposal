@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d30dc3d5_f11eb813",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "How about:\n\n```\nProposal: add a `try` construct to handle optional fields\n```",
+      "parentUuid": "b96aa169_1faf13cb",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b1e2b6d5_c136ec32",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -94,6 +112,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d7248080_de881d52",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "nit: per Roger\u0027s input above, use \"fallback\" here",
+      "range": {
+        "startLine": 26,
+        "startChar": 284,
+        "endLine": 26,
+        "endChar": 291
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "95e92fb1_a1932b22",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -139,6 +180,70 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "Personally, I find these long bold passages somewhat distracting.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f36f3bd3_63cb5c8c",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "I tend to agree. The use of bold text should be very sparse. If every other paragraph has bold text, I find it too distracting, almost like there\u0027s no priority when a quarter of the text is high priority.\n\nYou could consider using italics, but I\u0027d also try avoiding their overuse.",
+      "parentUuid": "a07a7f13_ef2a1a8e",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ec06b74_a1d04bff",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "as before, all of these examples should use \"fallback\"",
+      "range": {
+        "startLine": 50,
+        "startChar": 31,
+        "endLine": 50,
+        "endChar": 38
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea756990_257f81db",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "link to that proposal?",
+      "range": {
+        "startLine": 52,
+        "startChar": 50,
+        "endLine": 52,
+        "endChar": 64
+      },
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -254,6 +359,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6a5fc862_3d68c278",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "Could you clarify if using the `?` postfix on non-optional fields is allowed? For example, would it work on regular and required fields? And if it is permitted, does it do anything useful at all?",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f66e4ae2_e007777b",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -340,6 +462,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "bbc135ef_9bc9032e",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "🫏",
+      "parentUuid": "e08a48d9_a47b2324",
+      "range": {
+        "startLine": 87,
+        "startChar": 114,
+        "endLine": 87,
+        "endChar": 120
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "54bc88fe_45a0788a",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -351,6 +497,30 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "I don\u0027t understand what \"becoming generally available\" means here.",
+      "range": {
+        "startLine": 88,
+        "startChar": 24,
+        "endLine": 88,
+        "endChar": 51
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75402d39_dd5a1e67",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "I also worry that this might lead to people thinking they will be able to use `if x {...} else {...}`, if they read this to mean `else` will become a general feature for comprehensions in the language.\n\nEdit: seeing the end of the document, now I\u0027m confused if you are actually adding support for if-else as part of this proposal. Please clarify one way or another, and if you\u0027re adding support, I\u0027d add an example too for the sake of clarity.",
+      "parentUuid": "54bc88fe_45a0788a",
       "range": {
         "startLine": 88,
         "startChar": 24,
@@ -529,6 +699,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9008021c_618370c5",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "this comment is below 153, i.e. the \"future extensions\" section, but highlights 149-151, part of the previous section. Which section are you referring to here?",
+      "parentUuid": "495a1835_6fa3930d",
+      "range": {
+        "startLine": 149,
+        "startChar": 0,
+        "endLine": 153,
+        "endChar": 0
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1a251365_265964ea",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -540,6 +734,23 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "It would be nice to be a bit clearer about what we mean by \"brittle\" CUE, as it\u0027s the first time the term has been used. It might even be good to talk about that as part of the overall motivation near the top of the doc.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd41eb7e_73567704",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-07T14:30:57Z",
+      "side": 1,
+      "message": "Personally, I don\u0027t think a conclusion at the end of a proposal doc helps. Any high level summary should already be at the very top, as part of the objective or abstract. Having anything here is either repetitive, or buried beneath lots of detail.",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
