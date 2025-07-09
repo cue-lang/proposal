@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "29214582_26f4c97a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Updated, also including line wraps, as per Rog\u0027s comment in the try proposal.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1a753a3c_012e02a1",
@@ -14,6 +31,24 @@
       "writtenOn": "2025-07-07T14:09:42Z",
       "side": 1,
       "message": "you could back up the complexity by pointing out that there are three (!!!) currently open spec-deviation issues relating to aliases:\n* https://github.com/cue-lang/cue/issues/2194\n* https://github.com/cue-lang/cue/issues/2506\n* https://github.com/cue-lang/cue/issues/2736\n\nof course we could and should fix them, but the fact that so far haven\u0027t been able to make the evaluator and spec agree on alias semantics points to the fact that the design is too complex.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a6bcdeb_eff03a0e",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a753a3c_012e02a1",
       "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -35,6 +70,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e32011d_b4b91b66",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "It rendered fine, but fixed.",
+      "parentUuid": "54ed73cc_91b0b5a6",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fa085bb3_a5733235",
@@ -48,6 +101,24 @@
       "writtenOn": "2025-07-07T14:09:42Z",
       "side": 1,
       "message": "As a new user of this feature, I might get confused between `keyOf` and `fieldOf`. Did we discard clearer alternatives to `keyOf` such as `fieldNameOf`?\n\nOr if we like `keyOf` as a counter to `valueOf`, and we think `fieldOf` should be rare, perhaps we call it something like `fieldValueOf`. Or since its use is mainly for cyclic structures, perhaps `cyclicFieldOf` or `cyclicValueOf`.\n\nI\u0027m especially worried about e.g. `[string]: string`, where the key and value are both strings. Choosing the wrong builtin could lead to a subtle bug.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "685dd788_41416b42",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Name is not correct, I think, as it may also be a number for lists, or--in the future--even complex CUE values.\n\nBut maybe the original name `refOf` (as oposed to `valueOf`), instead of fieldOf is better?",
+      "parentUuid": "fa085bb3_a5733235",
       "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -92,6 +163,48 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c7b169f_76b78526",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3b728b4e_9c9d037d",
+      "range": {
+        "startLine": 79,
+        "startChar": 49,
+        "endLine": 79,
+        "endChar": 53
+      },
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "878e22b3_154e7685",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Because it is very bad practice to refer to the top of the file and it leads to bugs. So the syntax for this is intentionally verbose. Languages that have a single symbol for top-of-file, often see considerable overuse.\n\nThat said, sometimes it is necessary.\n\nChanged Top to Root as well as related language.",
+      "parentUuid": "90276e6b_53fe70dd",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3abbe957_91330033",
@@ -132,6 +245,48 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c0d7f4a_d6308345",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3abbe957_91330033",
+      "range": {
+        "startLine": 87,
+        "startChar": 11,
+        "endLine": 87,
+        "endChar": 19
+      },
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4879564c_cf5491a4",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2d72e530_c5df53cb",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "754d8319_986d4dea",
@@ -145,6 +300,24 @@
       "writtenOn": "2025-07-07T14:09:42Z",
       "side": 1,
       "message": "I\u0027d say that `~` is only relatively commonly used for regular expression or pattern matches, but I think that shouldn\u0027t cause confusion for users given the postfix notation.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5a64824_404a9b06",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "I\u0027m open to other suggestions, but haven\u0027t been able to come up with something. `#` is already in use.\n\nAdjusted the language a bit.",
+      "parentUuid": "754d8319_986d4dea",
       "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -174,6 +347,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "078e5d71_01cbd373",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "improved a bit.",
+      "parentUuid": "b0556e96_07672f51",
+      "range": {
+        "startLine": 122,
+        "startChar": 231,
+        "endLine": 122,
+        "endChar": 321
+      },
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "bf3ae8ff_3aa00a15",
         "filename": "designs/language/xxxx-aliases-v2.md",
         "patchSetId": 2
@@ -185,6 +382,24 @@
       "writtenOn": "2025-07-07T14:09:42Z",
       "side": 1,
       "message": "Do we plan on having one language.version value, like v0.15, where both old and new forms work?\n\nI would suggest that that would be a good idea - because for large projects, it\u0027s useful to be able to gradually rewrite the code, for example package by package, without breaking anything or needing to cause project-wide git conflicts.",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "798b3471_b787d446",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-09T19:26:33Z",
+      "side": 1,
+      "message": "Yes, definitely. There should be a transition period.",
+      "parentUuid": "bf3ae8ff_3aa00a15",
       "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
