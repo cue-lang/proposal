@@ -125,6 +125,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2f905bb2_cf02db91",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-09T19:37:31Z",
+      "side": 1,
+      "message": "I\u0027d mildly prefer refOf over fieldOf; at least it feels significantly different to valueOf. But no strong opinion here.",
+      "parentUuid": "685dd788_41416b42",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3b728b4e_9c9d037d",
         "filename": "designs/language/xxxx-aliases-v2.md",
         "patchSetId": 2
@@ -201,6 +219,24 @@
       "side": 1,
       "message": "Because it is very bad practice to refer to the top of the file and it leads to bugs. So the syntax for this is intentionally verbose. Languages that have a single symbol for top-of-file, often see considerable overuse.\n\nThat said, sometimes it is necessary.\n\nChanged Top to Root as well as related language.",
       "parentUuid": "90276e6b_53fe70dd",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f0e56ea_7e9c79db",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-09T19:37:31Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "878e22b3_154e7685",
       "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -322,6 +358,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e709f4b7_3c21b0fa",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-09T19:37:31Z",
+      "side": 1,
+      "message": "I wasn\u0027t arguing against the use of `~`; just that its only use seems to be with regular expressions, and I agree it won\u0027t cause issues.",
+      "parentUuid": "e5a64824_404a9b06",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b0556e96_07672f51",
@@ -369,6 +423,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "196a8aa6_8299c3b4",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-09T19:37:31Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "078e5d71_01cbd373",
+      "range": {
+        "startLine": 122,
+        "startChar": 231,
+        "endLine": 122,
+        "endChar": 321
+      },
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bf3ae8ff_3aa00a15",
@@ -400,6 +478,24 @@
       "side": 1,
       "message": "Yes, definitely. There should be a transition period.",
       "parentUuid": "bf3ae8ff_3aa00a15",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32169242_41901199",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1017720
+      },
+      "writtenOn": "2025-07-09T19:37:31Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "798b3471_b787d446",
       "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
