@@ -53,6 +53,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e86d8444_98a08ad7",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d30dc3d5_f11eb813",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b1e2b6d5_c136ec32",
@@ -66,6 +84,24 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "These long lines are hard to read in gerrit (no word wrap) and also make it harder to comment on individual parts of the paragraph.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f435ab05_bc941382",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "The problem is that GitHub MD, where it will be published, doesn\u0027t handle broken up lines well. But perhaps we could use some github preprocessor of sorts.\n\nI prefer broken up lines as well.\n\nChanged all lines using Go style, also in the alias proposal.",
+      "parentUuid": "b1e2b6d5_c136ec32",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -93,6 +129,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "322e14e4_97abfb07",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "I was working on it concurrently and figured that would be out before this doc. 😊\n\nModified. Also explained exists a bit. Please note that I only explained exists for understanding the proposal. It is not intended to fully define it.",
+      "parentUuid": "e718ac87_5696faa9",
+      "range": {
+        "startLine": 13,
+        "startChar": 306,
+        "endLine": 13,
+        "endChar": 331
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "98329de0_67bb50fa",
@@ -110,6 +170,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b61f6906_fb47f2ca",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "98329de0_67bb50fa",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7248080_de881d52",
@@ -123,6 +201,30 @@
       "writtenOn": "2025-07-07T14:30:57Z",
       "side": 1,
       "message": "nit: per Roger\u0027s input above, use \"fallback\" here",
+      "range": {
+        "startLine": 26,
+        "startChar": 284,
+        "endLine": 26,
+        "endChar": 291
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ac5ad94_6941def1",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d7248080_de881d52",
       "range": {
         "startLine": 26,
         "startChar": 284,
@@ -152,6 +254,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1ccf9b94_60e8611f",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Indeed, there should not be a self-reference. Fixed.",
+      "parentUuid": "95e92fb1_a1932b22",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "239783b6_31dc431a",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -163,6 +283,24 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "Again, too many `a`s... AFAICS `exists(a)` is always true here because it\u0027s referring to the regular field `a` which definitely does exist.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00cf6484_137812b7",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "239783b6_31dc431a",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -202,6 +340,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e9558ff_573e3f63",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "unbolded",
+      "parentUuid": "f36f3bd3_63cb5c8c",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7ec06b74_a1d04bff",
@@ -215,6 +371,30 @@
       "writtenOn": "2025-07-07T14:30:57Z",
       "side": 1,
       "message": "as before, all of these examples should use \"fallback\"",
+      "range": {
+        "startLine": 50,
+        "startChar": 31,
+        "endLine": 50,
+        "endChar": 38
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dea13eee_dc9b1746",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ec06b74_a1d04bff",
       "range": {
         "startLine": 50,
         "startChar": 31,
@@ -248,6 +428,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e662ddd_1a9f436f",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ea756990_257f81db",
+      "range": {
+        "startLine": 52,
+        "startChar": 50,
+        "endLine": 52,
+        "endChar": 64
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3b5cb330_d543bf22",
@@ -271,6 +475,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1149e5d_6cc12bd4",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "I now explicitly mention that these are not covered.",
+      "parentUuid": "3b5cb330_d543bf22",
+      "range": {
+        "startLine": 58,
+        "startChar": 33,
+        "endLine": 58,
+        "endChar": 63
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "da9e93f0_c82cb079",
@@ -284,6 +512,30 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "Surely there are other cases too, not just optional fields? What about pattern constraints? What about referring to fields in open structs, such as:\n\n```\na: {\n\tx: _\n\ty: try x.a? else \"fallback\"\n}\n```\n\nThe above seems like it should probably be fine to me, but the description wouldn\u0027t cover that kind of usage.",
+      "range": {
+        "startLine": 59,
+        "startChar": 130,
+        "endLine": 59,
+        "endChar": 179
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54c2d068_74e946dc",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "clarified.",
+      "parentUuid": "da9e93f0_c82cb079",
       "range": {
         "startLine": 59,
         "startChar": 130,
@@ -319,6 +571,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "03ca2195_962fbb22",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Tried to clarify. Still abstract, but details are not that important.",
+      "parentUuid": "04ddb561_39517339",
+      "range": {
+        "startLine": 61,
+        "startChar": 229,
+        "endLine": 61,
+        "endChar": 267
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e2c7fb8f_2d2ce1f2",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -330,6 +606,24 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "This doesn\u0027t seem quite right to me. `field` is syntactically distinct from `x.field` and `x[expr]`. We could say `expr?` but then we\u0027d have to distinguish the various allowed expression forms.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f107339_eb279826",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Clarified.",
+      "parentUuid": "e2c7fb8f_2d2ce1f2",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -359,6 +653,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8073af1d_f2362cd7",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "undefined means it is not declared and is not a constraint). To me required fields and optional fields are both constraints (that is how the spec defines it as well), and thus are undefined.",
+      "parentUuid": "d7a58c31_8834310b",
+      "range": {
+        "startLine": 68,
+        "startChar": 85,
+        "endLine": 68,
+        "endChar": 97
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6a5fc862_3d68c278",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -370,6 +688,24 @@
       "writtenOn": "2025-07-07T14:30:57Z",
       "side": 1,
       "message": "Could you clarify if using the `?` postfix on non-optional fields is allowed? For example, would it work on regular and required fields? And if it is permitted, does it do anything useful at all?",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "67622670_b9e9026a",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "It should be permitted, but a a `cue vet` or `cue lint` could complain about it.\n\nIt should be permitted, as the referenced field may be in an external template, for instance, that may be optional now, but could later become non-optional. I think you would not want the code break in such a case.\n\nClarified that in the doc.",
+      "parentUuid": "6a5fc862_3d68c278",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -399,6 +735,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "808ac957_c6f7ec3a",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "I think this may lead to ambiguity. It seemed safer to restrict it now and worry about relaxing it later, if possible.",
+      "parentUuid": "f66e4ae2_e007777b",
+      "range": {
+        "startLine": 77,
+        "startChar": 49,
+        "endLine": 77,
+        "endChar": 65
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7c3d82a2_f83d79be",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -410,6 +770,24 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "This is never referred to, so it\u0027s not clear how it fits into the grammar.\n\nAlso, do you actually intend all the arguments to be optional? And I think Expr should be Expression.\n\nMaybe you actually intended something like this?\n\n\n```suggestion\n      TryClause.          \u003d \"try\" [ identifier \"\u003d\" ] Expression .\n```",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "914bf0e6_1c9dbfe7",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Good point, referred to it now.\n\nYes, this was intentional. There are basicaly two forms. If `try` is the last element, the StructLit of the comprehension takes the role of its value:\n\ntry { a: b.c? }\n\nThe other form is if it is not the last clause: \n\ntry x \u003d a.b? { c: x }",
+      "parentUuid": "7c3d82a2_f83d79be",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -486,6 +864,54 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c87c5a49_24d4ff9d",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Yes, the point is that `x \u003d Expression` may be dropped if it is at the end.",
+      "parentUuid": "02c00e4c_324abc80",
+      "range": {
+        "startLine": 87,
+        "startChar": 159,
+        "endLine": 87,
+        "endChar": 193
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b712bf6d_527fbe06",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bbc135ef_9bc9032e",
+      "range": {
+        "startLine": 87,
+        "startChar": 114,
+        "endLine": 87,
+        "endChar": 120
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "54bc88fe_45a0788a",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -533,6 +959,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0b97f18c_7dbf101b",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "I have some trepedations about it, but ultimately it makes sense to support it. Ideally, we should at least have some switch-like construct to allow users to avoid nesting. Nickel has a match construct which is quite nice and could work for CUE with some adaptations.",
+      "parentUuid": "75402d39_dd5a1e67",
+      "range": {
+        "startLine": 88,
+        "startChar": 24,
+        "endLine": 88,
+        "endChar": 51
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dbb526ae_8a0bb3dc",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -544,6 +994,30 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "Do you actually mean \"expression\" here? I\u0027m trying to think of places where a \"field value\" is different from a regular expression.\n\nFor example, I _think_ this would be OK, but it\u0027s not clear from the text if it would:\n\n```\nstrconv.Atoi(try a.b? else {\"0\"})\n```",
+      "range": {
+        "startLine": 89,
+        "startChar": 51,
+        "endLine": 89,
+        "endChar": 72
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9c32ef8_39b9f961",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "I did mean field value. But that would perhaps be a nice extension perhaps. My initial thought was to not bury conditional flow.",
+      "parentUuid": "dbb526ae_8a0bb3dc",
       "range": {
         "startLine": 89,
         "startChar": 51,
@@ -602,6 +1076,54 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "25604ab3_1c32d597",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "added qualifier",
+      "parentUuid": "99934d59_b63839b9",
+      "range": {
+        "startLine": 91,
+        "startChar": 11,
+        "endLine": 91,
+        "endChar": 49
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5297f4fa_9074124e",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Rephrased using the language for comprehension in the spec.",
+      "parentUuid": "dcf1add7_9233de0b",
+      "range": {
+        "startLine": 91,
+        "startChar": 59,
+        "endLine": 91,
+        "endChar": 106
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ad127181_b2b048f2",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -613,6 +1135,24 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "It would be good to have an example of this.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8aa4a7af_cc2173cf",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done, although there is a separate section with examples, which makes it a bit redundant.",
+      "parentUuid": "ad127181_b2b048f2",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -657,6 +1197,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "03ce9962_54aaae97",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8981253c_2bc9e49d",
+      "range": {
+        "startLine": 134,
+        "startChar": 44,
+        "endLine": 134,
+        "endChar": 55
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8c8b146f_b82c462b",
@@ -670,6 +1234,24 @@
       "writtenOn": "2025-06-30T13:48:40Z",
       "side": 1,
       "message": "Again, this would be way clearer with actual example input and output rather than just describing the behaviour in words.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "395a37c6_77734129",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "expanded.",
+      "parentUuid": "8c8b146f_b82c462b",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -723,6 +1305,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f1daa383_508bf1de",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Removed highlighed part.",
+      "parentUuid": "9008021c_618370c5",
+      "range": {
+        "startLine": 149,
+        "startChar": 0,
+        "endLine": 153,
+        "endChar": 0
+      },
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1a251365_265964ea",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -740,6 +1346,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8d633c8f_a5e2e32e",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Reworded. We could also remove it, as `try` is actually not essential for this. It just makes it nicer.",
+      "parentUuid": "1a251365_265964ea",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "cd41eb7e_73567704",
         "filename": "designs/language/xxxx-try.md",
         "patchSetId": 1
@@ -751,6 +1375,24 @@
       "writtenOn": "2025-07-07T14:30:57Z",
       "side": 1,
       "message": "Personally, I don\u0027t think a conclusion at the end of a proposal doc helps. Any high level summary should already be at the very top, as part of the objective or abstract. Having anything here is either repetitive, or buried beneath lots of detail.",
+      "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe57d387_825ad1f6",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:27:56Z",
+      "side": 1,
+      "message": "Removed conclusions.",
+      "parentUuid": "cd41eb7e_73567704",
       "revId": "28aea5eb2494335d0fe899bbcb58b6c5f8335a9d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
