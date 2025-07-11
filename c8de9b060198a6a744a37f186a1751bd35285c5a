@@ -143,6 +143,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2729ff04_e83088b6",
+        "filename": "designs/language/xxxx-aliases-v2.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-07-11T12:28:38Z",
+      "side": 1,
+      "message": "I don\u0027t have a strong opinion either, so changed to refOf.",
+      "parentUuid": "2f905bb2_cf02db91",
+      "revId": "c8de9b060198a6a744a37f186a1751bd35285c5a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3b728b4e_9c9d037d",
         "filename": "designs/language/xxxx-aliases-v2.md",
         "patchSetId": 2
