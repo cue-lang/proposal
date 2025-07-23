@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "30041b16_0af07d32",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-07-23T09:51:51Z",
+      "side": 1,
+      "message": "Noting here a conversation from Discord. I intentionally did not comment here because my thoughts/question is not particularly well-formed, hence more suited to DM. But leaving an open comment here, so that we don\u0027t lose sight of it.",
+      "revId": "9370fb134b178eda24f070ff5224392024a7ee87",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
