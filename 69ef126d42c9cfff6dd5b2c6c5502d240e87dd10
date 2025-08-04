@@ -1,0 +1,9 @@
+Code-Review+2: Marcel van Lohuizen <mpvl@gmail.com>
+Code-Review+2: Daniel Martí <mvdan@mvdan.cc>
+TryBot-Result+1: CUEcueckoo <cueckoo@cuelang.org>
+Submitted-by: Marcel van Lohuizen <mpvl@gmail.com>
+Submitted-at: Mon, 04 Aug 2025 11:51:53 +0000
+Reviewed-on: https://review.gerrithub.io/c/cue-lang/proposal/+/1217017
+Comments-Total: 30
+Project: cue-lang/proposal
+Branch: refs/heads/main
