@@ -20,7 +20,7 @@ hard for users to learn without intimate knowledge of CUE syntax.
 A significant issue is the use of `=` for aliases.
 This is problematic because:
 * It conflicts with the common interpretation of `=` as assignment in many other
-  language (likeDhall, Nickel, PKL, KCL), where `field: Type = Value` is a
+  languages (like Dhall, Nickel, PKL, KCL), where `field: Type = Value` is a
   common pattern.
   CUE itself uses `=`for `let` and within attributes in a more traditional sense.
 * Using `=` for aliases prevents using a more natural notation for potential
@@ -99,13 +99,13 @@ As for any other predefined identifier in CUE, we would also define `__self` as 
 
 | **alias type**          | **old syntax**                 | **old ref**   | **new syntax**                               | **new ref**             |
 | :---------------------- | :----------------------------- | :------------ | :------------------------------------------- | :---------------------- |
-| field                   | F=label: value                 | F             | label~X: value                               | refOf(X)              |
-| dynamic field           | F=(label): value               | F             | (label)~X: value                             | refOf(X)              |
-| dynamic label           | (K=expr): value                | K             | (label)~X: value<br>(label)~(K,_): value   | keyOf(X)<br>K           |
-| pattern constraint field| F=[expr]: value                | F             | [expr]~X: value                              | refOf(X)              |
-| pattern constraint label| [K=expr]: value                | K             | [expr]~X: value<br>[expr]~(K,_): value       | keyOf(X)<br>K           |
-| value                   | label: V=value                 | V             | label~X: value                               | X<br>valueOf(X)         |
-| list element            | x: [V=value] (not implemented) | X             | x~X: [ value ]                               | X.0<br>X[0]                     |
+| field                   | `F=label: value`                 | `F`             | `label~X: value`                               | `refOf(X)`              |
+| dynamic field           | `F=(label): value`               | `F`             | `(label)~X: value`                             | `refOf(X)`              |
+| dynamic label           | `(K=expr): value`                | `K`             | `(label)~X: value`<br>`(label)~(K,_): value`   | `keyOf(X)`<br>`K`           |
+| pattern constraint field| `F=[expr]: value`                | `F`             | `[expr]~X: value`                              | `refOf(X)`              |
+| pattern constraint label| `[K=expr]: value`                | `K`             | `[expr]~X: value`<br>`[expr]~(K,_): value`       | `keyOf(X)`<br>`K`           |
+| value                   | `label: V=value`                 | `V`             | `label~X: value`                               | `X`<br>`valueOf(X)`         |
+| list element            | `x: [V=value]` (not implemented) | `X`             | `x~X: [ value ]`                               | `X.0`<br>`X[0]`                     |
 
 The value alias types works for all field types, including dynamic fields and
 pattern constraints.
