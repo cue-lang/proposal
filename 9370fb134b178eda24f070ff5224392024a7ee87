@@ -16,6 +16,24 @@
       "message": "Noting here a conversation from Discord. I intentionally did not comment here because my thoughts/question is not particularly well-formed, hence more suited to DM. But leaving an open comment here, so that we don\u0027t lose sight of it.",
       "revId": "9370fb134b178eda24f070ff5224392024a7ee87",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "846121ba_c626d8e6",
+        "filename": "designs/language/xxxx-try.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-05T11:26:47Z",
+      "side": 1,
+      "message": "added clarification in background",
+      "parentUuid": "30041b16_0af07d32",
+      "revId": "9370fb134b178eda24f070ff5224392024a7ee87",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
