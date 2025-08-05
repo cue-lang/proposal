@@ -1,0 +1,276 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41508ad4_518d2655",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "I like the simplifications here a lot. I\u0027ve got a bunch of suggestions/nits for improvement of the text, and one thought about a possible minor syntax adjustment.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c992566_f6d16f65",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "It would be good to go into this a bit more so that people can understand the current situation a bit better: specifically it would be good to enumerate these 7 kinds of alias so it\u0027s clear what aspects of the current language we\u0027re referring to.\n[Edit: I see that the current language spec does in fact enumerate those 7 kinds of alias, so we could just link to that part of the spec]",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cddf812d_d7a87672",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "Perhaps make it clear that other aspects of aliases, such as scoping, will remain the same?",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7729626c_547c71f1",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "Maybe make it clear whether in this example, both `field` and `X` are brought into scope, or just `X`? (I presume the former, but I can see arguments for the latter too)",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e3ed2e1d_d4256946",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "It would be good to be clear about exactly when these builtins are allowed.\nFor example, it would be possible to allow:\n\n```\nx: {\n   y: keyOf(x)\n}\n```\nbecause `x` clearly has a key, even though it\u0027s equivalent to `\"x\"`, and I can even see why someone might do that (to guarantee an evaluator error if the identifier does not resolve).",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8a82b86_3c2d4b52",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "It would be nice to have an example of each of these in both the old and new syntax so we can do side-by-side comparisons and fully understand exactly what the proposal is changing and its likely impact on the appearance of real-world CUE code.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be58aae4_2bdf2121",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "After trying to think it through for a while, I realise that I really don\u0027t understand the distinction between `refOf` and `valueOf`. It might be nice to explain a bit more about that distinction here, particularly as it is already pointed out that that distinction is confusing.\n\nSpecifically, how is \"the field itself\" different from \"the value of the field\" ?",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5faa383c_eff2c34e",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "Are there any circumstances when it\u0027s actually _necessary_ to use `valueOf` or is it just there for symmetry with `keyOf` and `refOf` ?\n\nAlso, does the qualifier \"directly\" have any weight here? Are `keyOf` and `refOf` somehow \"indirect\" ?",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dddd84c2_3ac0598b",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "Is there any difference between a \"value alias\" and a \"direct reference\" ?",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20864f5b_9572c90f",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "Maybe better as:\n\n```suggestion\nAliases of fixed and dynamic fields are visible within the scope in which the field\n```\n\nas \"where\" feels somewhat broader to me (there are potentially many nested scopes in play where a field is defined).",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e5363e7_712f9ae1",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "This seems like an entirely orthogonal proposal to me.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e2cfb7f_1bbc9cc2",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "Maybe slightly clearer to explicitly say that the outermost scope behaviour is a special case?\n\n```suggestion\nWe also propose introducing the `self` keyword to refer to the current scope (the value to the right of the innermost colon `:`). When there is no such innermost colon,`self` can be used refers to the root of the package (package scope). This was was not possible before. The expressions `x: op(self)` and `x~Self: op(Self)` are equivalent.\n```\n\n\nAs an aside, there\u0027s an interesting edge case where AFAICS it\u0027s _not_ possible to use `self` to obtain a reference to the current struct:\n\n```\nlet _foo \u003d {\n    let fooSelf \u003d self   // Refers to package-level scope not _foo\u0027s self\n    x: fooSelf.y\n}\n```\nI don\u0027t _think_ there\u0027s a way within `_foo` to refer to its current value.\n\nIt\u0027s possible to work around this restriction by using something like:\n\n```\nlet _foo \u003d {\n    v: {\n    \tlet fooSelf \u003d self\n    \tx: fooSelf.y\n    }\n}.v\n```\nbut this feels a little awkward.\n\nPerhaps this is enough of an edge case that things are fine as proposed, but it could probably do with calling out in the proposal.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8261e62a_c5391ba7",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "Note that AFAIK the spec does not define`_` as the blank identifier like Go does, and underscore is currently disallowed as an alias identifier, so this would imply some additional change to the spec, I guess.\n\nNote that this _does_ work currently, but probably should not:\n\n```\nimport _ \"strings\"\n\nx: _.ToUpper(\"xxx\")\n```",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89d8dac6_6836bb8b",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "I don\u0027t understand this. This looks just like ths `F\u003dlabel: value` syntax, where `value` is a list literal.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f62c752b_1898b6fe",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "I can\u0027t work out how I feel about this, and it could do with an example or two to make the syntax obvious to the reader of this proposal. AIUI, this means that for optional and required fields, this means that for optional and required fields, the syntax would look like:\n\n```\noptional?~X: foo\nrequired!~Y: bar\n```\n\nrather than:\n\n```\noptional~X?: foo\nrequired~Y!: bar\n```\n\nI _think_ I prefer the latter, as it has less concatenated symbols: it\u0027s arguably more obvious that `?~` and `!~` aren\u0027t some kind of operator by themselves.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "06edd201_f3dc392a",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-05T13:00:18Z",
+      "side": 1,
+      "message": "This syntax doesn\u0027t seem to match the syntax used in the last line of the comparison table. Also, I think it would be good to be consistent and use \"list element aliases\" throughout, as \"list alias\" sounds like it\u0027s an alias for a list, not an element of a list.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
