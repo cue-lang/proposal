@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "52385907_b34f5078",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T12:15:43Z",
+      "side": 1,
+      "message": "It piggybacks on the auth of the gh tool.",
+      "parentUuid": "d4debd1d_686ab339",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9958cc23_ed03bd48",
@@ -31,6 +49,24 @@
       "writtenOn": "2025-08-06T10:52:40Z",
       "side": 1,
       "message": "Wrong URL.",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2fa66e80_d53c1509",
+        "filename": "scripts/publish/publish.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 870,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T12:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9958cc23_ed03bd48",
       "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -52,6 +88,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1bdf162d_5ef32c57",
+        "filename": "scripts/publish/publish.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 890,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T12:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b1e8c7e6_506e4b9d",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0bb7c85c_76f198fa",
@@ -69,6 +123,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5edb50e_5f6c87c2",
+        "filename": "scripts/publish/publish.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 933,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T12:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0bb7c85c_76f198fa",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "838a4abe_c4d21143",
@@ -82,6 +154,24 @@
       "writtenOn": "2025-08-06T10:52:40Z",
       "side": 1,
       "message": "I think this is probably superfluous. Rob Pike would hate to see the noisy output :)",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "492fcf54_14465ffa",
+        "filename": "scripts/publish/test.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T12:15:43Z",
+      "side": 1,
+      "message": "removed. 😅",
+      "parentUuid": "838a4abe_c4d21143",
       "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
