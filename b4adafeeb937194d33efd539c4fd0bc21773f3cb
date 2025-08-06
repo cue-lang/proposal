@@ -71,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bee2439_1e17f12d",
+        "filename": "CLAUDE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:54:55Z",
+      "side": 1,
+      "message": "I\u0027m not talking in Claude terms, I\u0027m talking about the CUE project. But let\u0027s pick up offline",
+      "parentUuid": "36e77e58_f8cfbc02",
+      "revId": "b4adafeeb937194d33efd539c4fd0bc21773f3cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5e049bbb_a80e4ae5",
