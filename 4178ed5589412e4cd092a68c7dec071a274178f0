@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2614e605_c0ae8455",
+        "filename": "design/TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:53:59Z",
+      "side": 1,
+      "message": "Missing something?",
+      "range": {
+        "startLine": 5,
+        "startChar": 49,
+        "endLine": 5,
+        "endChar": 51
+      },
+      "revId": "4178ed5589412e4cd092a68c7dec071a274178f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "19eaeccd_613baa03",
+        "filename": "design/TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:53:59Z",
+      "side": 1,
+      "message": "Please tell AI to drop trailing spaces on a line.",
+      "revId": "4178ed5589412e4cd092a68c7dec071a274178f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "320a2ed5_9eb5853d",
+        "filename": "design/TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:53:59Z",
+      "side": 1,
+      "message": "Per above; trailing spaces are not needed, and \"show up\" in review",
+      "revId": "4178ed5589412e4cd092a68c7dec071a274178f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
