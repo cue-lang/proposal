@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4debd1d_686ab339",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:52:40Z",
+      "side": 1,
+      "message": "+2 on the basis:\n\n* you ran this manually to confirm it \"works\" (save the CL link likely being wrong, but this is not critical path)\n* in case it doesn\u0027t work, we always have a manual fallback (and correction)\n* there are zero Go deps added (which is good)\n* the blast radius of things going wrong is minimal\n* It\u0027s possible/likely auth will be required for GitHub API calls, but that can be added later",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9958cc23_ed03bd48",
+        "filename": "scripts/publish/publish.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 870,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:52:40Z",
+      "side": 1,
+      "message": "Wrong URL.",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1e8c7e6_506e4b9d",
+        "filename": "scripts/publish/publish.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 890,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:52:40Z",
+      "side": 1,
+      "message": "I know this is an example, but it\u0027s misleading.",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0bb7c85c_76f198fa",
+        "filename": "scripts/publish/publish.go",
+        "patchSetId": 3
+      },
+      "lineNbr": 933,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:52:40Z",
+      "side": 1,
+      "message": "This is not correct.",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "838a4abe_c4d21143",
+        "filename": "scripts/publish/test.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:52:40Z",
+      "side": 1,
+      "message": "I think this is probably superfluous. Rob Pike would hate to see the noisy output :)",
+      "revId": "e9762612390f49c0ffc780de433db1b6985e34e0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
