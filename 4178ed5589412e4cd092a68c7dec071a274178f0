@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "42969f67_6a2f1c78",
+        "filename": "design/TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T14:05:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2614e605_c0ae8455",
+      "range": {
+        "startLine": 5,
+        "startChar": 49,
+        "endLine": 5,
+        "endChar": 51
+      },
+      "revId": "4178ed5589412e4cd092a68c7dec071a274178f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "19eaeccd_613baa03",
@@ -41,6 +65,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc4b3175_8b95462f",
+        "filename": "design/TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T14:05:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "19eaeccd_613baa03",
+      "revId": "4178ed5589412e4cd092a68c7dec071a274178f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "320a2ed5_9eb5853d",
@@ -54,6 +96,24 @@
       "writtenOn": "2025-08-06T10:53:59Z",
       "side": 1,
       "message": "Per above; trailing spaces are not needed, and \"show up\" in review",
+      "revId": "4178ed5589412e4cd092a68c7dec071a274178f0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94db9047_f5684bb9",
+        "filename": "design/TEMPLATE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-06T14:05:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "320a2ed5_9eb5853d",
       "revId": "4178ed5589412e4cd092a68c7dec071a274178f0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
