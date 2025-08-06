@@ -28,10 +28,17 @@ go build ./...                 # Build all Go packages
 ```
 
 ### Proposal Publishing
+
 ```bash
-./scripts/publish-proposal.sh designs/language/xxxx-my-proposal.md
+go run scripts/publish/publish.go [--dry-run] [--use-ai] [commit-ref]
 ```
-Publishes a draft proposal (with `xxxx-` prefix) to GitHub Discussions, renames the file with the discussion number, and commits the change.
+Complete implementation with colored output: Handles proposal detection, GitHub discussion management, file renaming, discussion link updates, CL submission via git codereview, trybot runs, and AI-powered summary generation.
+
+Both tools:
+- Work with git commits containing proposal files
+- Support both draft (`xxxx-*.md`) and numbered (`NNNN-*.md`) proposals  
+- Include dry-run mode for testing
+- Default to HEAD if no commit specified
 
 ## Architecture
 
@@ -41,7 +48,12 @@ Publishes a draft proposal (with `xxxx-` prefix) to GitHub Discussions, renames 
   - `/designs/modules/` and `/designs/modules.v3/` - Module system proposals
 - Draft proposals use `xxxx-shortname.md` naming convention
 - Published proposals use `NNNN-shortname.md` where NNNN is the GitHub discussion number
-- `/scripts/` - Contains utility scripts including `publish-proposal.sh`
+- `/scripts/` - Contains utility scripts
+  - `publish-proposal.sh` - Legacy bash implementation
+  - `/scripts/publish/` - Go implementation of proposal workflow
+    - `publish.go` - Main publishing tool with full workflow automation
+    - `publish_test.go` - Comprehensive test suite
+    - `test.sh` - Test runner script
 
 ### CI Infrastructure
 - `/internal/ci/` - CUE-based CI configuration system
