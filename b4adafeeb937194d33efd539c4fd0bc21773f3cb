@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1458a8b4_a9e0f8e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:41:24Z",
+      "side": 1,
+      "message": "Happy to +2 this, but I\u0027ve indicated where I think some of this config is essentially copy-pasted here from a conceptual \"project config\" per our discussions offline",
+      "revId": "b4adafeeb937194d33efd539c4fd0bc21773f3cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab668644_4be1cc9e",
+        "filename": "CLAUDE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:41:24Z",
+      "side": 1,
+      "message": "Project config.",
+      "revId": "b4adafeeb937194d33efd539c4fd0bc21773f3cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e049bbb_a80e4ae5",
+        "filename": "CLAUDE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:41:24Z",
+      "side": 1,
+      "message": "Project config.",
+      "revId": "b4adafeeb937194d33efd539c4fd0bc21773f3cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53e01809_e3a8c29b",
+        "filename": "CLAUDE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:41:24Z",
+      "side": 1,
+      "message": "Project config.",
+      "revId": "b4adafeeb937194d33efd539c4fd0bc21773f3cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "edd24e1a_1e014066",
+        "filename": "CLAUDE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:41:24Z",
+      "side": 1,
+      "message": "Project config.",
+      "revId": "b4adafeeb937194d33efd539c4fd0bc21773f3cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3096daf8_c3efa963",
+        "filename": "CLAUDE.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-06T10:41:24Z",
+      "side": 1,
+      "message": "Project config (maybe even higher level)",
+      "revId": "b4adafeeb937194d33efd539c4fd0bc21773f3cb",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
