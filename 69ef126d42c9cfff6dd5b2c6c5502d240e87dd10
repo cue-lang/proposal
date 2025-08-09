@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a969c321_8dd8f727",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-09T11:55:47Z",
+      "side": 1,
+      "message": "TODO: add link to the CUE specification.",
+      "parentUuid": "5c992566_f6d16f65",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "cddf812d_d7a87672",
         "filename": "designs/language/4014-aliases-v2.md",
         "patchSetId": 5
@@ -88,6 +106,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d2b39298_62cdc6e2",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-09T11:55:47Z",
+      "side": 1,
+      "message": "Only for aliases. But as per our discussion, we may not have these builtins at all.",
+      "parentUuid": "e3ed2e1d_d4256946",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b8a82b86_3c2d4b52",
         "filename": "designs/language/4014-aliases-v2.md",
         "patchSetId": 5
@@ -99,6 +135,24 @@
       "writtenOn": "2025-08-05T13:00:18Z",
       "side": 1,
       "message": "It would be nice to have an example of each of these in both the old and new syntax so we can do side-by-side comparisons and fully understand exactly what the proposal is changing and its likely impact on the appearance of real-world CUE code.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "73d1f6d2_b5419aa4",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-09T11:55:47Z",
+      "side": 1,
+      "message": "See detailed design.",
+      "parentUuid": "b8a82b86_3c2d4b52",
       "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -207,6 +261,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "43446d72_7174c84d",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-09T11:55:47Z",
+      "side": 1,
+      "message": "As discussed, we could use the let X \u003d self form for any value aliases and get rid of the builtins and use foo~(K,V) instead.",
+      "parentUuid": "8e2cfb7f_1bbc9cc2",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8261e62a_c5391ba7",
         "filename": "designs/language/4014-aliases-v2.md",
         "patchSetId": 5
@@ -218,6 +290,24 @@
       "writtenOn": "2025-08-05T13:00:18Z",
       "side": 1,
       "message": "Note that AFAIK the spec does not define`_` as the blank identifier like Go does, and underscore is currently disallowed as an alias identifier, so this would imply some additional change to the spec, I guess.\n\nNote that this _does_ work currently, but probably should not:\n\n```\nimport _ \"strings\"\n\nx: _.ToUpper(\"xxx\")\n```",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c0cbd4b_d299f172",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-09T11:55:47Z",
+      "side": 1,
+      "message": "That is a separate bug.",
+      "parentUuid": "8261e62a_c5391ba7",
       "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -252,6 +342,24 @@
       "writtenOn": "2025-08-05T13:00:18Z",
       "side": 1,
       "message": "I can\u0027t work out how I feel about this, and it could do with an example or two to make the syntax obvious to the reader of this proposal. AIUI, this means that for optional and required fields, this means that for optional and required fields, the syntax would look like:\n\n```\noptional?~X: foo\nrequired!~Y: bar\n```\n\nrather than:\n\n```\noptional~X?: foo\nrequired~Y!: bar\n```\n\nI _think_ I prefer the latter, as it has less concatenated symbols: it\u0027s arguably more obvious that `?~` and `!~` aren\u0027t some kind of operator by themselves.",
+      "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "26341733_62868f85",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-09T11:55:47Z",
+      "side": 1,
+      "message": "No strong opinion. Happy swapping it around.",
+      "parentUuid": "f62c752b_1898b6fe",
       "revId": "69ef126d42c9cfff6dd5b2c6c5502d240e87dd10",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
