@@ -107,7 +107,7 @@ As noted above, some (but not all) proposals need to be elaborated in a design d
 where `NNNN` is the GitHub discussion number and `shortname` is a short name
 (a few dash-separated words at most).
 
-- The design doc should follow [the template](design/TEMPLATE.md). [TODO]
+- The design doc should follow [the template](designs/TEMPLATE.md). [TODO]
 
 - The design doc should address any specific concerns raised during the initial discussion.
 
