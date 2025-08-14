@@ -13,7 +13,7 @@ other languages, and better integrate aliases with query syntax.
 
 ## Background
 
-The current CUE specification defines seven (!) different kinds of aliases
+The current CUE specification defines [seven (!) different kinds of aliases](https://cuelang.org/docs/references/spec/#aliases)
 spread over five different syntactic positions, making the system complex and
 hard for users to learn without intimate knowledge of CUE syntax.
 
@@ -29,11 +29,11 @@ This is problematic because:
   syntax, as the `=`can look like an assignment.
 * Minor issue: in pattern constraints with regular expression comparators, using
   `=` requires aspace to avoid an illegal token, e.g., `[X= =~"^[A-Z]"]`.
-* Users should generally prefer value aliases over field aliases, but the
-  current syntax make field aliases more convenient, leading to confusion.
-  As a reminder, value and field aliases differ subtly. In general, one should
-  use field aliases to refer to recursive types or templates, while using value
-  aliases in most other cases.
+* Users should generally need the value of a field rather than a reference to
+  the field itself, but the current syntax makes field aliases more convenient,
+  leading to confusion. As a reminder, value and field aliases differ subtly.
+  In general, one should use field aliases to refer to recursive types,
+  while using value aliases in most other cases.
 
 Additionally, the semantics of the aliases is hard to get right.
 Evidence for this can be found in various open issues, such as:
@@ -46,6 +46,7 @@ Evidence for this can be found in various open issues, such as:
 ### Alternative Syntax for Aliases
 We propose replacing all current alias forms with a single form using the `~`
 syntax as a postfix notation.
+Other aspects of aliases, such as scoping rules, will remain the same.
 
 The primary proposed syntax for a field alias is:
 
@@ -54,25 +55,39 @@ field~X: value
 ```
 where `X` is an identifier representing the alias. This alias `X` refers to the
 position/field where it is declared.
+In this example, both the field name and the alias `X` are brought into scope.
 
-To make up for lost functionality from eliminating other alias types, and to
-allow referring to different aspects of a field alias `X` (defined as `field~X:
-value`), we propose the following builtins:
+With the new alias syntax, a field alias `X` (defined as `field~X: value`)
+always refers to the field itself, similar to current CUE's field alias.
+This means a reference to the field declaration position, which when evaluated
+includes both the field's structure and any constraints defined on it.
+This is useful for recursive types.
+
+To obtain the value of a field (what was previously called a "value alias"),
+use `let` with `self`:
+
+```cue
+field~X: {
+    let V = self  // V now holds the value of the field
+    // X refers to the field itself
+    // V refers to the value
+}
+```
+
+We also propose a builtin for accessing the field name:
 
 * `keyOf(X)`: Refers to the name of the field (`"field"` in `field~X: value`).
-* `refOf(X)`: Refers to the field itself, similar to current CUE's field
-  alias.
-* `valueOf(X)`: Directly links to the value of the field (`value` in `field~X:
-  value`).
-  Referencing an alias `X` directly (e.g., just `X`) outside of a builtin is
-  equivalent to using `valueOf(X)`.
+  This is allowed when `X` is bound to a field position. For example:
+  ```cue
+  x~X: {
+      y: keyOf(X)  // evaluates to "x"
+  }
+  ```
+  Note that `keyOf` could be used even with identifiers that clearly have a key,
+  such as `keyOf(x)` for `x: {}`.
 
-The distinction between `refOf(X)` and `valueOf(X)` can be confusing, and
-users should generally use value aliases or the direct reference `X` as a
-shorthand for `valueOf(X)`.
-
-Aliases of fixed and dynamic fields are visible within the scope where the field
-is defined.
+Aliases of fixed and dynamic fields are visible within the scope in which the
+field is defined.
 Aliases on pattern constraints are visible only within the scope of the value of
 the field.
 
@@ -81,34 +96,108 @@ A potential future phase could introduce a second form:
 ```cue
 field~(K,V): value
 ```
-where `K` is equivalent to `keyOf(X)` and `V` is equivalent to `valueOf(X)` of
-Form 1.
+where `K` is equivalent to `keyOf(field)` and `V` would be equivalent to
+referring to `field`.
 
 
 ### Introduction of `self`
 
-We also propose introducing the `self` keyword to refer to the current scope (the value to the right of the innermost colon `:`). `self` can be used to refer to the root of the file (package scope), which was not possible before. The expressions `x: op(self)` and `x~Self: op(Self)` are equivalent.
+We also propose introducing the `self` keyword to refer to the current
+_node_.
+Nodes map to:
+- the top of the file (package scope)
+- any new field introduced by a `:`
+- let declarations
 
+With field aliases always referring to the field, `let V = self` becomes the
+alternative of choice for value aliases.
 
-As for any other predefined identifier in CUE, we would also define `__self` as a non-shadowable variant.
+As for any other predefined identifier in CUE, we would also define `__self` as
+a non-shadowable variant.
 
 
 ## Detailed Design and Justification
 
 ### Comparison between Current and Proposed Syntax
 
+Here are side-by-side examples showing how real-world CUE code would change:
+
+#### Field Alias Example
+```cue
+// Old syntax
+data=Config: {
+    host: "localhost"
+    port: 8080
+    url: "http://\(data.host):\(data.port)"
+}
+
+// New syntax
+Config~data: {
+    host: "localhost"
+    port: 8080
+    url: "http://\(data.host):\(data.port)"  // data refers to the field itself
+}
+```
+
+#### Value Alias Example
+```cue
+settings: timeout: 30
+settings: #Settings
+
+#Settings: timeout: int
+
+// Old syntax
+#Settings: X={
+    retry: X.timeout * 2
+}
+// New syntax
+#Settings: {
+    let X = self
+
+    retry: X.timeout * 2
+}
+```
+Note that this using a field alias on `#Settings` would not give the desired
+result in this case, as it would refer to `#Settings.timeout`, not the
+given value in `settings`.
+
+#### Pattern Constraint Example
+```cue
+// Old syntax
+[K=string]: {
+    name: K
+    type: "dynamic"
+}
+
+// New syntax using (K,V)
+[string]~(K,_): {
+    name: K
+    type: "dynamic"
+}
+
+// New syntax using builtin
+[string]~X: {
+    name: keyOf(X)
+    type: "dynamic"
+}
+```
+
 | **alias type**          | **old syntax**                 | **old ref**   | **new syntax**                               | **new ref**             |
 | :---------------------- | :----------------------------- | :------------ | :------------------------------------------- | :---------------------- |
-| field                   | `F=label: value`                 | `F`             | `label~X: value`                               | `refOf(X)`              |
-| dynamic field           | `F=(label): value`               | `F`             | `(label)~X: value`                             | `refOf(X)`              |
-| dynamic label           | `(K=expr): value`                | `K`             | `(label)~X: value`<br>`(label)~(K,_): value`   | `keyOf(X)`<br>`K`           |
-| pattern constraint field| `F=[expr]: value`                | `F`             | `[expr]~X: value`                              | `refOf(X)`              |
-| pattern constraint label| `[K=expr]: value`                | `K`             | `[expr]~X: value`<br>`[expr]~(K,_): value`       | `keyOf(X)`<br>`K`           |
-| value                   | `label: V=value`                 | `V`             | `label~X: value`                               | `X`<br>`valueOf(X)`         |
-| list element            | `x: [V=value]` (not implemented) | `X`             | `x~X: [ value ]`                               | `X.0`<br>`X[0]`                     |
+| field                   | `F=label: value`                 | `F`             | `label~X: value`                               | `X`                     |
+| dynamic field           | `F=(label): value`               | `F`             | `(label)~X: value`                             | `X`                     |
+| dynamic label           | `(K=expr): value`                | `K`             | `(label)~X: value`<br>`(label)~(K,V): value`   | `keyOf(X)`<br>`K`       |
+| pattern constraint field| `F=[expr]: value`                | `F`             | `[expr]~X: value`                              | `X`                     |
+| pattern constraint label| `[K=expr]: value`                | `K`             | `[expr]~X: value`<br>`[expr]~(K,V): value`     | `keyOf(X)`<br>`K`       |
+| value                   | `label: V=value`                 | `V`             | `label: {let V = self, value }`              | `V`                     |
+| list element            | `x: [V=value, V+1]` (not implemented) | `V`             | (no direct equivalent - see note below)       | N/A                        |
 
-The value alias types works for all field types, including dynamic fields and
-pattern constraints.
+Value aliases can be created for all field types using `let V = self`, including
+for dynamic fields and pattern constraints.
+
+Note: for the `(K,V)` variant, if only the key is needed, `V` can be
+replaced with `_` as a blank identifier to indicate the value is unused.
+
 
 ### Usage of `self`
 
@@ -142,11 +231,25 @@ after the label.
 
 *   **Proposed Syntax (Excerpts):**
     ```ebnf
-    Field       = Label ":" { Label ":" } Expression { attribute } .
-    Label       = LabelExpr [ "~" identifier  ].
-    LabelExpr   = LabelName [ "?" | "!" ] | "[" Expression "]" .
-    LabelName   = identifier | simple_string_lit | "(" Expression ")" .
+    Field        = Label ":" { Label ":" } Expression { attribute } .
+    Label        = AliasedLabel [ "?" | "!" ] | "[" Expression "]" .
+    AliasedLabel = LabelName [ "~" identifier ] .
+    LabelName    = identifier | simple_string_lit | "(" Expression ")" .
     ```
+
+For optional and required fields, the alias comes after the field name but
+before the constraint marker. For example:
+```cue
+// Optional field with alias
+optional~X?: foo
+
+// Required field with alias  
+required~Y!: bar
+```
+
+This syntax was chosen over `optional?~X: foo` to make it clearer that `~`
+binds to the field name, not to a composite operator like `?~`.
+
 Note that this reduces the number of positions on which an alias can occur from
 three to one.
 
@@ -255,14 +358,19 @@ The issue of requiring a space with `=` aliases in pattern constraints (`[X=
 
 ### List Element Aliases
 
-List aliases (`[X=value, X+1]`), which are currently in the specification but
-not implemented, do not work as straightforwardly with the new syntax.
-The proposal notes that there is no exact equivalent without supporting more
-syntax. Possible workarounds or alternatives are being considered, such as
-allowing `let` in lists, allowing `:` for explicit indices (`[0~X: 1, X, X]`),
-or using struct notation for lists (`{ 0~X: x, 1: X, 2: X }`).
-We could also elide the position, as in `[~X: x, X, X]`, implying an alias for
-the first element.
+List element aliases (e.g., `x: [V=value, V+1]` in the old syntax), which are
+currently in the CUE specification but not implemented, do not have a direct
+equivalent in the new syntax. The old syntax allowed binding an alias to a
+list element that could be referenced within the list literal itself.
+
+Possible workarounds or alternatives being considered include:
+- Allowing `let` expressions within lists
+- Supporting explicit index notation with aliases: `[0~X: 1, X, X]`
+- Using struct notation for lists: `{ 0~X: x, 1: X, 2: X }`
+- Eliding the position for the first element: `[~X: x, X, X]`
+
+Until a solution is chosen, this specific alias type will not be supported in
+the new syntax.
 
 ## Transitioning
 
@@ -298,7 +406,18 @@ when referring to `X` (e.g., `b: ~X`), were also considered.
 As a reminder.
 
 ```
+// Old syntax
 F=foo: V={
+    bar: {
+        bar: 1
+    }
+    x: F.bar // field alias: equivalent to foo.bar
+    y: V.bar // value alias: equivalent to bar
+}
+
+// New syntax
+foo~F: {
+    let V = self
     bar: {
         bar: 1
     }
@@ -307,6 +426,6 @@ F=foo: V={
 }
 ```
 These generally result in the same outcomes, but may differ if a value is used as a closure.
-In general: if a reference refers to a recursive "template" or "type", use a field alias, otherwise use a value alias.
+In general: if a reference refers to a recursive "type", use a field alias, otherwise use `let V = self` for a value alias.
 
 -->
