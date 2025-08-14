@@ -73,7 +73,7 @@ The CI system uses CUE to define GitHub workflows declaratively, then generates 
 
 - Design documents should be wrapped at 80 columns
 - Each sentence should start on a new line for better diff readability
-- Use the proposal template at `/design/TEMPLATE.md` when creating new design documents
+- Use the proposal template at `/designs/TEMPLATE.md` when creating new design documents
 - Comments on PRs should focus on grammar/spelling, not content (content discussion happens in GitHub Discussions)
 
 ## Development Workflow
