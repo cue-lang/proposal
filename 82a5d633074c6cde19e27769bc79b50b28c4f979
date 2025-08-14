@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7ee4295_7ae621af",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "```suggestion\ndesign/language: updates based on feedback\n```",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "722f3333_f0ddbcc7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "This is great! I really like the removal of refOf and valueOf in favour of `self`, although I think I\u0027d go further still and remove `keyOf` too, so there\u0027s only one way to do it.",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9edbdd40_6ce736e6",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "I thought perhaps that since the other builtin functions had gone, we could just define the `field~(K, V)` syntax as primary, meaning we wouldn\u0027t need any new builtins at all.",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "225fb5ec_6a5d638f",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "This isn\u0027t entirely clear, because I think that in:\n```\nlet x \u003d self\n```\n`self` does _not_ refer directly to itself, as this point would suggest, but instead\nto the outer scope. I think some slightly more nuanced language\nis needed here.",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b186fe75_e085f0b8",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "I think it would be worth pointing out, for the benefit of those who might not be wholly familiar with the current semantics, that `data.host` always refers to the _original_ value of the `host` field, not to anything it\u0027s been unified with. To that end, maybe worth defining `host: *\"localhost\" | string` to that end so it\u0027s not necessarily the final value?",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87c83c17_cf4f611e",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "Presumably this _could_ be:\n```\n   retry: self.timeout * 2\n```\nso the `let` isn\u0027t always needed.\nPerhaps worth including a comment or additional example field that makes that clear?",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2dc4bb7d_a89621b6",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "```suggestion\nNote that using a field alias on `#Settings` would not give the desired\n```",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e5798cf_b027e929",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "Again, I\u0027d be inclined to remove this alternative from from the proposal.",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7c0b5ba_d99f22f8",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2025-08-14T16:26:58Z",
+      "side": 1,
+      "message": "I can\u0027t see how this syntax admits aliases on pattern constraints (`[string]~x: y`)",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
