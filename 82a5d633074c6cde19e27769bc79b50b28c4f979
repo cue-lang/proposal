@@ -20,6 +20,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "5d3f8c44_58bd2e1f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-16T10:04:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e7ee4295_7ae621af",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "722f3333_f0ddbcc7",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
@@ -99,6 +117,24 @@
       "writtenOn": "2025-08-14T16:26:58Z",
       "side": 1,
       "message": "Presumably this _could_ be:\n```\n   retry: self.timeout * 2\n```\nso the `let` isn\u0027t always needed.\nPerhaps worth including a comment or additional example field that makes that clear?",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc7200f2_e01b40ae",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-16T10:04:04Z",
+      "side": 1,
+      "message": "No, because retry introduces a new node. So self would not work here.",
+      "parentUuid": "87c83c17_cf4f611e",
       "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
