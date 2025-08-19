@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a882d18_40dcfe2c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2025-08-19T14:39:03Z",
+      "side": 1,
+      "message": "Again, +2 on the basis you\u0027ve tested this with an actual proposal :)",
+      "revId": "eaf06c39b4f26c7f07e27693b8b3fb91bbc7fb68",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
