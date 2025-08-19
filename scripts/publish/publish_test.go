@@ -480,6 +480,7 @@ Test content.`
 			newProposalFile: filepath.Join(repo.dir, "test1.md"),
 			discussionURL:   "https://github.com/cue-lang/cue/discussions/9999",
 			dryRun:          false,
+			isDraft:         true,
 		}
 
 		if err := publisher.updateDiscussionLink(); err != nil {
@@ -513,6 +514,7 @@ Test content.`
 			newProposalFile: filepath.Join(repo.dir, "test2.md"),
 			discussionURL:   "https://github.com/cue-lang/cue/discussions/8888",
 			dryRun:          false,
+			isDraft:         true,
 		}
 
 		if err := publisher.updateDiscussionLink(); err != nil {
