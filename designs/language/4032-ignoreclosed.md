@@ -1,6 +1,6 @@
 # Eliminate Embedding-Based Struct Opening Semantics
 
-2025/MM/DD
+2025/8/19
 
 **Status:** Draft
 **Lifecycle:** Proposed
