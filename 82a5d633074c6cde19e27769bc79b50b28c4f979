@@ -211,6 +211,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "54829975_1312da53",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-19T12:17:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bc090ecb_e8a9c327",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2dc4bb7d_a89621b6",
