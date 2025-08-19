@@ -160,13 +160,44 @@ settings: #Settings
 // New syntax
 #Settings: {
     let X = self
-
     retry: X.timeout * 2
+
+    // OR
+
+    retry: self.timeout * 2
 }
 ```
 Note that using a field alias on `#Settings` would not give the desired
 result in this case, as it would refer to `#Settings.timeout`, not the
 given value in `settings`.
+
+#### Validator Example
+When we introduce `must`, or other validators, it will be necessary to refer to
+the current value. Since `self` binds to the inner block, this means that we
+need to put the validators themselves in a block:
+```cue
+import "strconv"
+
+// a is a string respresenting an integer
+a: {must(strconv.Atoi(self))}
+```
+Note that the curly braces around the validator are necessary to resolve `self`
+correctly to `a`.
+
+#### Comprehension Example
+Note that a `self` in an "embedded" struct will end up referring to the value
+in which it is embedded.
+```cue
+
+a: {
+    if true {
+        x: self.y // resolves to 3
+    }
+}
+a: y: 3
+```
+Here, `self` is scoped by the block associated with `if`.
+This block will ultimately unify with `a`, meaning that `self.y` resolves to `3`.
 
 #### Pattern Constraint Example
 ```cue
@@ -246,7 +277,7 @@ the closing bracket. For example:
 // Optional field with alias
 optional~X?: foo
 
-// Required field with alias  
+// Required field with alias
 required~Y!: bar
 
 // Pattern constraint with alias (both forms supported)
