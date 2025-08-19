@@ -156,20 +156,50 @@ func (p *Publisher) findProposalFile() error {
 	}
 	p.commitHash = strings.TrimSpace(commitHash)
 
-	// Get files changed in the commit
-	stdout, _, err := p.runCommand("git", "diff-tree", "--no-commit-id", "--name-only", "-r", p.commitRef)
+	// Get files changed in the commit with rename detection
+	stdout, _, err := p.runCommand("git", "diff-tree", "--no-commit-id", "--name-status", "-r", "-M", p.commitRef)
 	if err != nil {
 		return fmt.Errorf("failed to get files from commit: %v", err)
 	}
 
-	// Find proposal files
+	// Find proposal files, handling renames
 	var proposalFiles []string
+	var renamedFrom, renamedTo string
+
 	for _, line := range strings.Split(strings.TrimSpace(stdout), "\n") {
 		if line == "" {
 			continue
 		}
-		if strings.HasPrefix(line, "designs/") && strings.HasSuffix(line, ".md") {
-			proposalFiles = append(proposalFiles, line)
+
+		// Parse git diff-tree output: STATUS\tFILE or STATUS\tOLD_FILE\tNEW_FILE
+		parts := strings.Split(line, "\t")
+		if len(parts) < 2 {
+			continue
+		}
+
+		status := parts[0]
+
+		if strings.HasPrefix(status, "R") { // Rename
+			if len(parts) < 3 {
+				continue
+			}
+			oldFile := parts[1]
+			newFile := parts[2]
+
+			// Check if this is a proposal file rename
+			if strings.HasPrefix(oldFile, "designs/") && strings.HasSuffix(oldFile, ".md") &&
+				strings.HasPrefix(newFile, "designs/") && strings.HasSuffix(newFile, ".md") {
+				renamedFrom = oldFile
+				renamedTo = newFile
+				// For renames, we only consider the target file as the proposal file
+				proposalFiles = append(proposalFiles, newFile)
+				p.logger.Info("Detected proposal file rename: %s -> %s", oldFile, newFile)
+			}
+		} else if status == "A" || status == "M" { // Added or Modified
+			file := parts[1]
+			if strings.HasPrefix(file, "designs/") && strings.HasSuffix(file, ".md") {
+				proposalFiles = append(proposalFiles, file)
+			}
 		}
 	}
 
@@ -181,6 +211,9 @@ func (p *Publisher) findProposalFile() error {
 		p.logger.Error("Multiple proposal files found in commit %s:", p.commitRef)
 		for _, file := range proposalFiles {
 			fmt.Fprintf(os.Stderr, "  %s\n", file)
+		}
+		if renamedFrom != "" && renamedTo != "" {
+			p.logger.Info("Note: Detected rename from %s to %s", renamedFrom, renamedTo)
 		}
 		return fmt.Errorf("each proposal should be in its own commit")
 	}
@@ -572,6 +605,12 @@ func (p *Publisher) renameProposal() error {
 	if !p.isDraft {
 		p.logger.Info("Step 3: Skipping file rename (already numbered: %s)", p.basename)
 		p.newProposalFile = p.proposalFile
+
+		// For numbered proposals, still update the discussion link if needed
+		if err := p.updateDiscussionLink(); err != nil {
+			return fmt.Errorf("failed to update discussion link: %v", err)
+		}
+
 		return nil
 	}
 
@@ -766,23 +805,40 @@ func (p *Publisher) updateDiscussionLink() error {
 		return nil
 	}
 
-	// Read the current content of the renamed file
-	content, err := os.ReadFile(p.newProposalFile)
-	if err != nil {
-		return fmt.Errorf("failed to read proposal file: %v", err)
+	// Read the current content of the file (from working directory for drafts, from commit for numbered)
+	var content []byte
+	var err error
+
+	if p.isDraft {
+		// For drafts, read from working directory (after rename)
+		content, err = os.ReadFile(p.newProposalFile)
+		if err != nil {
+			return fmt.Errorf("failed to read proposal file: %v", err)
+		}
+	} else {
+		// For numbered proposals, read from the commit
+		stdout, _, err := p.runCommand("git", "show", fmt.Sprintf("%s:%s", p.commitRef, p.proposalFile))
+		if err != nil {
+			return fmt.Errorf("failed to read proposal file from commit: %v", err)
+		}
+		content = []byte(stdout)
 	}
 
 	// Look for the Discussion Channel line and update it
 	lines := strings.Split(string(content), "\n")
 	updated := false
-	discussionChannelPattern := regexp.MustCompile(`^(\*\s+\*\*Discussion Channel\*\*:\s*)(.*)$`)
+	// Match formats like: **Discussion Channel** GitHub: {link}, **Discussion Channel**: {link}, or *   **Discussion Channel**: TBD
+	discussionChannelPattern := regexp.MustCompile(`^(\*\s+\*\*Discussion Channel\*\*:\s*|\*\*Discussion Channel\*\*\s*:?\s*(?:GitHub:?\s*)?)(.*)$`)
 
 	for i, line := range lines {
 		if matches := discussionChannelPattern.FindStringSubmatch(line); matches != nil {
-			// Update the line with the GitHub discussion URL
-			lines[i] = fmt.Sprintf("%s%s", matches[1], p.discussionURL)
-			updated = true
-			break
+			// Check if it contains a placeholder like {link} or needs updating
+			if strings.Contains(matches[2], "{link}") || strings.Contains(matches[2], "TBD") || strings.Contains(matches[2], "TODO") {
+				// Update the line with the GitHub discussion URL
+				lines[i] = fmt.Sprintf("%s%s", matches[1], p.discussionURL)
+				updated = true
+				break
+			}
 		}
 	}
 
@@ -801,11 +857,39 @@ func (p *Publisher) updateDiscussionLink() error {
 	}
 
 	if updated {
-		// Write the updated content back
 		updatedContent := strings.Join(lines, "\n")
-		if err := os.WriteFile(p.newProposalFile, []byte(updatedContent), 0644); err != nil {
-			return fmt.Errorf("failed to write updated proposal file: %v", err)
+
+		if p.isDraft {
+			// For drafts, write to working directory file
+			if err := os.WriteFile(p.newProposalFile, []byte(updatedContent), 0644); err != nil {
+				return fmt.Errorf("failed to write updated proposal file: %v", err)
+			}
+		} else {
+			// For numbered proposals, we need to update the commit
+			// This is complex for non-HEAD commits, so for now we'll use a different approach
+			if p.commitRef == "HEAD" {
+				// Write to working directory and amend
+				if err := os.WriteFile(p.proposalFile, []byte(updatedContent), 0644); err != nil {
+					return fmt.Errorf("failed to write updated proposal file: %v", err)
+				}
+
+				// Stage and amend the commit
+				_, _, err := p.runCommand("git", "add", p.proposalFile)
+				if err != nil {
+					return fmt.Errorf("failed to stage updated file: %v", err)
+				}
+
+				_, _, err = p.runCommand("git", "commit", "--amend", "--no-edit")
+				if err != nil {
+					return fmt.Errorf("failed to amend commit: %v", err)
+				}
+			} else {
+				// For historical commits, this is complex - we'd need to rewrite history
+				p.logger.Warn("Cannot update discussion link in historical commit %s", p.commitRef)
+				p.logger.Info("The discussion link update will be included in the discussion content instead")
+			}
 		}
+
 		p.logger.Success("Updated Discussion Channel link to %s", p.discussionURL)
 	} else {
 		p.logger.Warn("Could not find or add Discussion Channel field in proposal")
@@ -871,8 +955,8 @@ func (p *Publisher) submitCL() error {
 		return nil
 	}
 
-	// Run git codereview mail
-	stdout, stderr, err := p.runCommand("git", "codereview", "mail")
+	// Run git codereview mail with specific commit
+	stdout, stderr, err := p.runCommand("git", "codereview", "mail", p.commitRef)
 	if err != nil {
 		// Check if it's the "no new changes" error which we can ignore
 		if strings.Contains(stderr, "no new changes") || strings.Contains(stdout, "no new changes") {
@@ -987,19 +1071,29 @@ func (p *Publisher) runTrybots() error {
 func (p *Publisher) extractProposalSummary(content string) string {
 	lines := strings.Split(content, "\n")
 
-	// First try to find a "## Summary" section
+	// First try to find a summary section (## Summary, ## Abstract, ## Objective, etc.)
 	var summary []string
 	inSummary := false
+	summaryHeaders := []string{"## Summary", "## Abstract", "## Objective", "## Objective / Abstract", "## Overview"}
+
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
-		if strings.HasPrefix(line, "## Summary") {
-			inSummary = true
-			continue
+
+		// Check if this line starts a summary section
+		for _, header := range summaryHeaders {
+			if strings.HasPrefix(line, header) {
+				inSummary = true
+				break
+			}
 		}
-		if inSummary && strings.HasPrefix(line, "##") {
+
+		if inSummary && strings.HasPrefix(line, "##") && !strings.HasPrefix(line, "## Summary") &&
+			!strings.HasPrefix(line, "## Abstract") && !strings.HasPrefix(line, "## Objective") &&
+			!strings.HasPrefix(line, "## Overview") {
 			break // Hit next section
 		}
-		if inSummary && line != "" {
+
+		if inSummary && line != "" && !strings.HasPrefix(line, "##") {
 			summary = append(summary, line)
 		}
 	}
