@@ -1,6 +1,6 @@
 # Eliminate Embedding-Based Struct Opening Semantics
 
-2025/MM/DD
+2025/8/19
 
 **Status:** Draft
 **Lifecycle:** Proposed
@@ -12,7 +12,7 @@
   - [#3638](https://github.com/cue-lang/cue/issues/3638) - "incomplete value" regression in evalv3 which appears to be order dependent
 **Reviewers:** TBD
 **Approvers:** TBD
-**Discussion Channel** GitHub: {link}
+**Discussion Channel** GitHub: https://github.com/cue-lang/cue/discussions/4032
 
 ## Objective / Abstract
 
