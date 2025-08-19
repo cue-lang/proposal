@@ -70,6 +70,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "db419217_00ffa923",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-19T12:16:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9edbdd40_6ce736e6",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "225fb5ec_6a5d638f",
@@ -87,6 +105,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a18a8e23_5a04a5ce",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-19T12:16:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "225fb5ec_6a5d638f",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b186fe75_e085f0b8",
@@ -100,6 +136,24 @@
       "writtenOn": "2025-08-14T16:26:58Z",
       "side": 1,
       "message": "I think it would be worth pointing out, for the benefit of those who might not be wholly familiar with the current semantics, that `data.host` always refers to the _original_ value of the `host` field, not to anything it\u0027s been unified with. To that end, maybe worth defining `host: *\"localhost\" | string` to that end so it\u0027s not necessarily the final value?",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be304b80_576fb5a5",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-19T12:16:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b186fe75_e085f0b8",
       "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -174,6 +228,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1f8ded7_a5f1147c",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-19T12:16:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2dc4bb7d_a89621b6",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5e5798cf_b027e929",
@@ -191,6 +263,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b7233c2_ad8cac80",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-19T12:16:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5e5798cf_b027e929",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f7c0b5ba_d99f22f8",
@@ -204,6 +294,24 @@
       "writtenOn": "2025-08-14T16:26:58Z",
       "side": 1,
       "message": "I can\u0027t see how this syntax admits aliases on pattern constraints (`[string]~x: y`)",
+      "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "caeb5433_09d5deb3",
+        "filename": "designs/language/4014-aliases-v2.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2025-08-19T12:16:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f7c0b5ba_d99f22f8",
       "revId": "82a5d633074c6cde19e27769bc79b50b28c4f979",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
