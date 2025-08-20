@@ -218,12 +218,12 @@ type:
 }
 
 #Dog: {
-    #Mammal
+    #Mammal...
     breed: string
 }
 
 #Cat: {
-    #Mammal
+    #Mammal...
     lives: int | *9
 }
 
@@ -237,6 +237,9 @@ mammal: #Mammal...
 Note that `#Mammal...` accepts any CUE value conforming to the `#Mammal`
 schema, including values that may not explicitly extend `#Mammal` but have the
 required fields.
+
+Allowing this now prevents having to enumerate all types, especially when
+trying to represent an open-ended set.
 
 ### Implementation Simplifications
 
