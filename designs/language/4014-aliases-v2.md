@@ -141,7 +141,7 @@ Config~data: {
 }
 
 // Example showing data.host refers to original value
-config: Config~data
+config: Config
 config: host: "example.com"  // host is unified to "example.com"
 // data.host still refers to the original constraint (*"localhost" | string), not "example.com"
 ```
