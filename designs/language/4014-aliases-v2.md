@@ -214,6 +214,8 @@ This block will ultimately unify with `a`, meaning that `self.y` resolves to `3`
 }
 ```
 
+#### Summary of equivalent forms
+
 | **alias type**          | **old syntax**                 | **old ref**   | **new syntax**                               | **new ref**             |
 | :---------------------- | :----------------------------- | :------------ | :------------------------------------------- | :---------------------- |
 | field                   | `F=label: value`                 | `F`             | `label~X: value`                               | `X`                     |
