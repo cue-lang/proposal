@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11e7f715_dc68d152",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1021694
+      },
+      "writtenOn": "2025-10-27T12:00:22Z",
+      "side": 1,
+      "message": "PTAL. This will be useful for cuelang.org. I\u0027m not able to trigger the trybot workflows in this repo.",
+      "revId": "15f9e65f87402b7c31721603e94342a7bf72da68",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
