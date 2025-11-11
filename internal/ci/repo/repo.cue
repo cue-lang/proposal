@@ -4,7 +4,7 @@
 package repo
 
 import (
-	"github.com/cue-lang/proposal/internal/ci/base"
+	"github.com/cue-lang/tmp/internal/ci/base"
 )
 
 base
@@ -15,7 +15,3 @@ botGitHubUser:      "cueckoo"
 botGitHubUserEmail: "cueckoo@gmail.com"
 
 defaultBranch: "main"
-
-linuxMachine: "ubuntu-22.04"
-
-latestGo: "go1.23.x"

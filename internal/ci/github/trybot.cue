@@ -16,7 +16,6 @@ package github
 
 import (
 	"list"
-	"strings"
 	"cue.dev/x/githubactions"
 )
 
@@ -34,23 +33,6 @@ workflows: trybot: _repo.bashWorkflow & {
 	jobs: test: {
 		"runs-on": _repo.linuxMachine
 
-		let runnerOSExpr = "runner.os"
-		let runnerOSVal = "${{ \(runnerOSExpr) }}"
-
-		// The repo config holds the standard string representation of a Go
-		// version. setup-go, rather unhelpfully, strips the "go" prefix.
-		let goVersion = strings.TrimPrefix(_repo.latestGo, "go")
-
-		let _setupGoActionsCaches = _repo.setupGoActionsCaches & {
-			#goVersion: goVersion
-			#os:        runnerOSVal
-			_
-		}
-		let installGo = _repo.installGo & {
-			#setupGo: with: "go-version": goVersion
-			_
-		}
-
 		// Only run the trybot workflow if we have the trybot trailer, or
 		// if we have no special trailers. Note this condition applies
 		// after and in addition to the "on" condition above.
@@ -58,10 +40,8 @@ workflows: trybot: _repo.bashWorkflow & {
 
 		steps: [
 			for v in _repo.checkoutCode {v},
-
-			// Install and setup Go
-			for v in installGo {v},
-			for v in _setupGoActionsCaches {v},
+			for v in _repo.installGo {v},
+			for v in _repo.setupCaches {v},
 
 			// CUE setup
 			_installCUE,
