@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbb4af2d_1b3f1638",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-02-24T14:27:04Z",
+      "side": 1,
+      "message": "LGTM with one question regarding the discussion where this will live which needs to be corrected.",
+      "revId": "9f3c41ac41fb298b5fcb1fb3fbf9875efd3b1736",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d7a0624_e6b6d451",
+        "filename": "designs/607-load-io-fs.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-02-24T14:27:04Z",
+      "side": 1,
+      "message": "Discussion surely be in the new discussion created for the proposal?\n\nHave you created a placeholder discussion?",
+      "revId": "9f3c41ac41fb298b5fcb1fb3fbf9875efd3b1736",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "481b8c02_ed75f110",
+        "filename": "designs/607-load-io-fs.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-02-24T14:27:04Z",
+      "side": 1,
+      "message": "Please wrap paragraphs at something reasonable like 80 chars so that we can more readily read, review and add comments.",
+      "revId": "9f3c41ac41fb298b5fcb1fb3fbf9875efd3b1736",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
