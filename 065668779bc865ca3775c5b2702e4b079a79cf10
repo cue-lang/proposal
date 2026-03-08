@@ -135,6 +135,29 @@
       "message": "To avoid doubling the API when we allow non-pure functions, we could have this marker pass as a first argument, for instance.\n\ncue.NewFunc2(cue.Pure, arg0, arg1)\n\nor even\n\ncue.NewFunc2(arg0, arg1, cue.Pure(true))",
       "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8890728_344bcdc6",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-03-08T15:31:37Z",
+      "side": 1,
+      "message": "I think we need to provide more of a \"line of sight\" on what this actually looks like for `cmd/cue`, i.e. people who are \"just using CUE\". Will share more thoughts offline",
+      "range": {
+        "startLine": 253,
+        "startChar": 2,
+        "endLine": 255,
+        "endChar": 10
+      },
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
