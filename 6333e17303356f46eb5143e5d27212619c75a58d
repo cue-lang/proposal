@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f656a4ec_299a8d86",
+        "filename": "designs/4294-value-injection.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-03-08T06:28:05Z",
+      "side": 1,
+      "message": "This doesn\u0027t feel right to me. It feels/reads like we have a special mechanism when it comes to CUE that contains `@inject` attributes, outside of the existing unification mechanism. I was expecting this to read:\n\n```\nconfig: *\"default\" | _ @inject(name\u003d\"example.com/myapp/config\")\n```\n\nI assume this was a typo, not least because of the text that follows, but also because there is no explanation of why this separate default mechanism would be required.\n\nIndeed I think this test (which passes) confirms this must be a typo:\n\n```\nfunc TestInjectUnifyDefault(t *testing.T) {\n\tj :\u003d cuecontext.NewInjector()\n\tj.AllowAll()\n\tctx :\u003d cuecontext.New(cuecontext.Inject(j))\n\n\tj.Register(\"example.com/foo\", ctx.CompileString(`\"injected\"`))\n\n\tv :\u003d ctx.CompileString(`\n\t\t@extern(inject)\n\n\t\tpackage foo\n\n\t\tx: \"default\" @inject(name\u003d\"example.com/foo\")\n\t`)\n\tqt.Assert(t, qt.IsNotNil(v.Err()))\n\tqt.Assert(t, qt.ErrorMatches(v.Err(), `.*conflicting values \"injected\" and \"default\"`))\n}\n```\n\nAnd this test confirm that my version as written is what was intended:\n\n```\nfunc TestInjectUnifyProperDefault(t *testing.T) {\n\tj :\u003d cuecontext.NewInjector()\n\tj.AllowAll()\n\tctx :\u003d cuecontext.New(cuecontext.Inject(j))\n\n\tj.Register(\"example.com/foo\", ctx.CompileString(`\"injected\"`))\n\n\tv :\u003d ctx.CompileString(`\n\t\t@extern(inject)\n\n\t\tpackage foo\n\n\t\tx: *\"default\" | _ @inject(name\u003d\"example.com/foo\")\n\t\ty: *\"default\" | _ @inject(name\u003d\"example.com/bar\")\n\t`)\n\tqt.Assert(t, qt.IsNil(v.Err()))\n\tx :\u003d v.LookupPath(cue.ParsePath(\"x\"))\n\ty :\u003d v.LookupPath(cue.ParsePath(\"y\"))\n\tgotx, errx :\u003d x.String()\n\tgoty, erry :\u003d y.String()\n\tqt.Assert(t, qt.IsNil(errx))\n\tqt.Assert(t, qt.IsNil(erry))\n\tqt.Assert(t, qt.Equals(gotx, \"injected\"))\n\tqt.Assert(t, qt.Equals(goty, \"default\"))\n}\n```\n\nSome tangentially, I will not that on further thinking the points in https://github.com/cue-lang/cue/issues/3296 a very relevant here. But that\u0027s a separate discussion.",
+      "revId": "6333e17303356f46eb5143e5d27212619c75a58d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "caec5bf4_eccb8021",
+        "filename": "designs/4294-value-injection.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-03-08T06:28:05Z",
+      "side": 1,
+      "message": "It might be worth pointing out that defaults (assuming my correction above is correct) don\u0027t currently have any meaning when it comes to fields that are injected with functions. Because to my reading it\u0027s impossible for such a field to be used as a function/validator on the one hand, but have a regular CUE value default on the other.",
+      "revId": "6333e17303356f46eb5143e5d27212619c75a58d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
