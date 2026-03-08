@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f08a6896_b51a6ed9",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-08T09:58:31Z",
+      "side": 1,
+      "message": "Overall very useful!",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9321f731_2d61b50f",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-08T09:58:31Z",
+      "side": 1,
+      "message": "Did you investigate this does not result in any ambiguity?\n\nWould be good to include the EBNF in the proposal.",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68b8e4e2_9656c31f",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-08T09:58:31Z",
+      "side": 1,
+      "message": "Personally I much prefer the `tag\"string with...\"` style (no space).\n\nEither way, I guess both forms would have to be allowed.",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1ef692c_974c2f65",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-08T09:58:31Z",
+      "side": 1,
+      "message": "Note that this is different from the interpolations signature, which is a single list with alternating string and value. But that is probably fine.\n\nEither way, any reason to deviate from this form? Did you evaluate which results in nicer code?\n\nIt would be good to have at least one realistic Go implementation of such a function in this proposal. (or reference to a different CL with one or two)",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d71abd83_4fb58563",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-08T09:58:31Z",
+      "side": 1,
+      "message": "where would these live? \n\nhtml\nencoding/go\n\nI guess, but less clear about sh.",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dc61b94_310b06fb",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-08T09:58:31Z",
+      "side": 1,
+      "message": "That in itself is not sufficient proof it is not ambiguous or can lead to problems down the line. Also we want to avoid lookahead.\n\nAlso, it should be considered what this disallows in the future. For instance, we would not be able to allow lists without commas anymore [1 2 3]. \n\ntry: func\na: try \"foo\" {}\nb: try \"foo\"   // we might want to allow this try form in the future.",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8eb5c61c_ee682c81",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-08T09:58:31Z",
+      "side": 1,
+      "message": "Did you consider just adding a field to Interpolation?",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
