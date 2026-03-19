@@ -71,6 +71,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "573c126b_55bc639e",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-19T17:35:41Z",
+      "side": 1,
+      "message": "Marking as resolved because this is indeed discussion publicly visible aspects of the built-in functions.",
+      "parentUuid": "7f0efdee_fa252036",
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "655ce426_f796c25f",
@@ -88,6 +106,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "570b9779_3da16817",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-19T17:35:41Z",
+      "side": 1,
+      "message": "I think it\u0027s fine to require people to write a wrapper closure for now. We can add a variants that accept a non-error-returning function (e.g. `PureFunc4v` or similar) in the future if it seems worthwhile.\n\nRenamed all to use a `New` prefix to align with `NewList` and friends.",
+      "parentUuid": "655ce426_f796c25f",
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "36cb32a2_b2b51f8b",
@@ -101,6 +137,24 @@
       "writtenOn": "2026-03-06T15:06:48Z",
       "side": 1,
       "message": "Note that validators could theoretically also be non-pure.",
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f2b7b86_24b068b6",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-19T17:35:41Z",
+      "side": 1,
+      "message": "Renamed to `NewPureValidatorFunc`.",
+      "parentUuid": "36cb32a2_b2b51f8b",
       "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -140,6 +194,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b70a57e_f4d6207d",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-19T17:35:41Z",
+      "side": 1,
+      "message": "Marking as resolved for now, as there\u0027s no straightforward alternative here and having a name associated with the function valid aligns with the approach used by the current builtin functions.",
+      "parentUuid": "4417792e_915432a6",
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "94da7578_e22bde9e",
@@ -171,6 +243,24 @@
       "side": 1,
       "message": "I wouldn\u0027t rule it out entirely. After all, we can\u0027t technically print stdlib function values but we still make some effort in that direction by printing a name that\u0027s sufficient to reacquire the function implementation, and that\u0027s a not-entirely implausible avenue of exploration for foreign functions too AFAICS.",
       "parentUuid": "94da7578_e22bde9e",
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e74f44f5_405bfab7",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-19T17:35:41Z",
+      "side": 1,
+      "message": "It seems reasonable to produce an error for now, which leaves our options open for now. As such, marking this as resolved.",
+      "parentUuid": "7f4b9125_0b23b0f0",
       "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -245,6 +335,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb5c0128_405d1fef",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-19T17:35:41Z",
+      "side": 1,
+      "message": "As discussed online, we\u0027ll go with the current API for now: if impure functions are implemented, they might well have a different function signature anyway (for example they might take a context.Context argument).",
+      "parentUuid": "9766cc9a_5dbfbc65",
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a8890728_344bcdc6",
@@ -258,6 +366,30 @@
       "writtenOn": "2026-03-08T15:31:37Z",
       "side": 1,
       "message": "I think we need to provide more of a \"line of sight\" on what this actually looks like for `cmd/cue`, i.e. people who are \"just using CUE\". Will share more thoughts offline",
+      "range": {
+        "startLine": 253,
+        "startChar": 2,
+        "endLine": 255,
+        "endChar": 10
+      },
+      "revId": "065668779bc865ca3775c5b2702e4b079a79cf10",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0cd27f2_d3dfb2ac",
+        "filename": "designs/4293-user-functions-and-validators.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-19T17:35:41Z",
+      "side": 1,
+      "message": "Agreed, but I\u0027ll leave that to a subsequent proposal.",
+      "parentUuid": "a8890728_344bcdc6",
       "range": {
         "startLine": 253,
         "startChar": 2,
