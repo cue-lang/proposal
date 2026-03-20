@@ -178,6 +178,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "28b2c572_30f97d6e",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-20T14:00:07Z",
+      "side": 1,
+      "message": "encoding is probably not bad. We can go with that for now.",
+      "parentUuid": "c0360b12_f0ab40fd",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7dc61b94_310b06fb",
         "filename": "designs/language/4295-tagged-string-literals.md",
         "patchSetId": 3
@@ -229,6 +247,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0309ee82_bda028a6",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-20T14:00:07Z",
+      "side": 1,
+      "message": "Marked as resolved.",
+      "parentUuid": "86abe8e1_af16d9c5",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8eb5c61c_ee682c81",
@@ -260,6 +296,24 @@
       "side": 1,
       "message": "Yes. If we just added a field to Interpolation, then existing parses would just ignore the tag, which would be wrong IMHO - this is a genuinely new syntactic element which affects semantics and should not just be ignored.",
       "parentUuid": "8eb5c61c_ee682c81",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8aa36ae3_938e4af4",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 1013536
+      },
+      "writtenOn": "2026-03-20T14:00:07Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "343bbe2b_a8bba75a",
       "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
