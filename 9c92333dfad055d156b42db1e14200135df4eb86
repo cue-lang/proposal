@@ -194,6 +194,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0836f4b7_5415a8de",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-20T15:23:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "28b2c572_30f97d6e",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7dc61b94_310b06fb",
