@@ -213,6 +213,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "86abe8e1_af16d9c5",
+        "filename": "designs/language/4295-tagged-string-literals.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-03-20T12:04:53Z",
+      "side": 1,
+      "message": "I just realised that we already have a similar ambiguity with respect to `if`:\n\n```\nimport \"strconv\"\n\n_a: {\n\tif: strconv.Atoi\n\tif(\"2\") \u003d\u003d 2 {\n\t\ta: 2\n\t}\n\ta: *1 | _\n}\na: _a.a\n```\nThis exports as `{\"a\": 1}`, when arguably it could be a syntax error.",
+      "parentUuid": "59180e56_4554c370",
+      "revId": "9c92333dfad055d156b42db1e14200135df4eb86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8eb5c61c_ee682c81",
         "filename": "designs/language/4295-tagged-string-literals.md",
         "patchSetId": 3
