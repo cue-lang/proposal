@@ -3,6 +3,109 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9011d24a_5e5c5468",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-24T04:52:56Z",
+      "side": 1,
+      "message": "How do the user know to run `cue plugin build`? How does the user know that running `cue plugin build` is not necessary?",
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bffd2df5_4e4ae19a",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 568,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-24T04:52:56Z",
+      "side": 1,
+      "message": "Missing closing `**`?",
+      "range": {
+        "startLine": 568,
+        "startChar": 44,
+        "endLine": 568,
+        "endChar": 45
+      },
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "304807dc_9baee9f8",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 615,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-24T04:52:56Z",
+      "side": 1,
+      "message": "This needs explaining why. It seems like the tail wagging the dog here; what is the reason for not including the version? It\u0027s a correctness gap, something that can trivially be closed by including the Go version... why leave it out?",
+      "range": {
+        "startLine": 615,
+        "startChar": 7,
+        "endLine": 615,
+        "endChar": 45
+      },
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05d0f2eb_2d855d73",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 704,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-24T04:52:56Z",
+      "side": 1,
+      "message": "Is there a reason we are choosing to use the word \"instance\" here, as opposed to \"package\"?",
+      "range": {
+        "startLine": 704,
+        "startChar": 62,
+        "endLine": 704,
+        "endChar": 73
+      },
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fda2b718_dbb5bb99",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 706,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-24T04:52:56Z",
+      "side": 1,
+      "message": "Just to confirm my own understanding, the version of a Go function we resolve to (because of MVS there will only be one) is independent of the CUE instance and CUE module version, correct? i.e. all that ultimately matters is that some CUE code somewhere referenced that function (via its package).\n\nThe reason I ask is that it sounds like this map will have multiple entries for the same Go function, just with different keys.",
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ef9edec3_6418ae0f",
         "filename": "designs/XXXX-go-plugins.md",
         "patchSetId": 1
