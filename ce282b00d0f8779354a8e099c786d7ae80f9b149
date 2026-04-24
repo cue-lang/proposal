@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef9edec3_6418ae0f",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 931,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-24T04:29:34Z",
+      "side": 1,
+      "message": "Per my feedback in the original document, this needs to be stated as what the user would want/need to do first. i.e. that `cue vet $pkg@$version` is something that should work, regardless of whether there is Go code or not in the CUE being evaluated. \n\nWhether that happens via `cue plugin build` or some such is for this document to discover.",
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
