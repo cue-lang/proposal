@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "41621364_e18f689c",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-04-24T07:51:55Z",
+      "side": 1,
+      "message": "Two phases:\n- if the user runs `cue` and there\u0027s no `cue.mod/plugin` directory but the code being evaluated uses `@extern(go)`, we\u0027ll get an error saying that Go plugins are used and we should invoke `cue plugin build`. (with the current PoC we get an error but not the suggestion to invoke `cue plugin build` - that will be fixed)\n- if the user runs `cue` and there\u0027s a `cue.mod/plugin` directory but no executable built, we get an `module uses plugins; build with \"cue plugin build\"` error\n\nI\u0027ve added a \"Bootstrapping\" section outlining the above.",
+      "parentUuid": "9011d24a_5e5c5468",
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bffd2df5_4e4ae19a",
@@ -41,6 +59,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a8c678d_8be3c93b",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 568,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-04-24T07:51:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bffd2df5_4e4ae19a",
+      "range": {
+        "startLine": 568,
+        "startChar": 44,
+        "endLine": 568,
+        "endChar": 45
+      },
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "304807dc_9baee9f8",
@@ -54,6 +96,30 @@
       "writtenOn": "2026-04-24T04:52:56Z",
       "side": 1,
       "message": "This needs explaining why. It seems like the tail wagging the dog here; what is the reason for not including the version? It\u0027s a correctness gap, something that can trivially be closed by including the Go version... why leave it out?",
+      "range": {
+        "startLine": 615,
+        "startChar": 7,
+        "endLine": 615,
+        "endChar": 45
+      },
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "faa0609e_bf0feb53",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 615,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-04-24T07:51:55Z",
+      "side": 1,
+      "message": "I\u0027ve added some text explaining this decision.",
+      "parentUuid": "304807dc_9baee9f8",
       "range": {
         "startLine": 615,
         "startChar": 7,
@@ -89,6 +155,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0e19562f_d01707ef",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 704,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-04-24T07:51:55Z",
+      "side": 1,
+      "message": "Because according to the CUE spec, that\u0027s the correct naming (see https://cuelang.org/docs/reference/spec/#modules-instances-and-packages).\n\nPersonally I\u0027m not that keen on the naming (informally, we say package and in fact there\u0027s no real \"thing\" that is a package), but I\u0027ve gone with the official naming for the sake of argument. Happy to use the word \"package\" throughout if you think that\u0027s better.",
+      "parentUuid": "05d0f2eb_2d855d73",
+      "range": {
+        "startLine": 704,
+        "startChar": 62,
+        "endLine": 704,
+        "endChar": 73
+      },
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fda2b718_dbb5bb99",
         "filename": "designs/XXXX-go-plugins.md",
         "patchSetId": 1
@@ -106,6 +196,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3cffa62f_12a8394a",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 706,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-04-24T07:51:55Z",
+      "side": 1,
+      "message": "Yes that\u0027s right. We can refer to a Go package both as `.` (the Go package in the current directory) or as a fully qualified import path. In the former case, the Go package we resolve to does depend on the CUE instance because that\u0027s the place where the import path of that directory is defined (via the `module` directive of the `go.mod` in some parent directory).\n\nDo you think this needs clarifying in the text?",
+      "parentUuid": "fda2b718_dbb5bb99",
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ef9edec3_6418ae0f",
         "filename": "designs/XXXX-go-plugins.md",
         "patchSetId": 1
@@ -117,6 +225,24 @@
       "writtenOn": "2026-04-24T04:29:34Z",
       "side": 1,
       "message": "Per my feedback in the original document, this needs to be stated as what the user would want/need to do first. i.e. that `cue vet $pkg@$version` is something that should work, regardless of whether there is Go code or not in the CUE being evaluated. \n\nWhether that happens via `cue plugin build` or some such is for this document to discover.",
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5094242_d2fdad98",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 931,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-04-24T07:51:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ef9edec3_6418ae0f",
       "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
