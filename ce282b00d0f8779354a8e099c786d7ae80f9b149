@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cfaf6b63_408ae38b",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-24T16:23:58Z",
+      "side": 1,
+      "message": "You answered the first question, but not the second as far as I can see?",
+      "parentUuid": "41621364_e18f689c",
+      "revId": "ce282b00d0f8779354a8e099c786d7ae80f9b149",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "bffd2df5_4e4ae19a",
         "filename": "designs/XXXX-go-plugins.md",
         "patchSetId": 1
