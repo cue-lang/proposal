@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cbb8ab16_8018f868",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-27T14:25:05Z",
+      "side": 1,
+      "message": "Noting our conversation from earlier where we discussed the importance of the root `go.mod` file in a CUE+Go co-located repo being tidy. Because this is the file that participates in MVS when such a module is consumed.",
+      "revId": "a111bd4e11dbefbbd5d640fa18cced4c309c05a3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9345d68e_5e2c1cfb",
         "filename": "designs/XXXX-go-plugins.md",
         "patchSetId": 2
@@ -31,6 +48,23 @@
       "writtenOn": "2026-04-24T16:23:58Z",
       "side": 1,
       "message": "See above.",
+      "revId": "a111bd4e11dbefbbd5d640fa18cced4c309c05a3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f44367e_6b0be8fe",
+        "filename": "designs/XXXX-go-plugins.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 784,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-04-27T14:25:05Z",
+      "side": 1,
+      "message": "Noting our conversation from earlier here. The plan as proposed means that Go dependency resolution is dependent on VCS. This is a risk we need to call out and quantify to my mind, because \"regular\" Go dependency resolution from a consumer perspective does not depend on VCS. Either at all (if the module publish uses the `mod` VCS type) or in the extremely limited case of a consumer being the first person to ask a VCS-backed proxy for a version the proxy hasn\u0027t seen. This proposal as I understand it has _every_ consumer of a CUE+Go co-located module relying on VCS.",
       "revId": "a111bd4e11dbefbbd5d640fa18cced4c309c05a3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
