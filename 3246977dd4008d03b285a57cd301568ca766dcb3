@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "402614f8_9a1a83c9",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-05-29T14:56:13Z",
+      "side": 1,
+      "message": "I think this claim oversells what the two-file split actually achieves, and the framing is worth tightening.\n\nThe defining property of go.work is not that it is a second file, but that it lives *outside* the module and is gitignored by default, so machine-specific directory replaces physically cannot be committed alongside the module. This proposal instead puts directory replaces in cue.mod/local-module.cue, which is committed by default (see \"Why not `.gitignore` `local-module.cue` by default?\"), mitigated only by an opt-in \"tooling can warn\" check.\n\nSo the accidental-commit-of-directory-replaces problem that go.work was designed to eliminate is relocated into a new committed file, not eliminated. The design makes such commits easier to *detect* (a dedicated file, a warning), which is a real benefit — but that is a different and weaker claim than \"avoiding the problems that Go encountered.\"\n\nTwo concrete suggestions:\n- Soften the abstract/background to the honest claim, e.g. \"making development-time configuration explicit and easy to detect before publication\" rather than \"avoiding the problems that Go encountered.\"\n- Either way, the document should confront the residual footgun head-on: a directory replace like `replace: \"../local-foo\"` is inherently non-portable, yet nothing structurally stops it being committed. Is the warning enough? Should directory replaces (as opposed to module-version replaces) be gitignored or rejected at commit/publish time, while module-version replaces stay committable? The \"Why not `.gitignore` by default?\" section gestures at this distinction but stops short of a mechanism.",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "271f84cc_54ba042b",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-05-29T14:56:13Z",
+      "side": 1,
+      "message": "This seems to suggest that a wholesale copy of the `module.cue` is required, rather than being a sparse overlay. The wording above (\"When `local-module.cue` is present, the CUE tooling merges information from both files\") seems to suggest the opposite. \n\nWe definitely need to make clear what the intended workflow is.\n\nAnd if it is a sparse overlay approach, then why are we advocating this `cp` command here? It\u0027s not necessary, and requires a whole load of explanatory text caveating what `cue mod tidy` would do to reduce it.",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9849baac_212982e0",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-05-29T14:56:13Z",
+      "side": 1,
+      "message": "Can I just confirm that this basically allows one module to alias another, like https://github.com/golang/go/issues/26904?\n\nI guess it has to be the case that we support this, because we enforce (in the Central Registry at least, possibly also in `cmd/cue`) by construction that a module published to `domain.com/a/b` has that module path.",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
