@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9471e879_f21c4aab",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-01T16:26:50Z",
+      "side": 1,
+      "message": "Ack to first suggestion. Will address.\n\n\u003e nothing structurally stops it being committed\n\nIn the \"interaction with registries\" section, we make it clear (hopefully!)\nthat the `local-module.cue` file is omitted, which avoids it being published at least.\nWe\u0027d also make the Central Registry reject published modules with such a file present - we perhaps don\u0027t need to make that totally clear here, as it\u0027s more of an implementation concern.\n\nCommit and publish are two quite separate matters, I think. I don\u0027t think it\u0027s possible to stop the file being committed - that\u0027s a matter between the user and their VCS AFAICS. I\u0027m not even sure it\u0027s desirable. For example, I see Go modules that have directory replace statements that reference local directories and that aren\u0027t targeted at being a dependency. That seems like a reasonable use case to me.",
+      "parentUuid": "402614f8_9a1a83c9",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "271f84cc_54ba042b",
         "filename": "designs/XXXX-module-replace.md",
         "patchSetId": 1
@@ -37,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "503e5d32_d8f69996",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-01T16:26:50Z",
+      "side": 1,
+      "message": "I agree that might not be an ideal workflow, although I think it might be a useful one: if I\u0027ve got an existing `module.cue` file, I can easily modify it to add a `replace` directive without starting from scratch and creating a `deps` entry for the module I might want to replace.\n\nThe point I was really trying to get across is that the two files are essentially compatible with one another, but also that from a tooling p.o.v. it\u0027s not just a unification operation (otherwise updating the dependencies manually in one might result in a conflict rather than updating via MVS max-version semantics).\n\nI\u0027ll work on some better wording.",
+      "parentUuid": "271f84cc_54ba042b",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9849baac_212982e0",
         "filename": "designs/XXXX-module-replace.md",
         "patchSetId": 1
@@ -48,6 +84,24 @@
       "writtenOn": "2026-05-29T14:56:13Z",
       "side": 1,
       "message": "Can I just confirm that this basically allows one module to alias another, like https://github.com/golang/go/issues/26904?\n\nI guess it has to be the case that we support this, because we enforce (in the Central Registry at least, possibly also in `cmd/cue`) by construction that a module published to `domain.com/a/b` has that module path.",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf69513d_235067bb",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-01T16:26:50Z",
+      "side": 1,
+      "message": "Yes, I can confirm that: as you say that does indeed have to be the case. Will update the text to make that clear.",
+      "parentUuid": "9849baac_212982e0",
       "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
