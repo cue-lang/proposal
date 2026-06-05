@@ -140,6 +140,24 @@
       "parentUuid": "9849baac_212982e0",
       "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eaefa832_6fd79317",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-05T15:44:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf69513d_235067bb",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
