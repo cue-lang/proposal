@@ -54,6 +54,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "baf3af07_d88837bd",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-05T16:02:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a905e759_7d340ea8",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "271f84cc_54ba042b",
@@ -103,6 +121,24 @@
       "side": 1,
       "message": "Understood on the mechanism: the merge is MVS max-version, not unification, and that is worth stating explicitly. But I don\u0027t think it answers the thing I\u0027m most concerned about, and I want to separate the two questions, because they are orthogonal:\n\n1. How the two files combine: MVS max-version. Confirmed, good.\n2. What the user is expected to author. Still open.\n\nMVS-max merging is what enables a sparse local-module.cue (one that lists only the replaced dependency and inherits everything else from module.cue), but it does not require it: the same merge works equally well if local-module.cue is a full copy of module.cue with one replace added. So confirming the merge semantics does not tell a reader which of those they are meant to do.\n\nYour reply (\"might not be the ideal workflow, but it might be a useful one\") leaves both doors open, and the proposal as written leans on the cp example, which reads as \"copy the whole file.\" I would really like the proposal to commit to a single canonical, majority-case workflow and state it plainly and up front, e.g. \"create a local-module.cue containing only the dependency you want to replace, then run cue mod tidy,\" with the full-copy path described, if at all, as a secondary convenience rather than the headline.\n\nThis matters beyond ergonomics. If the blessed workflow is full-copy, we are back to whole-graph duplication: two near-identical dependency lists to keep in sync, larger diffs, and drift when someone edits one by hand. If it is sparse overlay, that concern disappears. So \"which workflow\" is really the same decision as \"do we accept the duplication,\" and the doc should resolve it rather than leaving it to the reader.\n\nIf we also think about LSP code actions doing things like \"add a replace to this local module\" or \"work on this module locally\" I think it would be incredibly odd if that action did a wholesale copy. \n\nSeparately: for a directory replace the dep\u0027s version is essentially nominal, since the content comes from the local checkout, so it is not obvious what \"max-version\" means for that entry. A sentence on whether a directory-replaced dep\u0027s version participates in the max reconciliation, or is excluded from it, would help.",
       "parentUuid": "503e5d32_d8f69996",
+      "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "969931d6_70101040",
+        "filename": "designs/XXXX-module-replace.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-05T16:02:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "538809ec_6e82c8de",
       "revId": "3246977dd4008d03b285a57cd301568ca766dcb3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
