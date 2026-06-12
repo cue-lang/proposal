@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00359bdd_7f6d9d31",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-06-12T10:20:49Z",
+      "side": 1,
+      "message": "Framing: the proposal characterizes local-module.cue throughout as \"development-time configuration\" (here, and lines 113/120/126/472, plus \"local development\" on line 12), but that conflates two orthogonal properties:\n\n- Scope — replace is honored only in the main module and never propagates to downstream consumers (lines 86, 165). This is the property the design actually enforces.\n- Lifecycle — \"development-time\", i.e. ephemeral/personal/machine-specific. This is what the name and the headline prose imply.\n\nThe proposal\u0027s own content contradicts the lifecycle framing: UC2 is \"committed on purpose\", UC3/UC4 are \"useful to share across a team\", and \"Why not .gitignore\" states \"Committing the replace is the correct behaviour there\". So replaces are frequently committed, shared and persistent — not development-time. The defining guarantee is scope (main-module-only, non-propagating); development-time replacement is just the most common use of that capability, not its essence.\n\nSuggest reframing to lead with the scope property — \"configuration that changes how you build without changing what your consumers see\" — and demote \"development-time\" to \"the common case\". The name local-module.cue reinforces the narrower reading (it works if \"local\" means \"local to this module / not propagated\", but the surrounding \"local development\" / \"machine-specific\" language reads it as machine-local), so it\u0027s worth at least making the prose consistent about which sense is meant.",
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e6c69e1_17ce7a7f",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-06-12T10:20:49Z",
+      "side": 1,
+      "message": "I don\u0027t understand why this proposal should be saying anything about the VCS practices of the user... This design/proposal has not control/say/influence over whether `local-module.cue` is committed, either at all, by default etc. I don\u0027t think we need to state anything so strongly here?",
+      "range": {
+        "startLine": 116,
+        "startChar": 50,
+        "endLine": 117,
+        "endChar": 7
+      },
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23d4aef0_fe5141da",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 548,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-06-12T10:20:49Z",
+      "side": 1,
+      "message": "Typo: \"could could\" → \"could\".\n\nMinor logical tightening while you\u0027re here: the section floats \"treat its module as the main module and apply replace directives\" as an option, then concludes that we reject any downloaded module containing local-module.cue. Since such a module can never legitimately carry the file, the floated alternative can never actually arise — so it reads slightly self-cancelling. Consider stating directly that the module is consumed as a (the sole) dependency, so its local-module.cue is ignored like any dependency\u0027s, and separately that the artifact is rejected outright.",
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1d4da24_499bc5a5",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 554,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-06-12T10:20:49Z",
+      "side": 1,
+      "message": "The parenthetical (\"this should not happen unless someone is publishing modules without using `cue mod publish`\") understates why client-side rejection is necessary, framing it as an accident only. The reason the check has to live in the consuming client — rather than relying on the publish-side guarantees described under \"Interaction with registries\" — is that those guarantees don\u0027t bind the threat: the Central Registry\u0027s rejection covers only the Central Registry; `cue mod publish`\u0027s strip covers only modules published via our CLI; an arbitrary OCI registry or a direct push is covered by neither, and a local-module.cue\u0027s replace directives (directory replaces pointing at arbitrary local paths, or module-version replaces redirecting deps) make a malicious artifact a real concern, not just a sloppy one.\n\nSuggest strengthening to make explicit that rejection defends against accidental *and* malicious artifacts from any registry, which is precisely why it must be enforced on download in the client. (Note: as of now this is not yet enforced — the consume-path zip check has no local-module.cue branch — so the proposal is specifying intended behaviour here.)",
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
