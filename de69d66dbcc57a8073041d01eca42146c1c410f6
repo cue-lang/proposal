@@ -41,6 +41,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2fbcb04_33b40abc",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-12T11:05:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e6c69e1_17ce7a7f",
+      "range": {
+        "startLine": 116,
+        "startChar": 50,
+        "endLine": 117,
+        "endChar": 7
+      },
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "23d4aef0_fe5141da",
@@ -58,6 +82,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7bb867ab_318565b1",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 548,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-12T11:05:35Z",
+      "side": 1,
+      "message": "\u003e Typo: \"could could\" → \"could\".\n\ndone\n\n\u003e Consider stating directly that the module is consumed as a (the sole) dependency, so its local-module.cue is ignored like any dependency\u0027s, and separately that the artifact is rejected outright.\n\nI could say that but I\u0027m not sure whether it\u0027s actually true, because internally that\u0027s _not_ actually how it\u0027s consumed, and I\u0027m not totally sure that ignoring local-module.cue does _actually_ amount to exactly the same as that, so I\u0027d prefer to avoid being quite so absolute.",
+      "parentUuid": "23d4aef0_fe5141da",
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b1d4da24_499bc5a5",
@@ -71,6 +113,24 @@
       "writtenOn": "2026-06-12T10:20:49Z",
       "side": 1,
       "message": "The parenthetical (\"this should not happen unless someone is publishing modules without using `cue mod publish`\") understates why client-side rejection is necessary, framing it as an accident only. The reason the check has to live in the consuming client — rather than relying on the publish-side guarantees described under \"Interaction with registries\" — is that those guarantees don\u0027t bind the threat: the Central Registry\u0027s rejection covers only the Central Registry; `cue mod publish`\u0027s strip covers only modules published via our CLI; an arbitrary OCI registry or a direct push is covered by neither, and a local-module.cue\u0027s replace directives (directory replaces pointing at arbitrary local paths, or module-version replaces redirecting deps) make a malicious artifact a real concern, not just a sloppy one.\n\nSuggest strengthening to make explicit that rejection defends against accidental *and* malicious artifacts from any registry, which is precisely why it must be enforced on download in the client. (Note: as of now this is not yet enforced — the consume-path zip check has no local-module.cue branch — so the proposal is specifying intended behaviour here.)",
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0ed141d_2ec4a57f",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 554,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-12T11:05:35Z",
+      "side": 1,
+      "message": "\u003e which is precisely why it must be enforced on download in the client\n\nI\u0027d say that\u0027s a bit strong. Even if we didn\u0027t enforce the check on download, we\u0027d still be safe from malicious artifacts, as none of the code will actually use a `local-module.cue` file from a dependency even if it\u0027s present.\n\nI\u0027ve updated the wording a bit.",
+      "parentUuid": "b1d4da24_499bc5a5",
       "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
