@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "80544d8d_364bffb5",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1007275
+      },
+      "writtenOn": "2026-06-12T11:06:24Z",
+      "side": 1,
+      "message": "I\u0027ve made some adjustments which hopefully address this suggestion.",
+      "parentUuid": "00359bdd_7f6d9d31",
+      "revId": "de69d66dbcc57a8073041d01eca42146c1c410f6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3e6c69e1_17ce7a7f",
