@@ -1,4 +1,4 @@
-# Proposal: Module Replace Directives with a Two-File Approach
+# Proposal: Module Replaces with a Two-File Approach
 
 Roger Peppe
 
@@ -8,12 +8,12 @@ Discussion at https://github.com/cue-lang/cue/discussions/4389.
 
 ## Abstract
 
-We propose adding `replace` directive support to the CUE module
-system, covering both directory replacements (for local checkouts)
+We propose adding module replace support to the CUE module system,
+covering both directory replacements (for local checkouts)
 and module-version replacements (for fork-based workflows). Rather
-than placing replace directives in the existing `cue.mod/module.cue`
+than placing new fields in the existing `cue.mod/module.cue`
 file, we introduce an optional companion file `cue.mod/local-module.cue`
-that holds replace directives and an alternative dependency list.
+that holds `replaceWith` fields and an alternative dependency list.
 This two-file design cleanly separates published module metadata
 from main-module-only configuration — overrides that change how you
 build without changing what your consumers see — making them explicit
@@ -35,7 +35,7 @@ No replace or exclude functionality has been implemented.
 
 ### Use cases
 
-Replace directives serve several distinct user stories. They are
+Module replaces serve several distinct user stories. They are
 numbered here so that the rest of the document — in particular the open
 question in "Aliasing and hidden fields" — can refer to them precisely
 and be explicit about which are supported under a given design choice.
@@ -43,7 +43,7 @@ and be explicit about which are supported under a given design choice.
 **UC1 — Coordinated local development ("edit two modules at once").**
 This is the most pressing use case. A developer working on module A
 that depends on module B needs to make coordinated changes to both.
-Without replace directives, changes to B must be published (or at least
+Without module replaces, changes to B must be published (or at least
 pushed to a registry) before they can be tested in A, creating a
 painful publish-test-fix cycle. A *directory replace* points A's
 dependency on B at a local checkout, so both can be edited and tested
@@ -89,7 +89,7 @@ module is used as a dependency. This ensures that replace and exclude
 are tools for the developer's own workflow, not constraints imposed
 on downstream consumers.
 
-However, placing replace directives in the single `go.mod` file has
+However, placing module replaces in the single `go.mod` file has
 a structural limitation: only one set of dependencies can be
 represented. In Go, `go.mod` holds the main-module dependencies
 (i.e., the dependency graph as resolved with replaces applied). When
@@ -108,7 +108,7 @@ required new tooling and introduced a separate configuration surface.
 
 CUE can learn from Go's experience and design the two-file split
 from the start. By introducing `cue.mod/local-module.cue` as the
-designated home for replace directives and main-module-specific
+designated home for module replaces and main-module-specific
 dependency overrides, we avoid the need for a separate workspace
 mechanism while maintaining a clean separation between published
 and main-module-only metadata.
@@ -117,7 +117,7 @@ The defining property of `local-module.cue` is scope: its contents
 are honoured only when the module is the main module and are ignored
 entirely when the module is consumed as a dependency. In this sense
 "local" in the filename means "local to this module — not propagated
-to consumers", not "machine-local". Replace directives change how
+to consumers", not "machine-local". Module replaces change how
 you build without affecting what your consumers see; that is the
 core guarantee. "Local development" is the most common motivation,
 but as UC2–UC4 show, replaces are often committed, shared, and
@@ -126,7 +126,7 @@ home for all such overrides: they are explicit, isolated from
 published metadata, and easy to detect before publication.
 Publication is structurally protected separately — `local-module.cue`
 is omitted from the published module zip and the Central Registry
-rejects any published module that contains replace directives.
+rejects any published module that contains `replaceWith` fields.
 
 ## Proposal
 
@@ -140,19 +140,19 @@ The module system gains an optional second file:
 - The language version (`language: version`).
 - Source metadata (`source`).
 - Dependencies (`deps`) as they would be resolved without any
-  replace directives, representing the module as seen by downstream
+  `replaceWith` fields, representing the module as seen by downstream
   consumers.
 - Custom tool data (`custom`).
 
 **`cue.mod/local-module.cue`** (new, optional) contains:
 - Dependencies (`deps`) as resolved with replaces applied,
   representing the main-module view. Individual dep entries may
-  include a `replace` field specifying the replacement target.
+  include a `replaceWith` field specifying the replacement target.
 - The `default` annotations that correspond to the main-module
   dependency set.
 
 Only `module.cue` contains the module path and language version.
-Only dep entries in `local-module.cue` may contain `replace` fields.
+Only dep entries in `local-module.cue` may contain `replaceWith` fields.
 
 When `local-module.cue` is absent, the module system behaves exactly
 as it does today: `module.cue` is the sole source of truth.
@@ -160,10 +160,10 @@ as it does today: `module.cue` is the sole source of truth.
 When `local-module.cue` is present, the CUE tooling merges
 information from both files. For dependency resolution in main-module
 mode, the dependencies in `local-module.cue` take precedence, with
-replace directives applied. For publishing or when the module is
+`replaceWith` fields applied. For publishing or when the module is
 used as a dependency, only `module.cue` is consulted: a
 `local-module.cue` belonging to a module that is itself consumed as a
-dependency is ignored entirely, so replace directives are honoured
+dependency is ignored entirely, so module replaces are honoured
 only in the main module and never affect downstream consumers.
 
 ### Authoring `local-module.cue`
@@ -176,7 +176,7 @@ dependency at a local checkout, a developer writes:
 ```cue
 // local-module.cue
 deps: "example.com/foo@v0": {
-    replace: "../local-foo"
+    replaceWith: "../local-foo"
 }
 ```
 
@@ -190,13 +190,13 @@ single entry, not a wholesale copy.
 
 In practice the most common way to produce that sparse file is not to
 create it by hand at all. Starting from a module that has no
-`local-module.cue`, a developer adds a `replace` field to the relevant
+`local-module.cue`, a developer adds a `replaceWith` field to the relevant
 dependency in the `module.cue` they already have and runs
-`cue mod tidy`. A `replace` field is not itself valid in `module.cue`,
+`cue mod tidy`. A `replaceWith` field is not itself valid in `module.cue`,
 but rather than rejecting it `cue mod tidy` takes it as the signal to
-set things up: it removes the directive from `module.cue` and writes an
-appropriate `local-module.cue` containing it (see "Migrating a replace
-directive out of `module.cue`"). From then on the developer edits
+set things up: it removes the field from `module.cue` and writes an
+appropriate `local-module.cue` containing it (see "Migrating a module
+replace out of `module.cue`"). From then on the developer edits
 `local-module.cue` directly.
 
 Both files share the same "lax" syntax (the existing `#File` schema
@@ -251,7 +251,7 @@ directory replace reduces to
 ```cue
 // local-module.cue
 deps: "example.com/foo@v0": {
-    replace: "../local-foo"
+    replaceWith: "../local-foo"
 }
 ```
 
@@ -266,7 +266,7 @@ inherit it from.
 
 ### Replace field syntax
 
-Replacements are expressed as a `replace` field within individual
+Replacements are expressed as a `replaceWith` field within individual
 `deps` entries in `local-module.cue`. Two forms are supported. The
 examples below show an explicit `v` field for clarity, but in
 practice it is usually omitted and inherited from `module.cue` (see
@@ -280,7 +280,7 @@ path:
 // local-module.cue
 deps: "example.com/foo@v0": {
     v: "v0.0.1"
-    replace: "../local-foo"
+    replaceWith: "../local-foo"
 }
 ```
 
@@ -291,7 +291,7 @@ absolute paths with drive letters are recognized:
 ```cue
 deps: "example.com/foo@v0": {
     v: "v0.0.1"
-    replace: "C:/Users/dev/local-foo"
+    replaceWith: "C:/Users/dev/local-foo"
 }
 ```
 
@@ -302,7 +302,7 @@ module and version in the registry:
 // local-module.cue
 deps: "example.com/foo@v0": {
     v: "v0.0.1"
-    replace: "example.com/bar@v0.1.2"
+    replaceWith: "example.com/bar@v0.1.2"
 }
 ```
 
@@ -330,7 +330,7 @@ package (UC5). That case interacts with CUE's per-package hidden-field
 namespaces and is the subject of "Open questions: aliasing and hidden
 fields" below.
 
-The `replace` value is interpreted as a directory path if it starts
+The `replaceWith` value is interpreted as a directory path if it starts
 with `.` or `/`, or if it matches a Windows absolute path (a drive
 letter followed by a colon, e.g., `C:\libs\foo` or `C:/libs/foo`).
 Otherwise it is interpreted as a module path with version. This
@@ -340,7 +340,7 @@ the second character of a Windows drive-letter path).
 
 ### Schema changes
 
-The `#Dep` type gains an optional `replace` field, and its version
+The `#Dep` type gains an optional `replaceWith` field, and its version
 field `v` becomes optional in the lax (`#File`) schema:
 
 ```cue
@@ -354,11 +354,11 @@ field `v` becomes optional in the lax (`#File`) schema:
     v?: #Semver | null
     default?: bool
 
-    // replace specifies a replacement for this dependency.
+    // replaceWith specifies a replacement for this dependency.
     // A value starting with "." or "/", or matching a Windows
     // absolute path (e.g. "C:\..." or "C:/..."), is a directory
     // path; otherwise it is a module path with version.
-    replace?: string
+    replaceWith?: string
 }
 ```
 
@@ -366,11 +366,11 @@ Making `v` optional is what permits a sparse `local-module.cue` to
 name a dependency by path alone and inherit its version from
 `module.cue` (see "Omitting redundant versions" below). A dependency
 that omits `v` and is *not* present in `module.cue` is only accepted
-when it is a replace-only placeholder (it has a `replace` field and a
+when it is a replace-only placeholder (it has a `replaceWith` field and a
 module path carrying its major version); otherwise it is an error,
 because there is no version to resolve it against.
 
-The `#Strict` schema (used at publish time) rejects the `replace`
+The `#Strict` schema (used at publish time) rejects the `replaceWith`
 field and continues to require a concrete version, so the relaxation
 of `v` applies only to the lax main-module and `local-module.cue`
 views:
@@ -383,7 +383,7 @@ views:
     #Dep: v!: #Semver
 
     // Replacements are not permitted in published modules.
-    #Dep: replace?: _errorReplaceNotPermittedInStrict
+    #Dep: replaceWith?: _errorReplaceNotPermittedInStrict
 }
 ```
 
@@ -396,8 +396,8 @@ map that must be kept in sync with `deps`.
 `cue mod tidy` keeps dependencies synchronized between the two
 files:
 
-1. It resolves the full dependency graph twice: once with replace
-   directives applied (the main-module view) and once without (the
+1. It resolves the full dependency graph twice: once with `replaceWith`
+   fields applied (the main-module view) and once without (the
    published-module view).
 
 2. The main-module dependencies are written to `local-module.cue`;
@@ -414,28 +414,28 @@ files:
    are omitted from the written file (see "Omitting redundant
    versions").
 
-6. If no dep entry in `local-module.cue` contains a `replace` field
+6. If no dep entry in `local-module.cue` contains a `replaceWith` field
    after tidying, `cue mod tidy` removes the file entirely, since
    it serves no purpose without replacements.
 
-#### Migrating a replace directive out of `module.cue`
+#### Migrating a module replace out of `module.cue`
 
-A `replace` field is not valid in `module.cue`: loading a module
+A `replaceWith` field is not valid in `module.cue`: loading a module
 whose `module.cue` carries one is an error (and the registry rejects
 it at publish time). As a convenience, however, `cue mod tidy` does
-not reject such a file. Instead it treats the misplaced replace
-directive as something to fix: it records the replacement in
+not reject such a file. Instead it treats the misplaced `replaceWith`
+field as something to fix: it records the replacement in
 `local-module.cue` (creating the file if necessary) and removes it
 from `module.cue`. `cue mod tidy --check` reports the module as not
 tidy in this state.
 
 This is in fact the most common way a `local-module.cue` comes into
 existence (see "Authoring `local-module.cue`"): a developer adds a
-`replace` to the `module.cue` they already have, and `cue mod tidy`
+`replaceWith` to the `module.cue` they already have, and `cue mod tidy`
 relocates it into a new `local-module.cue`, which the developer is
 then free to edit. The same path also smoothly handles a developer
 who is migrating an older module by hand, without their having to know
-up front which file the directive belongs in.
+up front which file the field belongs in.
 
 #### The `--local-only` flag
 
@@ -463,7 +463,7 @@ situation is possible.
 The resolution is to apply MVS as usual: `foo.com` appears in the
 dependency graph both as a replacement target at `v0.1.2` and as a
 transitive dependency at `v0.2.0`. MVS selects the maximum,
-`v0.2.0`, and the replace directive is updated accordingly. The
+`v0.2.0`, and the `replaceWith` field is updated accordingly. The
 developer sees the upgrade reflected in `local-module.cue` after
 running `cue mod tidy`.
 
@@ -473,11 +473,11 @@ When publishing a module to a registry, only `module.cue` is
 included. The `local-module.cue` file is omitted from the module zip
 because it contains main-module-only configuration that is
 irrelevant to consumers. The registry's `#Strict` validation
-rejects any `module.cue` that contains replace directives, providing
+rejects any `module.cue` that contains `replaceWith` fields, providing
 a safety net.
 
 This is the key advantage of the two-file design: there is no risk
-of accidentally publishing replace directives, because they live in
+of accidentally publishing module replaces, because they live in
 a file that is excluded from publication by construction.
 
 ### Interaction with `cue.work` (future)
@@ -486,15 +486,15 @@ A future workspace mechanism (analogous to Go's `go.work`) could
 complement `local-module.cue` by providing cross-module workspace
 configuration that lives entirely outside any individual module. The
 two features are orthogonal: `local-module.cue` handles per-module
-replace directives, while a workspace file would handle multi-module
+`replaceWith` fields, while a workspace file would handle multi-module
 development layouts. The design of `local-module.cue` does not
 preclude or constrain a future workspace feature.
 
 ## Rationale
 
-### Why not put replace directives in `module.cue`?
+### Why not put module replaces in `module.cue`?
 
-Placing replace directives in `module.cue` would replicate the
+Placing `replaceWith` fields in `module.cue` would replicate the
 problem Go had before `go.work`: developers must remember to remove
 directory replaces before committing, and the single dependency list
 cannot represent both the main-module and published-module views.
@@ -505,10 +505,10 @@ The two-file split avoids both problems.
 A workspace file (like `go.work`) solves the "don't commit directory
 replaces" problem but introduces a separate configuration surface
 that lives outside the module. For the common case of a single
-module with a few replace directives, a companion file inside
+module with a few module replaces, a companion file inside
 `cue.mod/` is simpler and more discoverable. A workspace mechanism
 may still be valuable for multi-module monorepo workflows, but it is
-a larger design that need not block replace directive support.
+a larger design that need not block module replace support.
 
 ### Why not `.gitignore` `local-module.cue` by default?
 
@@ -529,7 +529,7 @@ developer — a decision between them and their VCS, exactly as it
 would be for any other source file. Publication is protected
 separately and by construction (the file is omitted from the
 published zip and rejected by the registry; see "Interaction with
-registries"), so gitignoring is not needed to keep replace directives
+registries"), so gitignoring is not needed to keep module replaces
 out of published modules. Tooling can additionally warn when
 `local-module.cue` contains a directory replace and is tracked by
 git, so that an *accidentally* committed machine-specific path is
@@ -547,8 +547,8 @@ with a version that the module's code has never been tested against.
 
 The `cue` command line supports referring to a package at an absolute
 version. As it is the only package inside the build it is possible we
-could treat its module as the main module and apply replace
-directives. However, by implication from the rest of the proposal, in
+could treat its module as the main module and apply `replaceWith`
+fields. However, by implication from the rest of the proposal, in
 general we do not support having `local-module.cue` inside
 dependencies, and hence we will not recognize it when found in such a
 dependency. In fact, we will reject downloaded modules when they
@@ -621,7 +621,7 @@ is left to the design discussion.
 
 This proposal is fully backward compatible. Existing modules that
 have no `local-module.cue` file behave identically to the current
-system. The schema changes are additive: the `replace` field on
+system. The schema changes are additive: the `replaceWith` field on
 `#Dep` is optional and only permitted in `local-module.cue`.
 
 The proposal requires a new language version gate (e.g.,
@@ -633,15 +633,15 @@ the `source` field addition in `v0.9.0-alpha.0`.
 
 A suggested phased approach:
 
-1. **Schema and parsing**: Add the `replace` field to `#Dep` and make
+1. **Schema and parsing**: Add the `replaceWith` field to `#Dep` and make
    `v` optional in the lax schema (keeping it required in `#Strict`).
    Extend `modfiledata.File` and `modfile.Parse` to handle
    `local-module.cue` alongside `module.cue`, including a `ParseLocal`
    that inherits identity from `module.cue` and fills in omitted
    versions from it. Reject `module`/`language` fields that disagree
-   with `module.cue`. A `replace` field in `module.cue` is rejected at
+   with `module.cue`. A `replaceWith` field in `module.cue` is rejected at
    load and publish time, but tolerated and migrated by `cue mod tidy`
-   (see "Migrating a replace directive out of `module.cue`").
+   (see "Migrating a module replace out of `module.cue`").
 
 2. **Directory replacement in the loader**: Teach the module loader
    to resolve directory-replaced modules from the local filesystem
@@ -649,14 +649,14 @@ A suggested phased approach:
    including the `io/fs.FS` boundary issues on Windows.
 
 3. **Module-version replacement**: Extend the registry resolution
-   layer to remap module paths and versions according to replace
-   directives before fetching.
+   layer to remap module paths and versions according to `replaceWith`
+   fields before fetching.
 
 4. **`cue mod tidy` support**: Implement dual-graph resolution
    and the synchronization logic described above, including
    `--local-only` and automatic removal of empty `local-module.cue`
    files.
 
-5. **Exclude directives** (future): Once replace is stable, exclude
-   can be added following the same two-file pattern if needed, or
-   placed solely in `local-module.cue`.
+5. **Module version exclusion** (future): Once replace is stable,
+   "exclude" can be added following the same two-file pattern if needed,
+   or placed solely in `local-module.cue`.
