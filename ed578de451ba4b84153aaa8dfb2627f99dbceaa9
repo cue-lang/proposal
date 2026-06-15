@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e53e78f_51023911",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1017723
+      },
+      "writtenOn": "2026-06-15T08:32:51Z",
+      "side": 1,
+      "message": "For the sake of \"at a glance\" I would suggest including the replaceWith equivalent below.",
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
