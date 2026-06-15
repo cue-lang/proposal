@@ -16,6 +16,201 @@
       "message": "For the sake of \"at a glance\" I would suggest including the replaceWith equivalent below.",
       "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0f584639_8013fd23",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "I (currently) disagree with this - \"replace directive\" is the `replaceWith` syntax, so I do think where we\u0027re explicitly talking about replace directive in the local file, we should be using `replaceWith`",
+      "range": {
+        "startLine": 30,
+        "startChar": 44,
+        "endLine": 31,
+        "endChar": 46
+      },
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ddc8e80a_c53b70df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "Right, I\u0027ve not read this before so I started reading it in its entirety.\n\n+2\u0027ing this because your changes are completely fine.\n\nPersonally, I think we should be using `replaceWith` more - to me, the consistency of saying `replaceWith directive` and the syntax also being `replaceWith`, is important. However, I can well believe others will disagree with me, and there\u0027s no point me going through the entire proposal and pointing out every single instance of `replace directive` that (I think) should be changed; so cutting this short.",
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "561a7f8d_0f36b338",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "I think this one should be `replaceWith` as it\u0027s talking about the file itself.",
+      "range": {
+        "startLine": 16,
+        "startChar": 11,
+        "endLine": 16,
+        "endChar": 18
+      },
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c834b6dc_384e75c5",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "arguable, but I think this one should be `replaceWith`",
+      "range": {
+        "startLine": 111,
+        "startChar": 20,
+        "endLine": 111,
+        "endChar": 27
+      },
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2bc22b89_87894f5c",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "obviously far too late now, and really nothing more than an idle thought, but I do wonder whether `main-module.cue` would be a better name for the file, given this property.",
+      "range": {
+        "startLine": 116,
+        "startChar": 25,
+        "endLine": 117,
+        "endChar": 52
+      },
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "57cc0262_05af0c71",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "definitely `replaceWith`",
+      "range": {
+        "startLine": 129,
+        "startChar": 43,
+        "endLine": 129,
+        "endChar": 50
+      },
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7788271e_8e538f41",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 148,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "replacements? or `replaceWith directives`? To me, \"replaces\" reads a bit jarring",
+      "range": {
+        "startLine": 148,
+        "startChar": 41,
+        "endLine": 148,
+        "endChar": 49
+      },
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8891302b_530fa4cb",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "`replaceWith`",
+      "range": {
+        "startLine": 163,
+        "startChar": 0,
+        "endLine": 163,
+        "endChar": 7
+      },
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "523ad3cc_c35517ee",
+        "filename": "designs/modules.v3/4389-module-replace.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1038145
+      },
+      "writtenOn": "2026-06-15T09:28:36Z",
+      "side": 1,
+      "message": "`replaceWith`",
+      "revId": "ed578de451ba4b84153aaa8dfb2627f99dbceaa9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
