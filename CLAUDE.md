@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+<!-- The CUE project common guidance is imported below, managed by
+     cueckoo. If the referenced file is missing on your machine, run
+     "cueckoo version update" to write it (and pick up any newer
+     cueckoo while you are at it). -->
+@~/.cache/cueckoo/common-guidance.md
+
 ## Repository Overview
 
 This is the CUE proposal repository containing design documents for changes to the CUE language, libraries, and tools. The repository follows a formal proposal process documented in README.md.
